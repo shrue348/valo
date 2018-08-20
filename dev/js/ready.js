@@ -216,6 +216,33 @@ $(function(){
 
 
 
+// переключалка банков
+jQuery.fn.swap = function(b) {
+  b = jQuery(b)[0];
+  var a = this[0],
+      a2 = a.cloneNode(true),
+      b2 = b.cloneNode(true),
+      stack = this;
 
+  $(b).parent().removeClass('active')
+  $(a).parent().removeClass('active')
+
+  setTimeout(function(){
+    a.parentNode.replaceChild(b2, a);
+    b.parentNode.replaceChild(a2, b);
+
+    $(a2).parent().addClass('active') //большая
+    $(b2).parent().addClass('active') //текущая
+  }, 200)
+
+  stack[0] = a2;
+  return this.pushStack( stack );
+};
+
+$(function(){
+  $('.buy_cards_item ').on('click', function(){
+    $(this).children().swap('.buy_cards_big .buy_cards_item__in');
+  })
+})
 
 

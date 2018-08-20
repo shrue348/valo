@@ -47,11 +47,11 @@
 		<div class="header_bottom__wrapper">
 			<div class="header_logo">
 				<nav class="menu">
-					<a href="javascript:;" class="menu__toggle"><i class="icon-menu"></i></a>
+					<a href="javascript:;" class="menu__toggle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="31px"><image  x="0px" y="0px" width="54px" height="31px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAfCAQAAAAG7/aoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBMUCSlt24sQAAAAPElEQVRIx2P8/5+BboCJflaNWkYlwEjH9DGMg3HUslHL8AIWhtGCeNQyPGC0IB61bNQy2oPRgnjUMrwAADrCBjqc0jTwAAAAAElFTkSuQmCC" /></svg></a>
 
 					<div class="menu__wrap">
 						<div class="menu__wrapper">
-							<a href="javascript:;" class="menu__toggle"><i class="icon-menu"></i></a>
+							<a href="javascript:;" class="menu__toggle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="31px"><image  x="0px" y="0px" width="54px" height="31px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAfCAQAAAAG7/aoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBMUCSlt24sQAAAAPElEQVRIx2P8/5+BboCJflaNWkYlwEjH9DGMg3HUslHL8AIWhtGCeNQyPGC0IB61bNQy2oPRgnjUMrwAADrCBjqc0jTwAAAAAElFTkSuQmCC" /></svg></a>
 
 							<ul class="main_menu__list">
 								<li class="main_menu__item">
@@ -740,39 +740,60 @@
 
 
 
-			<div class="buy_cards">
-				<div class="buy_cards__item"><div class="buy_cards__in">1</div></div>
-				<div class="buy_cards__item"><div class="buy_cards__in">2</div></div>
-				<div class="buy_cards__item"></div>
-				<div class="buy_cards__item"><div class="buy_cards__in">4</div></div>
-				<div class="buy_cards__item"><div class="buy_cards__in">3</div></div>
+
+			<div class="buy_cards row">
+				<div class="col-4">
+
+					<div class="buy_cards_big active">
+						<div class="buy_cards_item__in">
+							<img src="img/banks/bank1.png" alt="" class="buy_cards_item__img">
+							<div class="buy_cards_item__title">Банк 1</div>
+							<div class="buy_cards_item__desc">Описание банка 1</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div class="col-8">
+					<div class="buy_cards_list row">
+
+						<div class="buy_cards_item active col-4">
+							<div class="buy_cards_item__in">
+								<img src="img/banks/bank2.png" alt="" class="buy_cards_item__img">
+								<div class="buy_cards_item__title">Банк 2</div>
+								<div class="buy_cards_item__desc">Описание банка 2</div>
+							</div>
+						</div>
+
+						<div class="buy_cards_item active col-4">
+							<div class="buy_cards_item__in">
+								<img src="img/banks/bank3.png" alt="" class="buy_cards_item__img">
+								<div class="buy_cards_item__title">Банк 3</div>
+								<div class="buy_cards_item__desc">Описание банка 3</div>
+							</div>
+						</div>
+
+						<div class="buy_cards_item active col-4">
+							<div class="buy_cards_item__in">
+								<img src="img/banks/bank4.png" alt="" class="buy_cards_item__img">
+								<div class="buy_cards_item__title">Банк 4</div>
+								<div class="buy_cards_item__desc">Описание банка 4</div>
+							</div>
+						</div>
+
+						<div class="buy_cards_item active col-4">
+							<div class="buy_cards_item__in">
+								<img src="img/banks/bank5.png" alt="" class="buy_cards_item__img">
+								<div class="buy_cards_item__title">Банк 5</div>
+								<div class="buy_cards_item__desc">Описание банка 5</div>
+							</div>
+						</div>
+	
+					</div>
+				</div>
 			</div>
-
-			<div class="btn btn-test">12123</div>
-
-			<script>
-				jQuery.fn.swap = function(b) {
-				    b = jQuery(b)[0];
-				    var a = this[0],
-				        a2 = a.cloneNode(true),
-				        b2 = b.cloneNode(true),
-				        stack = this;
-
-				    a.parentNode.replaceChild(b2, a);
-				    b.parentNode.replaceChild(a2, b);
-
-				    stack[0] = a2;
-				    return this.pushStack( stack );
-				};
-
-
-				$('.btn-test').on('click', function(){
-
-					// $('.buy_cards__item:first-child .buy_cards__in').swap('.buy_cards__item:last-child .buy_cards__in');
-					$('.buy_cards__item:first-child .buy_cards__in').appendTo('.buy_cards__item:empty')
-				})
-			</script>
-			
 		</div>
 	</div>
 </div>
