@@ -1,0 +1,49 @@
+/*_________Reset_styles_________*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body {height:100%;width:100%;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;background:none;background-color:none !important;}
+*:focus {outline: none;} /*убираем желтую обводку при клике на инпут в гуглхроме*/
+a,a img{border:0;outline:0;}
+ul li{list-style:none;}
+
+/*_________HTML5_display-role_reset_for_older_browsers_________*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1;}
+ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
+table {border-collapse:collapse;border-spacing:0;}
+
+
+.rouble:before {
+    content: "–";
+    display: block;
+    position: absolute;
+    top: 0.07em;
+	font-weight: normal !important;
+}
+.rouble {
+	font-family: sans-serif !important;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+	
+}
+.rouble span {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+}
