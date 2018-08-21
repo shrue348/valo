@@ -18,6 +18,9 @@
 	<script src="js/parallax.js"></script>
 	<script src="js/lunbo.js"></script>
 	<script src="js/ready.js"></script>
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 
@@ -26,7 +29,7 @@
 <div class="header">
 	<div class="header_slider gdlr-core-pbf-background-wrap">
 		<div class="header_slider__item gdlr-core-parallax gdlr-core-js" data-parallax-speed="0.4" style="background-image: url(../img/header_1.jpg)"></div>
-		<div class="header_slider__item gdlr-core-parallax gdlr-core-js" data-parallax-speed="0.4" style="background-image: url(../img/header_1.jpg)"></div>
+		<div class="header_slider__item gdlr-core-parallax gdlr-core-js" data-parallax-speed="0.4" style="background-image: url(../img/header_2.jpg)"></div>
 	</div>
 
 	<div class="header_top">
@@ -127,7 +130,7 @@
 				<div class="wrapper">
 					<div class="header_info__left">
 						<div class="header_title animated fade fade-bottom">VALO</div>
-						<div class="header_subtitle animated fade fade-bottom">апарт -комплекс по-фински</div>
+						<div class="header_subtitle animated fade fade-bottom">апарт-комплекс по-фински</div>
 						<div class="header_desc animated fade fade-bottom">
 							Мы создали принципиально новый <br>
 							формат апартаментов, меняющий <br>
@@ -198,10 +201,19 @@
 			<div class="header_control">
 				<a href="#" class="header_i_phone"></a>
 				<a href="#" class="header_i_mail"></a>
+
+
+				<div class="header_slider_control">
+					<button type="button" class="header_arrow header_arrow-left" onclick="$('.header_slider').slick('slickPrev')"></button>
+					<button type="button" class="header_arrow header_arrow-right" onclick="$('.header_slider').slick('slickNext')"></button>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
 
 
 
@@ -248,7 +260,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </div>
 
@@ -372,13 +383,14 @@
 			<div class="gdlr-core-pbf-background-wrap">
 				<div class="length__back gdlr-core-parallax gdlr-core-js" data-parallax-speed="0.2"></div>
 			</div>
-
 			<div class="length__in length__in-left animated fade fade-bottom">
 				<div class="length__title">VALO</div>
 				<div class="length__subtitle">1 минута до <br>метро «Бухарестская»</div>
 				<div class="length__desc">VALO расположен в одном из самых быстроразвивающихся районов Петербурга, прямо напротив метро «Бухарестская», рядом с крупной дорожной развязкой, что обеспечивает высокую транспортную доступность комплекса.</div>
-				<a href="#" class="length_btn btn">Карта</a>
+				<a href="javascript:;" class="length_btn btn" onclick="$('.length__in-left-inside-map').addClass('length__in-left-inside-map-active')">Карта</a>
 			</div>
+
+			<div class="length__in-left-inside-map" id="map"></div>
 		</div>
 		<div class="wide__in">
 			<div class="length__in length__in-right">
@@ -423,7 +435,7 @@
 						<div class="length_item__info">
 							<div class="length_item__title">Аэропорт «Пулково»</div>
 							<div class="length_item__num">25</div>
-							<div class="length_item__desc">минут <br></div>
+							<div class="length_item__desc">минут <br>на метро</div>
 						</div>
 					</div>
 					<div class="length_item animated fade fade-bottom">
@@ -732,68 +744,299 @@
 		<div class="wrapper">
 			<div class="buy__title animated fade fade-bottom">Как купить</div>
 
-			<div class="buy_tabs">
-				<a href="#" class="buy_tabs__item">Ипотека</a>
-				<a href="#" class="buy_tabs__item">Рассрочка</a>
-				<a href="#" class="buy_tabs__item">100%</a>
-			</div>
 
 
 
+			<ul class="buy_tabs nav nav-tabs animated fade fade-bottom" role="tablist">
+				<li role="presentation" class="active"><a href="#tab1" class="buy_tabs__item " role="tab" data-toggle="tab">Ипотека</a></li>
+				<li role="presentation"><a href="#tab2" class="buy_tabs__item" role="tab" data-toggle="tab">Рассрочка</a></li>
+				<li role="presentation"><a href="#tab3" class="buy_tabs__item" role="tab" data-toggle="tab">100%</a></li>
+			</ul>
 
-			<div class="buy_cards row">
-				<div class="col-4">
 
-					<div class="buy_cards_big active">
-						<div class="buy_cards_item__in">
-							<img src="img/banks/bank1.png" alt="" class="buy_cards_item__img">
-							<div class="buy_cards_item__title">Банк 1</div>
-							<div class="buy_cards_item__desc">Описание банка 1</div>
+
+			<div class="tab-content animated fade fade-bottom">
+
+		  	<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+					<div class="buy_cards row">
+						<div class="col-4">
+
+							<div class="buy_cards_big active">
+								<div class="buy_cards_item__in">
+									<img src="img/banks/bank1.png" alt="" class="buy_cards_item__img">
+
+									<div class="buy_cards_item__desc">
+										<div class="buy_cards_item_desc_item">
+											<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+											<div class="buy_cards_item_desc_item__bottom">60 млн. рублей</div>
+										</div>
+										<div class="buy_cards_item_desc_item">
+											<div class="buy_cards_item_desc_item__top">Ставка</div>
+											<div class="buy_cards_item_desc_item__bottom">от 10,5%</div>
+										</div>
+										<div class="buy_cards_item_desc_item">
+											<div class="buy_cards_item_desc_item__top">Взнос</div>
+											<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+										</div>
+										<div class="buy_cards_item_desc_item">
+											<div class="buy_cards_item_desc_item__top">Строк</div>
+											<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-8">
+							<div class="buy_cards_list row">
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank2.png" alt="" class="buy_cards_item__img">
+
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">59 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 9,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank3.png" alt="" class="buy_cards_item__img">
+
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">58 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 8,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank4.png" alt="" class="buy_cards_item__img">
+
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">57 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 7,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank5.png" alt="" class="buy_cards_item__img">
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">56 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 6,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank2.png" alt="" class="buy_cards_item__img">
+
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">59 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 9,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank3.png" alt="" class="buy_cards_item__img">
+
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">58 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 8,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank4.png" alt="" class="buy_cards_item__img">
+
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">57 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 7,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank5.png" alt="" class="buy_cards_item__img">
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">56 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 6,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="buy_cards_item active col-4">
+									<div class="buy_cards_item__in">
+										<img src="img/banks/bank5.png" alt="" class="buy_cards_item__img">
+										<div class="buy_cards_item__desc">
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Макс. сумма кредита</div>
+												<div class="buy_cards_item_desc_item__bottom">56 млн. рублей</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Ставка</div>
+												<div class="buy_cards_item_desc_item__bottom">от 6,5%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Взнос</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+											<div class="buy_cards_item_desc_item">
+												<div class="buy_cards_item_desc_item__top">Строк</div>
+												<div class="buy_cards_item_desc_item__bottom">от 20%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+			
+							</div>
+						</div>
+
+					</div><!--/.buy_cards-->
+
+					<div class="buy_btns">
+						<div class="buy_btns__item">
+							<a href="#" class="btn">Оставить заявку в банк <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.005 L10.004,9.999 L-0.000,20.002 L5.726,10.335 L-0.000,-0.005 Z"></path></svg></a>
+						</div>
+						<div class="buy_btns__item">
+							<a href="#" class="btn">Подробнее <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.005 L10.004,9.999 L-0.000,20.002 L5.726,10.335 L-0.000,-0.005 Z"></path></svg></a>
 						</div>
 					</div>
 
-				</div>
+				</div><!--/tab1-->
+
+				
+				<div role="tabpanel" class="tab-pane fade" id="tab2">2</div><!--/tab2-->
+				<div role="tabpanel" class="tab-pane fade" id="tab3">3</div><!--/tab3-->
 
 
+			</div><!--/tabs-->
 
-				<div class="col-8">
-					<div class="buy_cards_list row">
 
-						<div class="buy_cards_item active col-4">
-							<div class="buy_cards_item__in">
-								<img src="img/banks/bank2.png" alt="" class="buy_cards_item__img">
-								<div class="buy_cards_item__title">Банк 2</div>
-								<div class="buy_cards_item__desc">Описание банка 2</div>
-							</div>
-						</div>
-
-						<div class="buy_cards_item active col-4">
-							<div class="buy_cards_item__in">
-								<img src="img/banks/bank3.png" alt="" class="buy_cards_item__img">
-								<div class="buy_cards_item__title">Банк 3</div>
-								<div class="buy_cards_item__desc">Описание банка 3</div>
-							</div>
-						</div>
-
-						<div class="buy_cards_item active col-4">
-							<div class="buy_cards_item__in">
-								<img src="img/banks/bank4.png" alt="" class="buy_cards_item__img">
-								<div class="buy_cards_item__title">Банк 4</div>
-								<div class="buy_cards_item__desc">Описание банка 4</div>
-							</div>
-						</div>
-
-						<div class="buy_cards_item active col-4">
-							<div class="buy_cards_item__in">
-								<img src="img/banks/bank5.png" alt="" class="buy_cards_item__img">
-								<div class="buy_cards_item__title">Банк 5</div>
-								<div class="buy_cards_item__desc">Описание банка 5</div>
-							</div>
-						</div>
-	
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>

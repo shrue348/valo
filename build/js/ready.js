@@ -163,7 +163,8 @@ $(function(){
 // слайдеры
 $(function(){
   $('.header_slider').slick({
-    arrows: false
+    arrows: false,
+    fade: true
   })
 
   $('.staff_slider_left').slick({
@@ -243,4 +244,40 @@ $(function(){
   $('.buy_cards_item ').on('click', function(){
     $(this).children().swap('.buy_cards_big .buy_cards_item__in');
   })
+})
+
+
+
+
+
+
+//карта
+$(function(){
+  ymaps.ready(init);
+
+  function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [55.76, 37.64],
+        zoom: 14
+    },{
+        searchControlProvider: 'yandex#search'
+    }),
+
+    myGeoObject = new ymaps.GeoObject({
+      geometry: {
+          type: "Point",
+          coordinates: [55.76, 37.64]
+      },
+      properties: {
+          iconContent: 'VALO',
+          hintContent: 'Апарт-комплекс по-фински'
+      }
+
+    },{
+      preset: 'islands#blackStretchyIcon',
+      draggable: false
+    });
+
+    myMap.geoObjects.add(myGeoObject);
+  }
 })
