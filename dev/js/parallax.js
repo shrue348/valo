@@ -20,7 +20,7 @@
 				gdlr_core_display = 'mobile-portrait';
 			}else if( window.matchMedia('(max-width: 767px)').matches ){
 				gdlr_core_display = 'mobile-landscape'
-			}else if( window.matchMedia('(max-width: 959px)').matches ){
+			}else if( window.matchMedia('(max-width: 1024px)').matches ){
 				gdlr_core_display = 'tablet'
 			}else{
 				gdlr_core_display = 'desktop';
@@ -33,7 +33,7 @@
 				gdlr_core_display = 'mobile-portrait';
 			}else if( $(window).innerWidth() <= 767 ){
 				gdlr_core_display = 'mobile-landscape'
-			}else if( $(window).innerWidth() <= 959 ){
+			}else if( $(window).innerWidth() <= 1024 ){
 				gdlr_core_display = 'tablet'
 			}else{
 				gdlr_core_display = 'desktop';
@@ -110,6 +110,7 @@
 		
 		set_background_position: function( t ){
 
+			if( gdlr_core_display == 'tablet' ) return;
 			if( gdlr_core_display == 'mobile-landscape' || gdlr_core_display == 'mobile-portrait' ) return;
 			
 			var wrapper_top = t.wrapper.offset().top;

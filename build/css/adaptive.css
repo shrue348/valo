@@ -12,8 +12,122 @@
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 1024px){
+	.gdlr-core-parallax { min-height: 100% !important; }
 
+
+	.header { height: auto;  }
+	.header_top { 
+		position: absolute; margin: auto; top: 0; left: 0; right: 0;
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );	
+	}
+	.header_top__wrapper { -ms-flex-pack: end; justify-content: flex-end; position: relative; }
+	.header_phone, .header_worktime { display: none; }
+	.header_ooo { max-width: 282px; position: absolute; color: #fefefe; top: 54px; right: 15px; line-height: 1.2; text-align: right; font-size: 15px; font-weight: 100; }
+	.header_bottom { padding-top: 0; }
+	.menu > .menu__toggle { background-color: #2a344a; padding: 37px 28px 25px; margin-left: -15px; margin-top: 0; }
+
+	.header_title { font-size: 100.92px; }
+	.header_subtitle { font-size: 40.72px; font-weight: normal; }
+	.header_subtitle:before { max-width: 274px; }
+	.header_desc { font-size: 20px; }
+
+
+	.menu__wrapper { margin-top: 0; }
+	.menu__toggle { padding: 37px 28px 25px; }
+
+
+	.l_block__title { font-size: 55px; }
+
+
+	.staff_title { font-size: 55px; }
+	.staff_subtitle { font-size: 32px; }
+	.staff .wide__in:first-child { -ms-flex: 0 0 50%; flex: 0 0 50%; }
+	.staff_slider_left { padding-right: 30px; }
+	.staff_arrow-right { right: 10px; }
+
+
+	.lvl_item:nth-child(odd) .lvl_item__img { margin-right: 60px; }
+	.lvl_item:nth-child(even) .lvl_item__img { margin-left: 60px; }
+	.lvl_item__title { font-size: 26px; }
+	.lvl_item__desc { font-size: 15px; }
+
+
+	.comfort__title { font-size: 55px; }
+	.comfort__subtitle { font-size: 15px; -ms-flex: 0 0 calc(50% - 1px); flex: 0 0 calc(50% - 1px); padding-left: 30px; box-sizing: border-box; }
+	.comfort_item__title { font-size: 26px; }
+	.comfort_item__desc { font-size: 15px; }
+	.comfort_item:nth-child(odd) { padding-right: 30px; }
+	.comfort_item:nth-child(even) { padding-left: 30px; }
+
+
+	.length__title { font-size: 55px; }
+	.length__subtitle { font-size: 32px; }
+	.length__desc { font-size: 15px; }
+	.length .wide__in:first-child { -ms-flex: 0 0 45%; flex: 0 0 45%; }
+	.length .wide__in:last-child { -ms-flex: 1 1 auto; flex: 1 1 auto; }
+	.length_item { margin-bottom: 35px; }
+	.length_item__title { font-size: 16px; }
+	.length_item__icon { zoom: .8; }
+
+
+	.service__title { font-size: 55px; }
+	.service__subtitle { font-size: 32px; }
+	.service__desc { font-size: 17px; }
+
+
+	.tasks__title { font-size: 55px; }
+	.tasks_item__title { font-size: 17px; }
+	.tasks_item__desc { font-size: 15px; }
+	.tasks__in:before { left: 10px; right: 10px; }
+
+
+	.func__title { font-size: 55px; }
+	.func__title span { font-size: 29px; }
+	.func_icons_item__desc { font-size: 15px; }
+
+
+	.invest__title { font-size: 55px; }
+	.invest__desc { font-size: 17px; }
+
+
+	.invest_table__item-1 { font-size: 15px; }
+	.invest_table__title { font-size: 40px; }
+	.invest .f55 { font-size: 38px; }
+	.invest .f89 { font-size: 55px; }
+	.invest .f39 { font-size: 27px; }
+	.invest_table__item-header.invest_table__item-4 { padding: 20px 0; }
+	.invest_table__item-2, .invest_table__item-3 { margin-right: 20px; }
+	.invest_table__row:nth-child(n+2) .invest_table__item-2, .invest_table__row:nth-child(n+2) .invest_table__item-3, .invest_table__row:nth-child(n+2) .invest_table__item-4 { font-size: 15px; }
+	.invest_table__absolute { font-size: 15px; }
+	.invest_bottom__label { font-size: 17px; }
+	.invest_bottom .col-4 { width: auto; }
+
+
+
+	.buy__title { font-size: 55px; }
+	.buy_cards_item_desc_item__bottom { font-size: 23px; }
+	.buy_btns { margin-top: -50px; }
+
+
+
+	.photo__title { font-size: 55px; }
+	.photo_list__item { height: 400px; }
+
+
+
+	.blog_title { font-size: 55px; }
+	.blog_item__title { font-size: 23px; }
+
+
+
+	.managers_title { font-size: 42px; }
+	.managers_item__title { font-size: 16px; }
+
+
+
+	.footer_bottom { font-size: 15px; }
 
 
 
@@ -22,7 +136,8 @@
 }
 
 
-@media  (max-width: 1024px) {
+
+@media  (max-width: 1023px) {
 	.header_top { 
 		position: absolute; margin: auto; top: 0; left: 0; right: 0;
 		background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
@@ -45,6 +160,8 @@
 	.header_counter .btn { -ms-flex-order: 1; order: 1; margin-bottom: 75px; }
 	.header_counter__label { -ms-flex-order: 2; order: 2; }
 	.header_counter__wrap { -ms-flex-order: 3; order: 3; }
+
+	.header_i {  }
 
 
 
