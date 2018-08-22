@@ -680,11 +680,11 @@ select {
 /*.length_item:nth-last-child(-n+2) { margin-bottom: 35px;}*/
 .length_item:nth-child(even) { transition-delay: .2s !important; }
 .length__btn_wrap { display: flex; justify-content: flex-end; }
-
 .length__in-left-inside-map { position: absolute; margin: auto; display: block; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; max-width: 100%; transition: all .5s ease; transform: perspective(700px) rotateY(-90deg); opacity: 0; }
 .length__in-left-inside-map.length__in-left-inside-map-active { transform: perspective(500px) rotateY(0); opacity: 1; }
-
 .length__in-left .btn { margin-top: 40px; }
+.length_arrow-left { display: none; }
+.length_arrow-right { position: absolute; z-index: 10; right: 30px; top: 50%; transform: translateY(-50%) scale(.6); display: block; border: 0 none; padding: 0; width: 36px; height: 124px; background: url(data:image/svg+xml;base64,PHN2ZyAKIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogd2lkdGg9IjM2cHgiIGhlaWdodD0iMTI0cHgiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiICBmaWxsPSJyZ2IoNTMsIDkxLCAxNDUpIgogZD0iTTAuMDAwLDAuMDAyIEwzNS45ODksNjIuMDAxIEwwLjAwMCwxMjQuMDAyIEwyMC42MDAsNjQuMDkwIEwwLjAwMCwwLjAwMiBaIi8+Cjwvc3ZnPg==) no-repeat scroll center transparent; }
 
 
 
