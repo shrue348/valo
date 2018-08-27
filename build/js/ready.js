@@ -186,7 +186,36 @@ $(function(){
     slidesToScroll: 1,
     swipeToSlide: true,
     arrows: false,
-    centerPadding: '0px'
+    centerPadding: '0px',
+    responsive: [
+    {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   })
 
   $('.photo_list').slick({
@@ -209,9 +238,17 @@ $(function(){
       showTime: 4000
   });
 })
-$(window).on('load resize', function(){
+
+
+
+function sliders(){
   if (screen.width >= 1024) {
-    $('.length__list').slick('unslick');
+   
+    $('.length__list.slick-initialized').slick('unslick');
+    $('.func_icons.slick-initialized').slick('unslick');
+    $('.invest_grid__row-1.slick-initialized, .invest_grid__row-2.slick-initialized, .invest_grid__row-3.slick-initialized').slick('unslick');
+
+
   } else {
     $('.length__list').slick({
       slidesToShow: 1,
@@ -221,8 +258,34 @@ $(window).on('load resize', function(){
       prevArrow: '<button type="button" class="length_arrow length_arrow-left"></button>',
       nextArrow: '<button type="button" class="length_arrow length_arrow-right"></button>'
     })
+
+    $('.func_icons').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      infinite: true,
+      prevArrow: '<button type="button" class="func_icons_arrow func_icons_arrow-left"></button>',
+      nextArrow: '<button type="button" class="func_icons_arrow func_icons_arrow-right"></button>'
+    })
+
+    $('.invest_grid__row-1, .invest_grid__row-2, .invest_grid__row-3').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      infinite: true,
+      prevArrow: '<button type="button" class="invest_arrow invest_arrow-left"></button>',
+      nextArrow: '<button type="button" class="invest_arrow invest_arrow-right"></button>'
+    })
+
   }
-});
+}
+
+$(function(){ 
+  sliders() 
+  $(window).on('resize', function(){
+     sliders()
+  });
+})
 
 
 
