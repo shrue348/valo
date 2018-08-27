@@ -250,7 +250,7 @@ function sliders(){
 
 
   } else {
-    $('.length__list').slick({
+    $('.length__list').not('.slick-initialized').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       focusOnSelect: true,
@@ -259,16 +259,25 @@ function sliders(){
       nextArrow: '<button type="button" class="length_arrow length_arrow-right"></button>'
     })
 
-    $('.func_icons').slick({
+    $('.func_icons').not('.slick-initialized').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       focusOnSelect: true,
       infinite: true,
       prevArrow: '<button type="button" class="func_icons_arrow func_icons_arrow-left"></button>',
       nextArrow: '<button type="button" class="func_icons_arrow func_icons_arrow-right"></button>'
+    })    
+
+    $('.func_carousel-slick>ul').not('.slick-initialized').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      infinite: true,
+      prevArrow: '<button type="button" class="func_arrow-slick func_arrow-slick-left"></button>',
+      nextArrow: '<button type="button" class="func_arrow-slick func_arrow-slick-right"></button>'
     })
 
-    $('.invest_grid__row-1, .invest_grid__row-2, .invest_grid__row-3').slick({
+    $('.invest_grid__row-1, .invest_grid__row-2, .invest_grid__row-3').not('.slick-initialized').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       focusOnSelect: true,

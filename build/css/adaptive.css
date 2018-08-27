@@ -243,6 +243,9 @@
 
 	.func_icons { max-width: 670px; margin-left: auto; margin-right: auto; }
 	.func_icons_item__desc { font-size: 45px; }
+	.func_carousel-slick { display: block; }
+	.func_carousel { display: none; }
+
 
 
 	.invest__title { font-size: 70px; }
@@ -295,6 +298,7 @@
 
 
 
+
 	.managers_title { font-size: 33px; }
 	.managers_item__title { font-size: 11.44px; }
 
@@ -307,9 +311,12 @@
 
 
 
-	.photo__title { font-size: 70px; text-align: center; }
+	.photo__title { font-size: 70px; text-align: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+	.photo__title span { -ms-flex: 0 0 100%; flex: 0 0 100%; margin-bottom: 20px; }
 	.photo_list__item { height: 248px; }
 	.photo > .wide { max-width: 750px; margin-left: auto; margin-right: auto; }
+
+
 
 
 }
@@ -429,8 +436,14 @@
 	.func { padding-top: 17px; padding-bottom: 17px; }
 	.func__title { font-size: 30px; }
 	.func__title span { font-size: 19.2px; }
+	.func_icons { margin-bottom: 35px; max-width: 280px; margin-left: auto; margin-right: auto; }
 	.func_icons_item { padding-right: 22px; }
 	.func_icons_item__desc { font-size: 19.2px; }
+	.func_arrow-slick-left  { width: 13px; height: 44px; }
+	.func_arrow-slick-right { width: 13px; height: 44px; }
+	.func_carousel-slick_item__img { height: 172px; }
+	.func_carousel-slick_item__title { font-size: 15px; text-align: center; padding: 10px; }
+
 
 
 	.invest { padding: 15px 0; }
@@ -496,7 +509,7 @@
 
 	.managers_title { font-size: 14.8px; letter-spacing: 0;}
 	.managers_item__title { font-size: 9px; padding-top: 7px; padding-left: 0; }
-	.managers_form form { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+	.managers_form form { -ms-flex-direction: column; flex-direction: column; max-width: 280px; margin: 0 auto; }
 	.managers_form form input { margin-bottom: 10px; padding-top: 5px; padding-bottom: 5px;}
 	.managers_form .btn { height: 39px; line-height: 39px; font-size: 11px; }
 
