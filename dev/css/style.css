@@ -686,6 +686,10 @@ select {
 .length__in-left .btn { margin-top: 40px; }
 .length_arrow-left { display: none; }
 .length_arrow-right { position: absolute; z-index: 10; right: 0; top: 50%; transform: translateY(-50%) scale(.6); display: block; border: 0 none; padding: 0; width: 36px; height: 124px; background: url(data:image/svg+xml;base64,PHN2ZyAKIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogd2lkdGg9IjM2cHgiIGhlaWdodD0iMTI0cHgiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiICBmaWxsPSJyZ2IoNTMsIDkxLCAxNDUpIgogZD0iTTAuMDAwLDAuMDAyIEwzNS45ODksNjIuMDAxIEwwLjAwMCwxMjQuMDAyIEwyMC42MDAsNjQuMDkwIEwwLjAwMCwwLjAwMiBaIi8+Cjwvc3ZnPg==) no-repeat scroll center transparent; }
+.length_btn-close { position: absolute; z-index: 10; margin: auto; left: 0; right: 0; bottom: 10px; max-width: 100px; }
+
+
+
 
 
 
@@ -740,6 +744,7 @@ select {
 
 
 .invest { padding: 30px 0;  }
+.invest_bottom { transition-delay: 1s !important; }
 .invest__back { background: url(../img/invest.jpg) no-repeat scroll center / cover #1c2840; }
 .invest .wide { margin-bottom: 60px; }
 .invest .wide__in:first-child { width: calc(50% + 86px); flex: 0 0 calc(50% + 86px); background-color: rgba(0,141,151,.67); color: #fefeff;  }
@@ -798,7 +803,6 @@ select {
 .invest_grid__row-1 .invest_table__item-2:nth-child(1):before,
 .invest_grid__row-2 .invest_table__item-3:nth-child(1):before,
 .invest_grid__row-3 .invest_table__item-4:nth-child(1):before { content: 'Доступные апартаменты'; display: none; }
-
 
 .invest_arrow-left { display: none !important; }
 .invest_arrow-right { position: absolute; z-index: 10; right: 10px; top: 83px; transform: scale(.4); display: block; border: 0 none; padding: 0; width: 36px; height: 124px; background: url(data:image/svg+xml;base64,PHN2ZyAKIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogd2lkdGg9IjM2cHgiIGhlaWdodD0iMTI0cHgiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiICBmaWxsPSJyZ2IoNTMsIDkxLCAxNDUpIgogZD0iTTAuMDAwLDAuMDAyIEwzNS45ODksNjIuMDAxIEwwLjAwMCwxMjQuMDAyIEwyMC42MDAsNjQuMDkwIEwwLjAwMCwwLjAwMiBaIi8+Cjwvc3ZnPg==) no-repeat scroll center transparent; opacity: .7; }
@@ -918,15 +922,15 @@ select {
 
 .photo_list { max-width: 100%; position: relative; }
 .photo_list:after { position: absolute; margin: auto; left: 0; bottom: 0; right: 0; height: 72px; background-color: rgba(255,255,255,.51); z-index: 2; content: ''; }
-.photo_list__item { display: block; line-height: 1; height: 632px; width: 100%; object-fit: cover; float: left; }
+.photo_list__item { display: block; line-height: 1; height: 632px; width: 100%; float: left; }
+.photo_list__item img { display: block; line-height: 1; height: 632px; width: 100%; object-fit: cover; }
 .photo_arrow { position: absolute; z-index: 3; margin: auto; left: 0; bottom: 16px; right: 0; display: block; width: 40px; height: 40px; line-height: 40px; text-align: center; box-sizing: border-box; border: 2px solid #fff; border-radius: 50%; transition: all .2s ease; }
 .photo_arrow.photo_arrow-left { background: url(data:image/svg+xml;base64,PHN2ZyAKIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogd2lkdGg9IjlweCIgaGVpZ2h0PSIyOHB4Ij4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiAgZmlsbD0icmdiKDI1NSwgMjU1LCAyNTUpIgogZD0iTTguMTE2LDI3LjIxMSBMMC41NzcsMTMuOTk4IEw4LjExNiwwLjc4NiBMMy44MDAsMTMuNTU0IEw4LjExNiwyNy4yMTEgWiIvPgo8L3N2Zz4=) no-repeat scroll center transparent; transform: translateX(-33px); }
 .photo_arrow.photo_arrow-right { background: url(data:image/svg+xml;base64,PHN2ZyAKIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogd2lkdGg9IjlweCIgaGVpZ2h0PSIyOHB4Ij4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiAgZmlsbD0icmdiKDI1NSwgMjU1LCAyNTUpIgogZD0iTTAuNjM4LDAuNzg4IEw4LjE3NywxNC4wMDAgTDAuNjM4LDI3LjIxMiBMNC45NTMsMTQuNDQ1IEwwLjYzOCwwLjc4OCBaIi8+Cjwvc3ZnPg==) no-repeat scroll center transparent; transform: translateX(33px); }
 .photo_arrow:hover { background-color: #0d233f; }
 .photo_webcam { max-width: 100%; height: 100%; position: relative;}
-.photo_webcam iframe { width: 100%; height: 100%; }
+.photo_webcam iframe { width: 100%; height: 100%; display: block !important; }
 .photo_webcam__start { position: absolute; z-index: 10; margin: auto; top: 0; right: 0; bottom: 0; left: 0; background: url(../img/video.jpg) no-repeat scroll center / cover transparent; cursor: pointer; }
-
 
 
 

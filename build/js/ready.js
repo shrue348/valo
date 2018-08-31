@@ -133,6 +133,7 @@ $(function(){
 //вебкамера
 $(function(){
   $('.photo_webcam__start').on('click', function(){
+    $(this).next().show()
     $(this).remove()
   })
 })
@@ -359,9 +360,8 @@ $(function(){
 // узнать больше 
 $(function(){
   let counter = 2
+
   $('.lvl__more').on('click', function(){
-
-
     $.get('_europe.html', function(data) {
       var elementClick = '.lvl__more'
       var destination = $(elementClick).offset().top;
@@ -386,8 +386,12 @@ $(function(){
           invertBottomOffset: true,
         })
       },700)
-      
     });
-
   })
 })
+
+
+//fancubox
+$(function() {
+  $(".fancybox").fancybox();
+});

@@ -180,7 +180,9 @@
 				<a href="javascript:;" class="length_btn btn" onclick="$('.length__in-left-inside-map').addClass('length__in-left-inside-map-active')">Карта</a>
 			</div>
 
-			<div class="length__in-left-inside-map" id="map"></div>
+			<div class="length__in-left-inside-map" id="map">
+				<a href="javascript:;" class="length_btn length_btn-close btn" onclick="$('.length__in-left-inside-map').removeClass('length__in-left-inside-map-active')">Закрыть</a>
+			</div>
 		</div>
 		<div class="wide__in">
 			<div class="length__in length__in-right">
@@ -955,21 +957,27 @@
 	<div class="wide">
 		<div class="wide__in">
 			<div class="photo_list animated fade fade-bottom">
-				<img src="img/photo/1.JPG" alt="1" class="photo_list__item">
-				<img src="img/photo/2.JPG" alt="2" class="photo_list__item">
+				<a class="fancybox photo_list__item" rel="group" href="img/photo/1.JPG"><img src="img/photo/1.JPG" alt="1"></a>
+				<a class="fancybox photo_list__item" rel="group" href="img/photo/2.JPG"><img src="img/photo/2.JPG" alt="2"></a>
 			</div>
 		</div>
 		<div class="wide__in">
 			<div class="photo_webcam animated fade fade-bottom">
 				<div class="photo_webcam__start"></div>
-				<iframe src="https://webcam.exdesign.ru/valo/" frameborder="0"></iframe>
+				<iframe id="iframe" src="https://webcam.exdesign.ru/valo/" frameborder="0"></iframe>
 			</div>
 		</div>
 	</div>
 </div>
 
 
+<a class="various" href="#iframe">123123123</a>
 
+<script>
+$(document).ready(function() {
+	$(".various").fancybox();
+});
+</script>
 
 
 
