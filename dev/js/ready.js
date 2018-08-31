@@ -116,12 +116,10 @@ $(function(){
 });
 
 
-
-// маска для формы
+// маска формы
 $(function(){
   $('[name=phone]').mask("+7 (999) 999-9999");
 })
-
 
 
 // переключалка гл меню
@@ -132,7 +130,7 @@ $(function(){
   })
 })
 
-
+//вебкамера
 $(function(){
   $('.photo_webcam__start').on('click', function(){
     $(this).remove()
@@ -142,14 +140,14 @@ $(function(){
 
 // анимации текста
 $(function(){
-  $('.header_title, .header_subtitle, .header_desc, .header_i, .header_counter').viewportChecker({ // для хедера
+  $('.header_title, .header_subtitle, .header_desc, .header_i, .header_counter').viewportChecker({ // хедер
     classToAdd: 'in',
     offset: 0,
     invertBottomOffset: true,
   });
   $('.animated').viewportChecker({
     classToAdd: 'in',
-    offset: 250,
+    offset: 100, //высота появления от низа экрана
     invertBottomOffset: true,
   });
 })
@@ -241,14 +239,13 @@ $(function(){
 
 
 
+
+// включаем слайдеры на мобильной
 function sliders(){
   if (screen.width >= 1024) {
-   
     $('.length__list.slick-initialized').slick('unslick');
     $('.func_icons.slick-initialized').slick('unslick');
     $('.invest_grid__row-1.slick-initialized, .invest_grid__row-2.slick-initialized, .invest_grid__row-3.slick-initialized').slick('unslick');
-
-
   } else {
     $('.length__list').not('.slick-initialized').slick({
       slidesToShow: 1,
@@ -285,10 +282,8 @@ function sliders(){
       prevArrow: '<button type="button" class="invest_arrow invest_arrow-left"></button>',
       nextArrow: '<button type="button" class="invest_arrow invest_arrow-right"></button>'
     })
-
   }
 }
-
 $(function(){ 
   sliders() 
   $(window).on('resize', function(){
@@ -320,15 +315,11 @@ jQuery.fn.swap = function(b) {
   stack[0] = a2;
   return this.pushStack( stack );
 };
-
 $(function(){
   $('.buy_cards_item ').on('click', function(){
     $(this).children().swap('.buy_cards_big .buy_cards_item__in');
   })
 })
-
-
-
 
 
 
@@ -362,4 +353,121 @@ $(function(){
     myMap.geoObjects.add(myGeoObject);
   }
 })
-  
+
+
+
+// узнать больше 
+$(function(){
+  let counter = 2
+  $('.lvl__more').on('click', function(){
+
+
+    $.get('_europe.html', function(data) {
+      var elementClick = '.lvl__more'
+      var destination = $(elementClick).offset().top;
+      setTimeout(function(){
+        jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1600);
+      }, 300)
+        
+      $("#lvl").css({
+          height: $("#lvl_inside").height()
+      });
+      $(data).appendTo('#lvl_inside')
+      $("#lvl").css({
+          height: $("#lvl_inside").height()
+      });
+
+      counter += 3
+
+      setTimeout(function(){ //чтобы анимация была после скролла
+        $('.animated').viewportChecker({
+          classToAdd: 'in',
+          offset: 100,
+          invertBottomOffset: true,
+        })
+      },700)
+      
+    });
+
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
