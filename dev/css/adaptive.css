@@ -14,7 +14,6 @@
 
 @media (max-width: 1200px) and (min-width: 1024px){
 	.gdlr-core-parallax { min-height: 100% !important; }
-	.gdlr-core-parallax { height: 100% !important; }
 	.header_slider * { min-height: 100%; }
 
 
@@ -350,6 +349,8 @@
 	.mian_menu_sub__link { font-size: 10.05px; }
 
 
+
+
 	.header_logo { margin-bottom: 23px; }
 	.header_ooo { font-size: 8.03px; max-width: 124px; top: 30px; }
 	.header_title { font-size: 50.74px; }
@@ -358,6 +359,7 @@
 	.header_desc { font-size: 15px; }
 	.header_i { font-size: 8.77px; width: 74px; height: 36px; }
 	.header_i:before { transform: scale(.4); transform-origin: 0 100% 0;  }
+	.header_i:after { border-width: 1px; }
 	.header_i_wrap { width: 130px; margin-bottom: 23px; }
 	.header_counter__label { margin-bottom: 5px; }
 	.header_brand img { zoom: .7; }

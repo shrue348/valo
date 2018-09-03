@@ -245,7 +245,6 @@ $(function(){
 function sliders(){
   if (screen.width >= 1024) {
     $('.length__list.slick-initialized').slick('unslick');
-    $('.func_icons.slick-initialized').slick('unslick');
     $('.invest_grid__row-1.slick-initialized, .invest_grid__row-2.slick-initialized, .invest_grid__row-3.slick-initialized').slick('unslick');
   } else {
     $('.length__list').not('.slick-initialized').slick({
@@ -256,7 +255,6 @@ function sliders(){
       prevArrow: '<button type="button" class="length_arrow length_arrow-left"></button>',
       nextArrow: '<button type="button" class="length_arrow length_arrow-right"></button>'
     })
-
     $('.func_icons').not('.slick-initialized').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -265,16 +263,6 @@ function sliders(){
       prevArrow: '<button type="button" class="func_icons_arrow func_icons_arrow-left"></button>',
       nextArrow: '<button type="button" class="func_icons_arrow func_icons_arrow-right"></button>'
     })    
-
-    $('.func_carousel-slick>ul').not('.slick-initialized').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      focusOnSelect: true,
-      infinite: true,
-      prevArrow: '<button type="button" class="func_arrow-slick func_arrow-slick-left"></button>',
-      nextArrow: '<button type="button" class="func_arrow-slick func_arrow-slick-right"></button>'
-    })
-
     $('.invest_grid__row-1, .invest_grid__row-2, .invest_grid__row-3').not('.slick-initialized').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -284,6 +272,25 @@ function sliders(){
       nextArrow: '<button type="button" class="invest_arrow invest_arrow-right"></button>'
     })
   }
+
+
+
+
+
+  if (screen.width >= 1200) {
+    $('.func_icons.slick-initialized').slick('unslick');
+  } else {
+    $('.func_carousel-slick>ul').not('.slick-initialized').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      infinite: true,
+      prevArrow: '<button type="button" class="func_arrow-slick func_arrow-slick-left"></button>',
+      nextArrow: '<button type="button" class="func_arrow-slick func_arrow-slick-right"></button>'
+    })
+  }
+
+
 }
 $(function(){ 
   sliders() 

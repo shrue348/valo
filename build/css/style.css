@@ -473,6 +473,10 @@ select {
 .header_arrow:hover { background-color: #0d233f;}
 
 
+.header_slider * { min-height: 100%; }
+
+
+
 
 
 .footer { background: url(../img/footer.jpg) no-repeat scroll center / cover transparent; padding: 113px 0 23px; }
