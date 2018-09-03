@@ -290,7 +290,9 @@ function sliders(){
     })
   }
 
-
+  //ставим ширину слайдера как у слайда
+  var w = $('.photo .photo_list').find('img').width()
+  $('.photo .wide .wide__in:first-child').css({'flex': '0 0 '+w+"px"})
 }
 $(function(){ 
   sliders() 
