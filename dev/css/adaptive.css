@@ -90,6 +90,8 @@
 	.func__title { font-size: 55px; }
 	.func__title span { font-size: 29px; }
 	.func_icons_item__desc { font-size: 15px; }
+	.func_carousel-slick { display: block; }
+	.func_carousel { display: none; }
 
 
 	.invest__title { font-size: 55px; }
@@ -136,9 +138,9 @@
 
 	.footer_bottom { font-size: 15px; }
 
-
-
 	
+
+
 	
 }
 
@@ -166,6 +168,7 @@
 	.header_phone, .header_worktime { display: none; }
 	.header_ooo { max-width: 282px; position: absolute; color: #fefefe; top: 54px; right: 15px; line-height: 1.2; text-align: right; font-size: 18.87px; font-weight: 100; }
 	.header_bottom { padding-top: 0; }
+	.header_bottom:before { zoom: .7; }
 	.header_info > .wrapper { flex-direction: column; }
 	.header_title { font-size: 118.92px; }
 	.header_subtitle { font-size: 50.72px; font-weight: normal; }
@@ -177,6 +180,7 @@
 	.header_counter__wrap { order: 3; }
 	.header_i_wrap { width: 236px; margin: 0 auto 45px; }
 	.header_i {  }
+
 
 	.menu > .menu__toggle { background-color: #2a344a; padding: 37px 28px 25px; margin-left: -15px; margin-top: 0; }
 	.menu__wrapper { margin-top: 0; }
@@ -334,6 +338,7 @@
 	.logo { align-self: flex-start; margin-top: 5px; }
 	.logo__img { width: 70px; height: 44px; }
 	.header_top__wrapper  { height: 22px; line-height: 22px; }
+	.header_bottom:before { zoom: .5; }
 
 	.menu__toggle  { transform: scale(.7); }
 	.menu > .menu__toggle, .menu_toggle { position: relative; display: inline-block; margin-left: 0; margin-top: 0; padding: 32px 22px 16px;  }
