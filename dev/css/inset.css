@@ -1,0 +1,75 @@
+
+.new_header { position: fixed; z-index: 10; margin: auto; top: 0; left: 0; right: 0; }
+.new_header .wrapper { max-width: 1280px; padding: 0 10px; }
+.header_menu-hor { background-color: rgba(13,35,64,.62); }
+
+.new_footer { padding: 17px 0; background-color: #0d233f; font-size: 18px; color: #ffffff; font-weight: 300; margin-top: auto; }
+.new_footer .wrapper { display: flex; justify-content: space-between; }
+.new_footer__link { color: #fff; }
+
+.menu_hor { display: flex; align-items: center; justify-content: flex-start; padding: 5px 0; }
+.menu_hor__logo { margin-right: auto; height: 47px; }
+.menu_hor__list { margin-left: auto; margin-right: auto; }
+.menu_hor__icons { margin-left: auto; display: flex; justify-content: space-between; align-items: center; }
+.menu_hor .menu__toggle { margin-right: 25px; }
+.menu_hor__item { display: inline-block; }
+.menu_hor__item:not(:last-child) { margin-right: 22px; }
+.menu_hor__link { font-size: 14px; color: #fff; transition: all .2s ease; }
+.menu_hor__link:hover { color: #e0508f; }
+.menu_hor__link-selected { color: #e0508f; }
+.menu_hor__icon { width: 25px; height: 25px; display: block; position: relative; z-index: 1; color: #fff; }
+.menu_hor__icon:not(:first-child) { margin-left: 25px; }
+.menu_hor__icon-calc,
+.menu_hor__icon-star,
+.menu_hor__icon-clock,
+.menu_hor__icon-glass { fill:#FFFFFF; transition: all .2s ease; }
+.menu_hor__icon:hover .menu_hor__icon-calc,
+.menu_hor__icon:hover .menu_hor__icon-star,
+.menu_hor__icon:hover .menu_hor__icon-clock,
+.menu_hor__icon:hover .menu_hor__icon-glass { fill:#e0508f; box-shadow: 0 0 9px rgba(0,0,0,0.2); }
+.menu_hor__icon-desc { color: #fff; position: absolute; margin: auto; left: -30px; right: -30px; text-align: center; bottom: -35px; opacity: 0; transition: all .2s ease; pointer-events: none; font-size: 12.33px; }
+.menu_hor__icon:hover .menu_hor__icon-desc { opacity: 1; }
+.menu_hor__icon-sup { position: absolute; top: -5px; right: -10px; color: #fff; font-size: 12.33px; transition: all .2s ease; }
+.menu_hor__icon-sup:not(:empty) { display: block; }
+.menu_hor__icon:hover .menu_hor__icon-sup { color: #e0508f; }
+
+
+
+
+.left_menu_in { font-size: 14px; }
+.left_menu_in__item { margin-bottom: 13px; position: relative; padding-left: 33px; }
+.left_menu_in__item:before { position: absolute; left: 0; top: .5em; content: ''; width: 4px; height: 3px; background-color: #e2e4e6; border-radius: 4px; }
+.left_menu_in__item:hover:before { background-color: #fff; }
+.left_menu_in__item-selected:before { background-color: #00b6bd; }
+.left_menu_in__link { color: #e2e4e6; font-weight: 300; transition: all .2s ease; text-transform: uppercase; }
+.left_menu_in__item-selected .left_menu_in__link { color: #00b6bd; font-weight: 600; }
+.left_menu_in__item:hover .left_menu_in__link { color: #fff; }
+
+
+
+.main_inside_flex { display: flex; flex-direction: column; }
+
+
+
+.main_inside { background-color: rgba(13,35,63,.75); margin-left: auto; margin-right: auto; margin-bottom: 21px; margin-top: 171px; max-width: 1500px; color: #fff; padding-top: 16px; padding-bottom: 26px; }
+.main_inside .wrapper { max-width: 1260px; padding: 0 30px; }
+.main_inside .buy_tabs { justify-content: space-between; margin-bottom: 80px; }
+.main_inside .buy_tabs__item { padding: 0 10px; width: auto; }
+.main_inside__header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px; }
+.main_inside__subtitle { margin-left: 25px; line-height: 1.35; font-size: 16px; }
+
+
+
+
+.faq_item { position: relative; z-index: 2; margin-bottom: 6px; }
+.faq_item .accordion-body:after { content: ''; position: absolute; margin: auto; left: 0; top: 0; right: 0; bottom: 0; background-color: #45566b; transition: background-color .2s ease; visibility: visible; z-index: -1; }
+.faq_item .accordion-body.in:after { background-color: #08586c; }
+.faq_item .accordion-body.collapsing:after { background-color: #08586c; }
+.faq_item__title { font-size: 24px; line-height: 1.1; padding: 17px 80px 17px 30px; color: #fff; display: block; position: relative; }
+.faq_item__arrow { position: absolute; top: 24px; right: 12px; transition: all .2s ease; transform: rotate(0); transform-origin: 50% 50%; }
+.faq_item__title.collapsed .faq_item__arrow { top: 24px; right: 12px; transform: rotate(-90deg); transform-origin: 50% 50%; }
+.faq_item__desc { position: relative; z-index: 2; color: #fff; padding: 17px 30px; font-size: 16px; line-height: 1.35; }
+.faq_item__desc p:last-child { margin-bottom: 0; }
+
+
+
