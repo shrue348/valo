@@ -139,6 +139,15 @@
 
 	
 
+	.menu_hor__icons { display: none; }
+	.new_footer { font-size: 14px; }
+	h1, .h1 { font-size: 75px; }
+	.page_row__left { display: none; }
+	.faq_item__desc { font-size: 24px; }
+	.faq_item__title { padding: 15px 60px 15px 10px; }
+	/*.faq_item__title.collapsed .faq_item__arrow { top: 30px; }*/
+	.main_inside__header { flex-wrap: wrap; }
+	.main_inside__subtitle { flex: 0 0 100%; font-size: 24px; margin-left: 0; }
 
 	
 }
@@ -323,6 +332,23 @@
 	.photo_list__item { height: 248px; }
 	.photo > .wide { max-width: 750px; margin-left: auto; margin-right: auto; }
 
+
+
+
+	.left_menu_in-select_wrap { display: block; }
+	.main_inside_tabs { display: none; }
+	.menu_hor__icons { display: none; }
+	.menu_hor__list { display: none; }
+	.menu_hor__phone { display: block; }
+	.header_phone-inside { display: none; }
+	.new_footer { font-size: 14px; }
+	h1, .h1 { font-size: 75px; }
+	.page_row__left { display: none; }
+	.faq_item__title { font-size: 33px; padding: 15px 60px 15px 10px;}
+	.faq_item__title.collapsed .faq_item__arrow { top: 29px; }
+	.faq_item__desc { font-size: 24px; padding: 17px 10px; }
+	.main_inside__header { flex-wrap: wrap; }
+	.main_inside__subtitle { flex: 0 0 100%; font-size: 24px; margin-left: 0; }
 
 
 
@@ -533,7 +559,25 @@
 	.footer_bottom { font-size: 9px; }
 	.footer_soc__item { zoom: 0.7; }
 
-	
+
+
+
+	.left_menu_in-select_wrap { display: block; }
+	.main_inside { margin-top: 140px; }
+	.header_worktime-inside { display: none; }
+	.menu_hor__phone { font-size: 13.64px; margin-left: 2em; }
+	h1, .h1 { font-size: 32px; }
+	.main_inside__subtitle { font-size: 10.24px; }
+	.faq_item__title { font-size: 14.08px; }
+	.faq_item__arrow { top: 17px; }
+	.faq_item__title.collapsed .faq_item__arrow { top: 18px; right: 6px; }
+	.faq_item__desc { font-size: 10.24px; padding: 17px 10px; }
+	.new_footer { font-size: 11px; }
+	.new_footer .wrapper { flex-direction: column; text-align: center; align-items: center; }
+	.new_footer__link { margin-top: 1em; }
+	.menu_icons { margin-left: 20px; margin-right: 20px; justify-content: space-between; }
+	.menu_icons__item.menu_hor__icon { width: 24px; height: 24px; margin-left: 5px; margin-right: 5px; }
+
 }
 
 @media (max-width: 680px) {
@@ -545,7 +589,8 @@
 
  
 @media (max-width: 480px) {
-
+	.header_ooo-inside span { display: none; }
+	.main_inside .wrapper { padding: 0 10px; }
 
 
 

@@ -1,3 +1,23 @@
+.header_top-inside { background-color: #fff; }
+.header_top__wrapper-inside {
+    padding: 0 15px;
+    max-width: 1835px;
+    width: 100%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    height: 40px;
+    line-height: 40px;
+    color: #1c2840;
+    box-sizing: border-box;
+}
+.header_brand-inside { margin-left: 20px; font-family: 'MyriadSetPro_Thin'; }
+.header_worktime-inside { margin: 0 60px; font-family: 'MyriadSetPro_Thin';}
+.header_phone-inside { margin-left: 17px; font-family: 'MyriadSetPro_Thin';}
+.header_ooo-inside { margin-right: auto; font-size: 10.38px; font-weight: 300; }
+
 
 .new_header { position: fixed; z-index: 10; margin: auto; top: 0; left: 0; right: 0; }
 .new_header .wrapper { max-width: 1280px; padding: 0 10px; }
@@ -7,11 +27,14 @@
 .new_footer .wrapper { display: flex; justify-content: space-between; }
 .new_footer__link { color: #fff; }
 
+.menu__toggle-inside { margin-right: 25px; }
+.menu__toggle-inside svg { display: block; }
+
+
 .menu_hor { display: flex; align-items: center; justify-content: flex-start; padding: 5px 0; }
 .menu_hor__logo { margin-right: auto; height: 47px; }
 .menu_hor__list { margin-left: auto; margin-right: auto; }
 .menu_hor__icons { margin-left: auto; display: flex; justify-content: space-between; align-items: center; }
-.menu_hor .menu__toggle { margin-right: 25px; }
 .menu_hor__item { display: inline-block; }
 .menu_hor__item:not(:last-child) { margin-right: 22px; }
 .menu_hor__link { font-size: 14px; color: #fff; transition: all .2s ease; }
@@ -32,7 +55,8 @@
 .menu_hor__icon-sup { position: absolute; top: -5px; right: -10px; color: #fff; font-size: 12.33px; transition: all .2s ease; }
 .menu_hor__icon-sup:not(:empty) { display: block; }
 .menu_hor__icon:hover .menu_hor__icon-sup { color: #e0508f; }
-
+.menu_hor__phone { color: #fff; display: none; font-size: 31.95px; }
+.menu_hor__phone a { color: #fff; }
 
 
 
@@ -44,6 +68,12 @@
 .left_menu_in__link { color: #e2e4e6; font-weight: 300; transition: all .2s ease; text-transform: uppercase; }
 .left_menu_in__item-selected .left_menu_in__link { color: #00b6bd; font-weight: 600; }
 .left_menu_in__item:hover .left_menu_in__link { color: #fff; }
+
+
+
+.left_menu_in-select_wrap { margin-bottom: 50px; display: none; }
+
+
 
 
 
@@ -60,7 +90,7 @@
 
 
 
-
+.faq_list { overflow: hidden; }
 .faq_item { position: relative; z-index: 2; margin-bottom: 6px; }
 .faq_item .accordion-body:after { content: ''; position: absolute; margin: auto; left: 0; top: 0; right: 0; bottom: 0; background-color: #45566b; transition: background-color .2s ease; visibility: visible; z-index: -1; }
 .faq_item .accordion-body.in:after { background-color: #08586c; }

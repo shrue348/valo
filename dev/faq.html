@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/adaptive.css">
 	<link rel="stylesheet" href="css/iconic.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/selectbox.css">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -20,6 +21,7 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/parallax.js"></script>
 	<script src="js/lunbo.js"></script>
+	<script src="js/selectbox.min.js"></script>
 	<script src="js/ready.js"></script>
 
 
@@ -31,13 +33,13 @@
 
 
 <div class="new_header">
-	<div class="header_top">
-		<div class="header_top__wrapper">
-			<div class="header_ooo">Генеральный подрядчик проекта — ООО «Лемминкяйнен Строй»</div>
-			<div class="header_phone">+7 (812) 421-78-80</div>
-			<div class="header_phone">+7 (800) 222-93-80</div>
-			<div class="header_worktime">Ежедневно с 10:00 до 19:00</div>
-			<div class="header_brand">
+	<div class="header_top-inside">
+		<div class="header_top__wrapper-inside">
+			<div class="header_ooo-inside">Генеральный подрядчик <span>проекта — ООО «Лемминкяйнен Строй»</span></div>
+			<div class="header_phone-inside">+7 (812) 421-78-80</div>
+			<div class="header_phone-inside">+7 (800) 222-93-80</div>
+			<div class="header_worktime-inside">Ежедневно с 10:00 до 19:00</div>
+			<div class="header_brand-inside">
 				<img src="img/lemminkainen.png" alt="Lemminkainen" class="header_brand__img">
 			</div>
 		</div>
@@ -46,9 +48,12 @@
 	<div class="header_menu-hor">
 		<div class="wrapper">
 			<nav class="menu_hor">
-				<a href="javascript:;" class="menu__toggle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="31px"><image  x="0px" y="0px" width="54px" height="31px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAfCAQAAAAG7/aoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBMUCSlt24sQAAAAPElEQVRIx2P8/5+BboCJflaNWkYlwEjH9DGMg3HUslHL8AIWhtGCeNQyPGC0IB61bNQy2oPRgnjUMrwAADrCBjqc0jTwAAAAAElFTkSuQmCC" /></svg></a>
+				<a href="javascript:;" class="menu__toggle-inside"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="31px"><image  x="0px" y="0px" width="54px" height="31px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAfCAQAAAAG7/aoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBMUCSlt24sQAAAAPElEQVRIx2P8/5+BboCJflaNWkYlwEjH9DGMg3HUslHL8AIWhtGCeNQyPGC0IB61bNQy2oPRgnjUMrwAADrCBjqc0jTwAAAAAElFTkSuQmCC" /></svg></a>
+
+				//= _menu.html
 
 				<a href="/" class="menu_hor__logo"><img src="img/logo.png" alt="VALO"></a>
+
 
 				<ul class="menu_hor__list">
 					<li class="menu_hor__item"><a href="" class="menu_hor__link menu_hor__link-selected">О проекте</a></li>
@@ -181,6 +186,10 @@
 						</svg>
 					</a>
 				</div>
+
+				<div class="menu_hor__phone">
+					<a href="tel:+78124110000">+7 (812) 411-00-00</a>
+				</div>
 			</nav>
 		</div>
 	</div>
@@ -199,7 +208,7 @@
 		<div class="main_inside__in">
 			<div class="wrapper">
 				
-				<ul class="buy_tabs">
+				<ul class="main_inside_tabs buy_tabs">
 					<li><a href="#tab1" class="buy_tabs__item">О компании</a></li>
 					<li><a href="#tab1" class="buy_tabs__item">Документы</a></li>
 					<li><a href="#tab3" class="buy_tabs__item">Управляющая компания</a></li>
@@ -208,6 +217,17 @@
 					<li class="active"><a href="#tab2" class="buy_tabs__item">FAQ</a></li>
 					<li><a href="#tab3" class="buy_tabs__item">Контакты</a></li>
 				</ul>
+
+				<div class="left_menu_in-select_wrap">
+					<select class="select left_menu_in-select">
+						<option value="/href">Все</option>
+						<option value="/href" selected="">Тема 1</option>
+						<option value="/href">Тема 2</option>
+						<option value="/href">Тема 3</option>
+						<option value="/href">Тема 4</option>
+					</select>
+				</div>
+					
 
 
 				<div class="main_inside__header">

@@ -32,70 +32,75 @@ function number_format(number, decimals, dec_point, separator ) {
 
 // гл счетчик
 $(function(){
-  var counterDays = new Counter(document.querySelector('[data-js="counter-days"]')),
-      counterHours = new Counter(document.querySelector('[data-js="counter-hours"]')),
-      counterMinutes = new Counter(document.querySelector('[data-js="counter-minutes"]')),
-      counterSeconds = new Counter(document.querySelector('[data-js="counter-seconds"]')),
+  if(document.querySelector('[data-js="counter-days"]')) {
+    var counterDays = new Counter(document.querySelector('[data-js="counter-days"]')),
+        counterHours = new Counter(document.querySelector('[data-js="counter-hours"]')),
+        counterMinutes = new Counter(document.querySelector('[data-js="counter-minutes"]')),
+        counterSeconds = new Counter(document.querySelector('[data-js="counter-seconds"]')),
 
-  count = 0;
+    count = 0;
 
-  var newDate = new Date(9,19,2018) //месяц день год для счетчика
+    var newDate = new Date(9,19,2018) //месяц день год для счетчика
 
-  function Counter(el) {
-    var current = el.querySelector('[data-js="current"]'),
-        next = el.querySelector('[data-js="next"]'),
-        count,
-        timeout;
+    function Counter(el) {
+      var current = el.querySelector('[data-js="current"]'),
+          next = el.querySelector('[data-js="next"]'),
+          count,
+          timeout;
 
-    function update(value) {
-      // if(count === value) { return; }
-      count = value;
-      next.innerHTML = count;
-      el.classList.add('is-changing');
-      window.clearTimeout(timeout);
-      timeout = window.setTimeout(function() {
-        current.innerHTML = next.innerHTML;
-        el.classList.remove('is-changing');
-      }, 210);
-    }
-    
-    return {
-      update: update
-    };
-  }
-
-  function increment() {
-    count ++;
-    if(count > 99) {
-      count = 0;
+      function update(value) {
+        // if(count === value) { return; }
+        count = value;
+        next.innerHTML = count;
+        el.classList.add('is-changing');
+        window.clearTimeout(timeout);
+        timeout = window.setTimeout(function() {
+          current.innerHTML = next.innerHTML;
+          el.classList.remove('is-changing');
+        }, 210);
+      }
+      
+      return {
+        update: update
+      };
     }
 
-    var nowDate = Date.now(),
-        resultTime = new Date(newDate - nowDate)
+    function increment() {
+      count ++;
+      if(count > 99) {
+        count = 0;
+      }
 
-    resultTime.setHours(resultTime.getHours()-3)
+      var nowDate = Date.now(),
+          resultTime = new Date(newDate - nowDate)
 
-    var days = resultTime.getDay();
-    var hours = resultTime.getHours();
-    var minutes = resultTime.getMinutes();
-    var seconds = resultTime.getSeconds();
+      resultTime.setHours(resultTime.getHours()-3)
 
-    if (days < 10) days = '0' + days
-    if (hours < 10) hours = '0' + hours
-    if (minutes < 10) minutes = '0' + minutes
-    if (seconds < 10) seconds = '0' + seconds
+      var days = resultTime.getDay();
+      var hours = resultTime.getHours();
+      var minutes = resultTime.getMinutes();
+      var seconds = resultTime.getSeconds();
 
-    counterDays.update(days);
-    counterHours.update(hours);
-    counterMinutes.update(minutes);
-    counterSeconds.update(seconds);
-    
-    setTimeout(increment, 60000);
+      if (days < 10) days = '0' + days
+      if (hours < 10) hours = '0' + hours
+      if (minutes < 10) minutes = '0' + minutes
+      if (seconds < 10) seconds = '0' + seconds
+
+      counterDays.update(days);
+      counterHours.update(hours);
+      counterMinutes.update(minutes);
+      counterSeconds.update(seconds);
+      
+      setTimeout(increment, 60000);
+    }
+
+    increment()
   }
-
-  increment()
 })
 
+$(function() { 
+  $('select.select').selectbox();
+});  
 
 
 
@@ -124,7 +129,7 @@ $(function(){
 
 // переключалка гл меню
 $(function(){
-  $('.menu__toggle').on('click', function(){
+  $('.menu__toggle, .menu__toggle-inside').on('click', function(){
     $('.menu__wrap').toggleClass('menu__wrap-active')
     $('.menu').toggleClass('menu-active')
   })
@@ -276,7 +281,6 @@ function sliders(){
 
 
 
-
   if (screen.width >= 1200) {
     $('.func_icons.slick-initialized').slick('unslick');
   } else {
@@ -406,6 +410,12 @@ $(function() {
 });
 
 
+// Открываем страницы из select как в faq
+$(function(){
+  $('.left_menu_in-select').on('change', function(){
+    location.href = $(this).val()
+  })
+})
 
 
 

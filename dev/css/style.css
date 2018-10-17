@@ -424,7 +424,7 @@ select {
 
 .l_block { position: relative; overflow: hidden; }
 .l_block__title { color: #fefeff; text-align: center; font-size: 85px; margin-bottom: 35px; line-height: 1.1; font-weight: bold; }
-
+.l_block .gdlr-core-parallax { min-height: 100%; }
 
 
 .logo__img { display: block; line-height: 1; width: 141px; height: 89px; object-fit: contain; }
@@ -444,6 +444,7 @@ select {
 .header_worktime { margin: 0 60px; font-family: 'MyriadSetPro_Thin';}
 .header_phone { margin-left: 17px; font-family: 'MyriadSetPro_Thin';}
 .header_ooo { margin-right: auto; font-size: 10.38px; font-weight: 300; }
+
 .header_logo { display: flex; align-items: center; justify-content: flex-start; opacity: 0; transition: opacity 0.6s ease; margin-bottom: 63px; }
 .header.loaded .header_logo { opacity: 1; }
 .header_control { margin-top: 45px; display: flex; align-items: center; }
@@ -531,10 +532,10 @@ select {
 
 .menu { margin-right: 37px; }
 .menu.menu-active > .menu__toggle { opacity: 0; }
-.menu__toggle { font-size: 30px;  position: relative; z-index: 11; color: rgba(255,255,255,.7); transition: all .2s ease; margin-top: 9px; margin-left: 7px; display: inline-block; }
+.menu__toggle { font-size: 30px;  position: relative; z-index: 11; color: rgba(255,255,255,.7); transition: all .2s ease; margin-top: 9px; margin-left: 7px; display: inline-block; z-index: 1; }
 .menu__toggle:hover { color: #fff;}
 .menu__toggle i:before { margin: 0; padding: 0; }
-.menu__wrap { position: fixed; margin: auto; top: 0; left: 0; bottom: 0; right: 0; z-index: 10; background-color: rgba(13,35,63,.9); opacity: 0; visibility: hidden; transition: all .2s ease; }
+.menu__wrap { position: fixed; margin: auto; top: 0; left: 0; bottom: 0; right: 0; z-index: 10; background-color: rgba(13,35,63,.9); opacity: 0; visibility: hidden; transition: all .2s ease; display: flex; flex-direction: column; }
 .menu__wrap.menu__wrap-active { visibility: visible; opacity: 1; }
 .menu__wrapper { padding: 0 15px; max-width: 1835px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start; flex: 1 1 auto; margin-top: 45px; box-sizing: border-box; }
 .main_menu__list { margin-top: 20px; padding-left: 7px; }
@@ -546,8 +547,8 @@ select {
 .mian_menu_sub__link:hover { color: #fff; transition: all .2s ease; }
 
 
-
-
+.menu_icons { padding: 0 15px; display: flex; align-items: center; justify-content: flex-start; margin-top: 1em; margin-bottom: 1em; }
+.menu_icons__item.menu_hor__icon { margin-left: 7px; margin-right: 45px; width: 51px; height: 51px; }
 
 
 
@@ -622,7 +623,7 @@ select {
 .lvl_item:nth-child(odd) .lvl_item__info { padding-right: 30px; }
 .lvl_item:last-child { margin-bottom: 50px; }
 .lvl__bottom { text-align: center; }
-.lvl__more { color: #fefeff; font-size: 18px; padding-bottom: 10px; background: url(../img/lvl_more.png) no-repeat scroll center bottom transparent; display: inline-block; }
+.lvl__more { color: #fefeff; font-size: 18px; padding-bottom: 10px; background: url(../img/lvl_more.png) no-repeat scroll center bottom transparent; display: inline-block; text-transform: uppercase; }
 
 
 
