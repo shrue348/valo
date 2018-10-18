@@ -14,7 +14,7 @@
 .selectbox li.disabled { color: #aaa; }
 .selectbox li.disabled:hover { background: none; }
 */
-.selectbox { position: relative; }
+.selectbox { position: relative; z-index: 1; }
 .selectbox .select { 
   height: 34px;
   line-height: 34px;
