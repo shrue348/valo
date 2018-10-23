@@ -544,15 +544,17 @@ select {
 .mian_menu_sub__link:hover { color: #fff; transition: all .2s ease; }
 
 
-.menu_icons { padding: 0 15px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: start; justify-content: flex-start; margin-top: 1em; margin-bottom: 1em; }
-.menu_icons__item.menu_hor__icon { margin-left: 7px; margin-right: 45px; width: 51px; height: 51px; }
+.menu_icons { padding: 0 15px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; margin-top: 1em; margin-bottom: 1em; }
+.menu_icons__item.menu_hor__icon { margin-left: 7px; margin-right: 45px; width: 70px; height: 70px; }
 
 
-
-
-
-
-
+.menu_icons { position: relative; }
+.menu_icons_search { position: absolute; display: none; z-index: 5; position: absolute; margin: auto; max-width: 408px; bottom: -3px; left: 0; right: 0; }
+.menu_icons_search input { border-radius: 9px; background-color: rgba(255,255,255,.36); padding: 15px 35px; color: #fff; border: 0 none; font-size: 40.15px; font-weight: 300; box-sizing: border-box; width: 100%; }
+.menu_icons_search input::-webkit-input-placeholder { color: #fff;}
+.menu_icons_search input:-ms-input-placeholder { color: #fff;}
+.menu_icons_search input::-moz-placeholder {  color: #fff; opacity: 1;}
+.menu_icons_search input:-moz-placeholder { color: #fff; opacity: 1;}
 
 
 

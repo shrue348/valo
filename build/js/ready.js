@@ -135,6 +135,14 @@ $(function(){
   })
 })
 
+
+// переключалка поиска
+$(function(){
+  $('.menu_hor__icon-search-toggle').on('click', function(){
+    $('.menu_icons_search').slideToggle()
+  })
+})
+
 //вебкамера
 $(function(){
   $('.photo_webcam__start').on('click', function(){
