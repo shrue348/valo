@@ -32,7 +32,7 @@ function number_format(number, decimals, dec_point, separator ) {
 
 // гл счетчик
 $(function(){
-  if(document.querySelector('[data-js="counter-days"]')) {
+  if(document.querySelector('[data-js="counter-days"]') && location.href == '/') {
     var counterDays = new Counter(document.querySelector('[data-js="counter-days"]')),
         counterHours = new Counter(document.querySelector('[data-js="counter-hours"]')),
         counterMinutes = new Counter(document.querySelector('[data-js="counter-minutes"]')),
@@ -138,8 +138,12 @@ $(function(){
 
 // переключалка поиска
 $(function(){
-  $('.menu_hor__icon-search-toggle').on('click', function(){
-    $('.menu_icons_search').slideToggle()
+  $('.menu_hor__icon-search-toggle1').on('click', function(){
+    $('.menu_icons_search-1').slideToggle()
+  })
+
+  $('.menu_hor__icon-search-toggle2').on('click', function(){
+    $('.menu_icons_search-2').slideToggle()
   })
 })
 
@@ -200,7 +204,25 @@ $(function(){
     arrows: false,
     centerPadding: '0px',
     responsive: [
-    {
+      {
+        breakpoint: 1920,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0',
+          slidesToShow: 5
+        }
+      },
+      {
+        breakpoint: 1600,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 4
+        }
+      },
+      {
         breakpoint: 1200,
         settings: {
           arrows: false,
@@ -347,33 +369,36 @@ $(function(){
 
 //карта
 $(function(){
-  ymaps.ready(init);
+  if ( location.href == '/' ){
+    ymaps.ready(init);
 
-  function init() {
-    var myMap = new ymaps.Map("map", {
-        center: [55.76, 37.64],
-        zoom: 14
-    },{
-        searchControlProvider: 'yandex#search'
-    }),
+    function init() {
+      var myMap = new ymaps.Map("map", {
+          center: [55.76, 37.64],
+          zoom: 14
+      },{
+          searchControlProvider: 'yandex#search'
+      }),
 
-    myGeoObject = new ymaps.GeoObject({
-      geometry: {
-          type: "Point",
-          coordinates: [55.76, 37.64]
-      },
-      properties: {
-          iconContent: 'VALO',
-          hintContent: 'Апарт-комплекс по-фински'
-      }
+      myGeoObject = new ymaps.GeoObject({
+        geometry: {
+            type: "Point",
+            coordinates: [55.76, 37.64]
+        },
+        properties: {
+            iconContent: 'VALO',
+            hintContent: 'Апарт-комплекс по-фински'
+        }
 
-    },{
-      preset: 'islands#blackStretchyIcon',
-      draggable: false
-    });
+      },{
+        preset: 'islands#blackStretchyIcon',
+        draggable: false
+      });
 
-    myMap.geoObjects.add(myGeoObject);
+      myMap.geoObjects.add(myGeoObject);
+    }
   }
+    
 })
 
 

@@ -34,7 +34,12 @@
 .menu_hor { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: start; justify-content: flex-start; padding: 5px 0; }
 .menu_hor__logo { margin-right: auto; height: 47px; }
 .menu_hor__list { margin-left: auto; margin-right: auto; }
-.menu_hor__icons { margin-left: auto; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
+.menu_hor__icons { margin-left: auto; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; position: relative; }
+
+.menu_hor__icons .menu_icons_search { left: -15px; max-width: 240px; bottom: -3px; z-index: 3; }
+.menu_hor__icons .menu_icons_search input { padding: 10px 15px; font-size: 13px; }
+
+
 .menu_hor__item { display: inline-block; }
 .menu_hor__item:not(:last-child) { margin-right: 22px; }
 .menu_hor__link { font-size: 14px; color: #fff; transition: all .2s ease; }
@@ -85,8 +90,8 @@
 .main_inside .wrapper { max-width: 1260px; padding: 0 30px; }
 .main_inside .buy_tabs { -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 80px; }
 .main_inside .buy_tabs__item { padding: 0 10px; width: auto; }
-.main_inside__header { display: -ms-flexbox; display: flex; -ms-flex-align: start; align-items: flex-start; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 20px; }
-.main_inside__subtitle { margin-left: 25px; line-height: 1.35; font-size: 16px; }
+.main_inside__header { display: -ms-flexbox; display: flex; -ms-flex-align: start; align-items: flex-start; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 20px; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.main_inside__subtitle { line-height: 1.35; font-size: 16px; -ms-flex: 0 0 100%; flex: 0 0 100%; }
 
 
 
