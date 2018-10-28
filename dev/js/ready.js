@@ -198,7 +198,7 @@ $(function(){
 
   $('.blog_list').slick({
     centerMode: true,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     swipeToSlide: true,
     arrows: false,
