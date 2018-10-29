@@ -108,3 +108,66 @@
 
 
 
+
+.about_item { margin-bottom: 30px; }
+.about_item__title { font-size: 31px; font-weight: bold; text-transform: uppercase; margin-bottom: 32px; }
+.about_item__info { display: flex; align-items: center; margin-bottom: 15px; }
+.about_item__desc { font-size: 16px; font-weight: 300; }
+.about_item__img_wrap { margin-left: 25px; flex: 0 0 auto; }
+.about_item__more_link { color: #fff; font-weight: 300; margin-left: auto; line-height: 1; font-size: 16px; }
+.about_item__more_link:before { position: absolute; content: ''; height: 4px; margin: auto; left: 0; right: 140px; bottom: 3px; background-color: #fff; }
+
+
+.about_item__more_link:hover { color: #00b6bd; }
+.about_item__more_link:hover:before { background-color: #00b6bd; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
