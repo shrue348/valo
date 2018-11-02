@@ -690,6 +690,8 @@
 
 	.contacts_bottom__item { -ms-flex: 0 0 280px; flex: 0 0 280px; }
 	.contacts_soc__item { margin-right: 15px !important; }
+	.contacts_soc__item:last-child { margin-right: 0 !important; }
+	.contacts_bottom__item:first-child .contacts_bottom__left { margin-right: 0 !important; }
 
 
 
