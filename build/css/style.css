@@ -841,7 +841,7 @@ select {
 .buy__back { background: url(../img/buy.jpg) no-repeat scroll center / cover #1c2840; }
 .buy__title { margin-bottom: 15px; font-size: 85px; font-weight: bold; text-align: center; line-height: 1.1; color: #fefeff; }
 .buy_tabs { margin-bottom: 50px; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
-.buy_tabs__item { height: 34px; line-height: 34px; width: 99px; display: block; color: #fff; text-transform: uppercase; font-size: 14px; position: relative; transition: background-color .2s ease; text-align: center; box-shadow: 0 0 0 2px #fff; }
+.buy_tabs__item { height: 34px; line-height: 34px; width: 99px; display: block; color: #fff; text-transform: uppercase; font-size: 14px; position: relative; transition: background-color .2s ease; text-align: center; box-shadow: 0 0 0 2px #fff; white-space: nowrap; }
 .buy_tabs li.active .buy_tabs__item { background-color: #00b6bd; }
 .buy_tabs__item:hover { box-shadow: none; }
 .buy_tabs__item:before { content: ''; position: absolute; margin: auto;  left: -2px; top: -2px; right: 100%; bottom: 100%; border-top: 2px solid #fff; border-right: 2px solid #fff; opacity: 0;}

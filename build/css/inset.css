@@ -60,7 +60,7 @@
 .menu_hor__icon-sup { position: absolute; top: -5px; right: -10px; color: #fff; font-size: 12.33px; transition: all .2s ease; }
 .menu_hor__icon-sup:not(:empty) { display: block; }
 .menu_hor__icon:hover .menu_hor__icon-sup { color: #e0508f; }
-.menu_hor__phone { color: #fff; display: none; font-size: 31.95px; }
+.menu_hor__phone { color: #fff; display: none; font-size: 31.95px; white-space: nowrap; }
 .menu_hor__phone a { color: #fff; }
 
 
@@ -181,6 +181,23 @@
 .contacts_bottom__left { margin-right: 15px; }
 .contacts_bottom__title { font-size: 30px; font-weight: bold; text-transform: uppercase; }
 .contacts_bottom__subtitle { font-size: 20px; display: inline-block; }
+
+
+.contacts_row { padding-right: 80px; }
+.contacts_item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin-bottom: 5px; height: 40px;}
+.contacts_item__title { margin-left: 45px; font-size: 16px; font-weight: bold; color: #fff; }
+
+
+.contacts_map { position: relative; }
+.contacts_map__link { position: absolute; color: #fff; top: 0; left: -58px; z-index: 2; }
+.contacts_map__link img { display: block; line-height: 1; }
+
+
+.buy_tabs__item.contacts_tabs__item { height: 38px; line-height: 38px; padding: 0 40px; font-size: 15px; }
+
+
+
+
 
 
 
