@@ -648,6 +648,9 @@
 	.contacts_row > .buy_tabs li { margin-right: 0; }
 
 
+	.about_item__info { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+	.about_item__desc { -ms-flex: 0 0 100%; flex: 0 0 100%; }
+	.about_item__img_wrap { -ms-flex: 0 0 100%; flex: 0 0 100%; margin-left: 0; margin-top: 20px; text-align: center; }
 	
 }
 

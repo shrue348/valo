@@ -369,7 +369,7 @@ $(function(){
 
 //карта
 $(function(){
-  if ( location.href == '/' ){
+  // if ( location.href == '/' ){
     ymaps.ready(init);
 
     function init() {
@@ -397,7 +397,7 @@ $(function(){
 
       myMap.geoObjects.add(myGeoObject);
     }
-  }
+  // }
     
 })
 
