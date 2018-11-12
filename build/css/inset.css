@@ -196,7 +196,7 @@
 .contacts_row { padding-right: 80px; }
 .contacts_item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin-bottom: 5px; height: 40px;}
 .contacts_item__title { margin-left: 45px; font-size: 16px; font-weight: bold; color: #fff; }
-
+.contacts_item svg { fill: #00b6bd; }
 
 .contacts_map { position: relative; }
 .contacts_map__link { position: absolute; color: #fff; top: 0; left: -58px; z-index: 2; }

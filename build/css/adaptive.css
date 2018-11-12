@@ -657,6 +657,7 @@
 	.contacts_row > .buy_tabs { -ms-flex-pack: start; justify-content: flex-start; }
 	.managers_form form input,
 	.managers_form form button { margin-left: 0; margin-right: 0; }
+	.contacts_bottom__left { margin-right: 0; }
 
 
 	.about_item__info { -ms-flex-wrap: wrap; flex-wrap: wrap; }
