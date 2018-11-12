@@ -383,8 +383,14 @@
 	.contacts_row > .buy_tabs { justify-content: flex-start; }
 	.contacts_row > .buy_tabs li { margin-right: 1em; }
 
-	.contacts_map { height: 300px !important; padding-left: 60px; }
-	.contacts_map__link { left: 0; }
+	.contacts_map { height: 300px !important; padding-left: 0; }
+	.contacts_map__link { left: 0; display: none; }
+
+	.contacts_bottom__item { flex-wrap: wrap; flex: 0 0 50%; box-sizing: border-box; }
+	.contacts_bottom__item .buy_tabs__item { margin-top: 15px; }
+	.contacts_soc { display: block !important; margin-top: 15px; }
+	.contacts_soc svg { width: 34px; height: 34px; }
+
 
 }
 			 
@@ -637,15 +643,17 @@
 	.blogpage_item__pubdate { font-size: 11px; }
 	.blogpage_item__morelink { font-size: 11px; }
 
-	.contacts_map { height: 240px !important; padding-left: 60px; }
+	
+	.contacts_map { height: 240px !important; padding-left: 0; }
+	.contacts_bottom__item { display: block; }
+	.contacts_bottom__title { font-size: 13px; }
+	.contacts_bottom__subtitle { font-size: 8px; }
+	.contacts_bottom__item .buy_tabs__item { height: 32px; line-height: 32px; }
+	.contacts_soc__item { margin-right: 15px !important; }
 
-	.contacts_bottom > .wrapper > .row { flex-wrap: wrap; justify-content: center; }
-	.contacts_bottom__item:first-child { margin-right: 0; border-bottom: 1px solid rgba(255,255,255,.6); padding-bottom: 20px; }
-	.contacts_bottom__item { flex: 0 0 340px; margin-bottom: 20px; }
-
-
-	.contacts_row > .buy_tabs { justify-content: space-between; }
-	.contacts_row > .buy_tabs li { margin-right: 0; }
+	.contacts_row > .buy_tabs { justify-content: flex-start; }
+	.managers_form form input,
+	.managers_form form button { margin-left: 0; margin-right: 0; }
 
 
 	.about_item__info { flex-wrap: wrap; }
@@ -682,19 +690,9 @@
 	.about_item__more_link:before { height: 2px; }
 
 	.btn_block-big { margin-top: 30px; }
-	.contacts_bottom {  }
-	.contacts_bottom__title { font-size: 20px; }
-	.contacts_bottom__subtitle { font-size: 16px; }
-
 
 	.buy_tabs__item.contacts_tabs__item { height: 19px; line-height: 19px; font-size: 12px; padding: 0 10px; }
 	.contacts_item__title { font-size: 9px; margin-left: 15px; }
-
-
-	.contacts_bottom__item { flex: 0 0 280px; }
-	.contacts_soc__item { margin-right: 15px !important; }
-	.contacts_soc__item:last-child { margin-right: 0 !important; }
-	.contacts_bottom__item:first-child .contacts_bottom__left { margin-right: 0 !important; }
 
 
 

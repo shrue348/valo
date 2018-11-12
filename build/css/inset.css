@@ -178,7 +178,9 @@
 
 
 .contacts_form { background-color: rgba(255,255,255,.6); padding: 13px 0; margin-left:  }
-.contacts_form form { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
+.contacts_form form { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: center; }
+.contacts_form form input,
+.contacts_form form button { margin: 0 1em; }
 .contacts_form_success { text-align: center; color: #fff; font-weight: 100; font-size: 20px; display: none; }
 
 
@@ -200,6 +202,8 @@
 .contacts_map__link { position: absolute; color: #fff; top: 0; left: -58px; z-index: 2; }
 .contacts_map__link img { display: block; line-height: 1; }
 
+.contacts_soc__link svg { fill: #fff; }
+.contacts_soc__link:hover svg { fill: #00b6bd; }
 
 .buy_tabs__item.contacts_tabs__item { height: 38px; line-height: 38px; padding: 0 40px; font-size: 15px; }
 
