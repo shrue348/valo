@@ -921,8 +921,8 @@ select {
 .photo { padding: 40px 0 0; }
 .photo__title { color: #00b6bd; font-size: 85px; font-weight: bold; line-height: 1.1; margin-bottom: 35px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center;}
 .photo_tabs { margin-left: auto; margin-right: auto; }
-
-.photo .wide__in { overflow: hidden; }
+.photo .wide {  }
+.photo .wide__in { overflow: hidden; flex: 0 0 50% !important; }
 
 
 

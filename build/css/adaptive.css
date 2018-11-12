@@ -570,8 +570,11 @@
 
 
 	.photo__title { font-size: 30px; }
-	.photo_list__item { height: 106px; }
-	.photo_webcam iframe { height: 106px; display: block;  }
+	.photo .wide { -ms-flex-wrap: wrap; flex-wrap: wrap; margin-left: 0; margin-right: 0; max-width: 100%; }
+	.photo .wide__in { -ms-flex: 0 0 100% !important; flex: 0 0 100% !important; }
+	.photo_list { height: 100%; }
+	.photo_list__item { height: 300px; }
+	.photo_webcam { height: 300px; }
 
 
 	.blog { padding: 15px 0; }
@@ -664,7 +667,8 @@
 
 @media (max-width: 680px) {
 
-
+	.photo_list__item { height: 270px; }
+	.photo_webcam { height: 270px; }
 
 
 }
@@ -695,7 +699,8 @@
 	.contacts_item__title { font-size: 9px; margin-left: 15px; }
 
 
-
+	.photo_list__item { height: 240px; }
+	.photo_webcam { height: 240px; }
 
 
 }
