@@ -497,7 +497,8 @@ select {
 .footer_gen__desc { font-size: 12px; font-weight: 100; color: #fff; -ms-flex: 1 1 auto; flex: 1 1 auto; max-width: 390px; margin-left: 20px; }
 .footer_soc { white-space: nowrap; }
 .footer_soc__item { display: inline-block; margin: 0 18px; }
-
+.footer_soc__item svg { fill: #fff; transition: all .2s ease; }
+.footer_soc__item:hover svg { fill: #00b6bd !important; }
 
 
 
