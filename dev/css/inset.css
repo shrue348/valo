@@ -23,7 +23,7 @@
 .new_header .wrapper { max-width: 1280px; padding: 0 10px; }
 .header_menu-hor { background-color: rgba(13,35,64,.62); }
 
-.new_footer { padding: 17px 0; background-color: #0d233f; font-size: 18px; color: #ffffff; font-weight: 300; margin-top: auto; }
+.new_footer { padding: 17px 0; background-color: #0d233f; font-size: 14px; color: #ffffff; font-weight: 300; margin-top: auto; }
 .new_footer .wrapper { display: flex; justify-content: space-between; }
 .new_footer__link { color: #fff; }
 
@@ -35,7 +35,6 @@
 .menu_hor__logo { margin-right: auto; height: 47px; }
 .menu_hor__list { margin-left: auto; margin-right: auto; }
 .menu_hor__icons { margin-left: auto; display: flex; justify-content: space-between; align-items: center; position: relative; }
-
 .menu_hor__icons .menu_icons_search { left: -15px; max-width: 240px; bottom: -3px; z-index: 3; }
 .menu_hor__icons .menu_icons_search input { padding: 10px 15px; font-size: 13px; }
 
@@ -127,7 +126,7 @@
 
 
 .about_item { margin-bottom: 30px; }
-.about_item__title { font-size: 31px; font-weight: bold; text-transform: uppercase; margin-bottom: 32px; }
+.about_item__title { font-size: 20px; font-weight: 400; text-transform: uppercase; margin-bottom: 32px; }
 .about_item__info { display: flex; align-items: center; margin-bottom: 15px; }
 .about_item__desc { font-size: 16px; font-weight: 300; }
 .about_item__desc p:last-child { margin-bottom: 0; }
@@ -178,7 +177,7 @@
 .blogpage_list {  }
 .blogpage_item { padding: 22px 24px 20px 68px; transition: all .2s ease; color: #fff;}
 .blogpage_item:hover { background-color: rgba(0,182,189,.24); }
-.blogpage_item__title { font-size: 31px; font-weight: bold; text-transform: uppercase; margin-bottom: 32px;}
+.blogpage_item__title { font-size: 20px; font-weight: 400; text-transform: uppercase; margin-bottom: 32px;}
 .blogpage_item__announce { font-size: 16px; font-weight: 100; margin-bottom: 30px; }
 .blogpage_item__bottom { display: flex; justify-content: space-between; }
 .blogpage_item__pubdate { margin-right: auto; font-size: 16px; font-weight: 300; }
