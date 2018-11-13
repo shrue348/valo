@@ -26,7 +26,7 @@
 
 
 @media (max-width: 767px) {
-  .selectbox .select { height: 21px; line-height: 21px; font-size: 8.36px; }
+  .selectbox .select { height: 21px; line-height: 21px; font-size: 9px; }
   .selectbox .dropdown { top: 24px !important; }
-  .selectbox .dropdown li { height: 21px; line-height: 21px; font-size: 8.36px; }
+  .selectbox .dropdown li { height: 21px; line-height: 21px; font-size: 9px; }
 }

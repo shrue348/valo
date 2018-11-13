@@ -55,12 +55,12 @@
 .menu_hor__icon:hover .menu_hor__icon-star,
 .menu_hor__icon:hover .menu_hor__icon-clock,
 .menu_hor__icon:hover .menu_hor__icon-glass { fill:#e0508f; box-shadow: 0 0 9px rgba(0,0,0,0.2); }
-.menu_hor__icon-desc { color: #fff; position: absolute; margin: auto; left: -30px; right: -30px; text-align: center; bottom: -35px; opacity: 0; transition: all .2s ease; pointer-events: none; font-size: 12.33px; }
+.menu_hor__icon-desc { color: #fff; position: absolute; margin: auto; left: -30px; right: -30px; text-align: center; bottom: -35px; opacity: 0; transition: all .2s ease; pointer-events: none; font-size: 12px; }
 .menu_hor__icon:hover .menu_hor__icon-desc { opacity: 1; }
-.menu_hor__icon-sup { position: absolute; top: -5px; right: -10px; color: #fff; font-size: 12.33px; transition: all .2s ease; }
+.menu_hor__icon-sup { position: absolute; top: -5px; right: -10px; color: #fff; font-size: 12px; transition: all .2s ease; }
 .menu_hor__icon-sup:not(:empty) { display: block; }
 .menu_hor__icon:hover .menu_hor__icon-sup { color: #e0508f; }
-.menu_hor__phone { color: #fff; display: none; font-size: 31.95px; white-space: nowrap; }
+.menu_hor__phone { color: #fff; display: none; font-size: 32px; white-space: nowrap; }
 .menu_hor__phone a { color: #fff; }
 
 
