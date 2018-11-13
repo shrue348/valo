@@ -519,60 +519,159 @@
 	<!--  !!!футер внутри .main_inside_flex -->
 
 
-	<div class="main_inside">
+
+	<div class="main_inside main_inside-white">
 		<div class="main_inside__in">
 			<div class="wrapper">
 				
 				<ul class="main_inside_tabs buy_tabs">
-					<li><a href="#tab1" class="buy_tabs__item">О компании</a></li>
-					<li><a href="#tab1" class="buy_tabs__item">Документы</a></li>
-					<li><a href="#tab3" class="buy_tabs__item">Управляющая компания</a></li>
-					<li><a href="#tab3" class="buy_tabs__item">Партнеры</a></li>
-					<li><a href="#tab3" class="buy_tabs__item">Блог компании</a></li>
-					<li class="active"><a href="#tab2" class="buy_tabs__item">FAQ</a></li>
-					<li><a href="#tab3" class="buy_tabs__item">Контакты</a></li>
+					<li class="active"><a href="#tab1" class="buy_tabs__item">Выбор апартаментов</a></li>
+					<li><a href="#tab1" class="buy_tabs__item">Коммерческие помещения</a></li>
+					<li><a href="#tab3" class="buy_tabs__item">Паркинг</a></li>
+					<li><a href="#tab3" class="buy_tabs__item">Отделка и мебель</a></li>
 				</ul>
 
+				
 				<div class="breadcrumbs">
 					<a href="" class="breadcrumbs__link">Главная</a>
 					<a href="" class="breadcrumbs__link">О проекте</a>
 					<span class="breadcrumbs__item">FAQ</span>
 				</div>
-
+					
 
 				<div class="main_inside__header">
-					<h1>Управляющая компания</h1>
+					<h1>Апартаменты</h1>
+					<div class="main_inside__subtitle">
+						<p>- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software</p>
+					</div>
 				</div>
 
-
-				<div class="page_row">
-					<div class="page_row__center">
+			
+				<div class="filter">
+					<div class="filter_title">Укажите параметры</div>
 					
-						<div class="about_list">
-							<div class="about_item">
-								<div class="about_item__title">What is Lorem Ipsum?</div>
-								<div class="about_item__info">
-									<div class="about_item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-								</div>
-								<div class="about_item__info-hidden" style="display: none;">
-									<div class="about_item__desc">
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<div class="filter_row">
+						<div class="filter_row__item">
+							<div class="dropdown">
+								<button type="button" data-toggle="dropdown" class="dropdown_btn">Срок сдачи</button>
+								<div class="dropdown_data">
+									<div class="filter_drop_list">
+										<div class="filter_drop_list__item">
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">IIкв. 2019г.</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">IIIкв. 2019г.</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">IIкв. 2020г.</div>
+											</label>
+										</div>
 									</div>
 								</div>
-								<div class="relative alignright">
-									<a href="javascript:;" class="about_item__more_link" onclick="$(this).parent().prev().slideDown();$(this).parent().slideUp();">Подробнее <i class="icon-right"></i></a>
+							</div>
+						</div>
+
+						<div class="filter_row__item">
+							<div class="dropdown">
+								<button type="button" data-toggle="dropdown" class="dropdown_btn">Комнатность</button>
+								<div class="dropdown_data">
+									<div class="filter_drop_list">
+										<div class="filter_drop_list__item">
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">Студии</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">1-комнтаные</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">2-комнатные</div>
+											</label>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div><!--/about_list-->
-						
+						</div>
 
-						<div class="btn_block-big">
-							<a href="#" class="btn">Доходные программы <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.005 L10.004,9.999 L-0.000,20.002 L5.726,10.335 L-0.000,-0.005 Z"></path></svg></a>
-							<a href="#" class="btn">Преимущества <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.005 L10.004,9.999 L-0.000,20.002 L5.726,10.335 L-0.000,-0.005 Z"></path></svg></a>
+						<div class="filter_row__item">
+							<div class="dropdown">
+								<button type="button" data-toggle="dropdown" class="dropdown_btn">Этаж</button>
+								<div class="dropdown_data">
+									<div class="filter_drop_list">
+										<div class="filter_drop_list__item">
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">Не первый</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">Не последний</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">1-5</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">6-10</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">11-15</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">16-20</div>
+											</label>
+											<label class="check">
+												<input type="checkbox">
+												<div class="check__title">21-25</div>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter_row__item">
+							<label class="check alignright">
+								<input type="checkbox">
+								<div class="check__title">Балкон</div>
+							</label>
+							<label class="check alignright">
+								<input type="checkbox">
+								<div class="check__title">Спец. предложение</div>
+							</label>
+						</div>
+					</div>
+
+					<div class="filter_btn_block">
+						<a href="" class="btn">Показать 154 вариантов</a>
+					</div>
+
+					<div class="filter_title">Каталог апартаментов</div>
+					<div class="filter_sort">
+						<div class="filter_sort__title">Сортировать по:</div>
+						<a href="" class="filter_sort__item">цена</a>
+						<a href="" class="filter_sort__item">этаж</a>
+						<a href="" class="filter_sort__item filter_sort__item-active"><i class="icon">↑</i>площадь</a>
+						<a href="" class="filter_sort__item filter_sort__item-active"><i class="icon">↓</i>срок сдачи</a>
+
+						<div class="cat_type_icons">
+							<a href="" class="cat_type_icons__item cat_type_icons__item-active">1</a>
+							<a href="" class="cat_type_icons__item">2</a>
 						</div>
 					</div>
 				</div>
+			
+
+
 			</div>
 		</div>
 	</div>

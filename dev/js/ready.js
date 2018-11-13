@@ -415,13 +415,9 @@ $(function(){
         jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1600);
       }, 300)
         
-      $("#lvl").css({
-          height: $("#lvl_inside").height()
-      });
+      $("#lvl").css({ height: $("#lvl_inside").height()});
       $(data).appendTo('#lvl_inside')
-      $("#lvl").css({
-          height: $("#lvl_inside").height()
-      });
+      $("#lvl").css({ height: $("#lvl_inside").height()});
 
       counter += 3
 
@@ -451,8 +447,12 @@ $(function(){
 })
 
 
-
-
+// не закрывать фильтр при клике на чекбоксы
+$(function(){
+  $(document).on('click', '.filter .dropdown .dropdown_data', function (e) {
+    e.stopPropagation();
+  });
+})
 
 
 
