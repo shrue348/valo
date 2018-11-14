@@ -156,6 +156,11 @@
 
 .btn_block-big { margin-top: 90px; margin-bottom: 110px; max-width: 440px; }
 .btn_block-big .btn { margin-bottom: 10px; display: block; text-align: right; }
+.btn_block-big .faq_item__title { display: block; text-align: right; text-transform: uppercase; font-size: 14px; padding: 21px 50px 21px 30px; }
+.btn_block-big .faq_item__title.collapsed { background-color: rgba(87,181,187,.52); }
+
+
+
 
 
 
@@ -181,7 +186,7 @@
 .blogpage_item__announce { font-size: 16px; font-weight: 100; margin-bottom: 30px; }
 .blogpage_item__bottom { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
 .blogpage_item__pubdate { margin-right: auto; font-size: 16px; font-weight: 300; }
-.blogpage_item__morelink { color: #fff; font-weight: 300; margin-left: auto; line-height: 1; font-size: 16px; }
+.blogpage_item__morelink { color: #fff; font-weight: 300; margin-left: auto; line-height: 1; font-size: 16px; font-weight: bold; }
 .blogpage_item__morelink:hover { color: #00b6bd; }
 
 

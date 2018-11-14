@@ -589,9 +589,8 @@
 
 	.managers_title { font-size: 15px; letter-spacing: 0;}
 	.managers_item__title { font-size: 9px; padding-top: 7px; padding-left: 0; }
-	.managers_form form { -ms-flex-direction: column; flex-direction: column; max-width: 280px; margin: 0 auto; }
-	.managers_form form input { margin-bottom: 10px; padding-top: 5px; padding-bottom: 5px;}
-	.managers_form .btn { height: 39px; line-height: 39px; font-size: 11px; }
+	.managers_form form input { padding-top: 5px; padding-bottom: 5px; font-size: 11px; }
+	.managers_form .btn { height: 39px; line-height: 39px; font-size: 11px; margin-left: 1em; }
 
 
 	.footer { padding: 11px 0 5px; }
@@ -655,9 +654,7 @@
 	.contacts_soc__item { margin-right: 15px !important; }
 
 	.contacts_row > .buy_tabs { -ms-flex-pack: start; justify-content: flex-start; }
-	.managers_form form input,
-	.managers_form form button { margin-left: 0; margin-right: 0; }
-	.contacts_bottom__left { margin-right: 0; }
+
 
 
 	.about_item__info { -ms-flex-wrap: wrap; flex-wrap: wrap; }
@@ -702,6 +699,11 @@
 
 	.photo_list__item { height: 240px; }
 	.photo_webcam { height: 240px; }
+
+
+	.managers_form form input { padding-left: 30px; font-size: 11px; background-position: 6px center; margin: 0 .3em; max-width: 100px; }
+	.managers_form .btn { height: 39px; line-height: 39px; font-size: 11px; margin: 0 .3em; padding: 0 10px; }
+	.managers_form .btn svg { margin-left: 5px; }
 
 
 }
