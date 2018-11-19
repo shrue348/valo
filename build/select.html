@@ -669,8 +669,8 @@
 						<a href="" class="filter_sort__item filter_sort__item-active"><i class="icon">↓</i>срок сдачи</a>
 
 						<div class="cat_type_icons">
-							<a href="javascript:;" class="cat_type_icons__item cat_type_icons__item-active" onclick="$('.app_list').removeClass('app_list-grid').addClass('app_list-list')">1</a>
-							<a href="javascript:;" class="cat_type_icons__item" onclick="$('.app_list').removeClass('app_list-list').addClass('app_list-grid')">2</a>
+							<a href="javascript:;" onclick="$('.app_list').addClass('loading'); setTimeout(()=>{ $('.app_list').removeClass('app_list-grid').addClass('app_list-list')}, 100); setTimeout(()=>{ $('.app_list').removeClass('loading')}, 300);" class="">111</a>
+							<a href="javascript:;" onclick="$('.app_list').addClass('loading'); setTimeout(()=>{ $('.app_list').removeClass('app_list-list').addClass('app_list-grid')}, 100); setTimeout(()=>{ $('.app_list').removeClass('loading')}, 300);" class="">222</a>
 						</div>
 					</div>
 				</div>
@@ -756,7 +756,7 @@
 								
 							<div class="app_item__lb">
 								<div class="app_item__compare">
-									<a href="" class="app_item__compare_icon app_item__compare_icon-compare app_item__compare_icon-active">
+									<a href="" class="app_item__compare_icon app_item__compare_icon-compare ">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 viewBox="0 0 590.4 542" style="enable-background:new 0 0 590.4 542;" xml:space="preserve">
 
@@ -821,7 +821,7 @@
 								
 							<div class="app_item__lb">
 								<div class="app_item__compare">
-									<a href="" class="app_item__compare_icon app_item__compare_icon-compare app_item__compare_icon-active">
+									<a href="" class="app_item__compare_icon app_item__compare_icon-compare ">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 viewBox="0 0 590.4 542" style="enable-background:new 0 0 590.4 542;" xml:space="preserve">
 
@@ -886,7 +886,7 @@
 								
 							<div class="app_item__lb">
 								<div class="app_item__compare">
-									<a href="" class="app_item__compare_icon app_item__compare_icon-compare app_item__compare_icon-active">
+									<a href="" class="app_item__compare_icon app_item__compare_icon-compare ">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 viewBox="0 0 590.4 542" style="enable-background:new 0 0 590.4 542;" xml:space="preserve">
 
@@ -951,7 +951,7 @@
 								
 							<div class="app_item__lb">
 								<div class="app_item__compare">
-									<a href="" class="app_item__compare_icon app_item__compare_icon-compare app_item__compare_icon-active">
+									<a href="" class="app_item__compare_icon app_item__compare_icon-compare ">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 viewBox="0 0 590.4 542" style="enable-background:new 0 0 590.4 542;" xml:space="preserve">
 
@@ -1016,7 +1016,7 @@
 								
 							<div class="app_item__lb">
 								<div class="app_item__compare">
-									<a href="" class="app_item__compare_icon app_item__compare_icon-compare app_item__compare_icon-active">
+									<a href="" class="app_item__compare_icon app_item__compare_icon-compare ">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 viewBox="0 0 590.4 542" style="enable-background:new 0 0 590.4 542;" xml:space="preserve">
 
@@ -1081,7 +1081,7 @@
 								
 							<div class="app_item__lb">
 								<div class="app_item__compare">
-									<a href="" class="app_item__compare_icon app_item__compare_icon-compare app_item__compare_icon-active">
+									<a href="" class="app_item__compare_icon app_item__compare_icon-compare ">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 viewBox="0 0 590.4 542" style="enable-background:new 0 0 590.4 542;" xml:space="preserve">
 
@@ -1146,7 +1146,7 @@
 								
 							<div class="app_item__lb">
 								<div class="app_item__compare">
-									<a href="" class="app_item__compare_icon app_item__compare_icon-compare app_item__compare_icon-active">
+									<a href="" class="app_item__compare_icon app_item__compare_icon-compare ">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 viewBox="0 0 590.4 542" style="enable-background:new 0 0 590.4 542;" xml:space="preserve">
 
@@ -1282,17 +1282,17 @@
 						<a href="" class="pagi__link pagi__link-side">в конец</a>
 					</div>
 
-					<ul class="hash clear">
-						<li class="hash_item">Студия</li>
-						<li class="hash_item">2х комнатные</li>
-						<li class="hash_item">с 2 спальнями</li>
-						<li class="hash_item">с видом на улицу</li>
-						<li class="hash_item">комфорт класса</li>
-						<li class="hash_item">1 комнатные</li>
-						<li class="hash_item">с 1 спальней</li>
-						<li class="hash_item">с видом во двор</li>
-						<li class="hash_item">готовые</li>
-						<li class="hash_item">недорогие</li>
+					<ul class="hash row ">
+						<li class="hash__item hash__item-selected col-2">Студия</li>
+						<li class="hash__item col-2">2х комнатные</li>
+						<li class="hash__item col-2">с 2 спальнями</li>
+						<li class="hash__item col-2">с видом на улицу</li>
+						<li class="hash__item col-2">комфорт класса</li>
+						<li class="hash__item col-2">1 комнатные</li>
+						<li class="hash__item col-2">с 1 спальней</li>
+						<li class="hash__item col-2">с видом во двор</li>
+						<li class="hash__item col-2">готовые</li>
+						<li class="hash__item col-2">недорогие</li>
 					</ul>
 
 					<div class="txt">

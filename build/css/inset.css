@@ -225,7 +225,7 @@
 /*===Выбор апартаментов===*/
 .main_inside__header-sel { padding: 0 35px; }
 
-.filter { padding: 10px 35px; border-top: 2px solid #3c4d63; border-bottom: 2px solid #3c4d63; }
+.filter { padding: 10px 35px; border-top: 2px solid #3c4d63; margin-bottom: 15px; }
 .filter_title { text-transform: uppercase; font-size: 18px; color: #0d233f; margin-bottom: 15px; }
 .filter_btn_block { text-align: right; }
 .filter_btn_block .btn { font-size: 14px; border: 1px solid #fff; height: 40px; line-height: 40px; background-color: rgba(87,181,187,1); }
@@ -243,18 +243,18 @@
 .cat_type_icons { margin-left: auto; }
 
 
-.app_list { padding-top: 6px; border-top: 2px solid #3b4c61; margin-bottom: 50px; }
-.app_item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; height: 132px; background-color: rgba(255,255,255,.76); border: 1px solid #9b9b9c; transition: all .2s ease; }
+.app_list { padding-top: 6px; border-top: 2px solid #3b4c61; margin-bottom: 50px; transition: all .2s ease; }
+.app_item { display: -ms-flexbox; display: flex; -ms-flex-align: stretch; align-items: stretch; height: 132px; background-color: rgba(255,255,255,.76); border: 1px solid #9b9b9c; transition: all .2s ease; }
 .app_item__grid_item { margin-bottom: 10px; box-sizing: border-box; }
 .app_item__img_block { -ms-flex: 3 1 auto; flex: 3 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; padding-left: 35px; }
 
 .app_item__props { -ms-flex: 6 1 auto; flex: 6 1 auto; display: -ms-flexbox; display: flex; -ms-flex-align: stretch; align-items: stretch; -ms-flex-pack: center; justify-content: center; }
 .app_item__lb { -ms-flex: 5 1 auto; flex: 5 1 auto; display: -ms-flexbox; display: flex; -ms-flex-align: stretch; align-items: stretch; -ms-flex-pack: center; justify-content: center; }
 
-.app_item__rooms { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease;  }
-.app_item__area { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease;  }
-.app_item__flor { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease;  }
-.app_item__price { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease;  }
+.app_item__rooms { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+.app_item__area { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+.app_item__flor { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+.app_item__price { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 .app_item__compare { -ms-flex: 2 1 auto; flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease;  }
 .app_item__btn_block { -ms-flex: 3 1 auto; flex: 3 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; padding-right: 35px; -ms-flex-item-align: center; align-self: center;}
 .app_item__btn { background-color: #fff; border: 1px solid #0d233f; color: #0d233f; text-align: center; height: 37px; line-height: 37px; display: block; font-size: 12px; font-weight: 300; text-transform: uppercase; padding: 0 15px; transition: all .2s ease; }
@@ -277,8 +277,8 @@
 .app_item:hover .app_item__compare .app_item__compare_icon-active svg { fill: #e0508f; }
 
 
-.app_list.app_list-list {  }
-.app_list.app_list-grid { padding-left: 20px; padding-right: 20px; -ms-flex-wrap: wrap; flex-wrap: wrap; display: -ms-flexbox; display: flex; -ms-flex-align: start; align-items: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
+.app_list.app_list-list { opacity: 1; }
+.app_list.app_list-grid { padding-left: 20px; padding-right: 20px; -ms-flex-wrap: wrap; flex-wrap: wrap; display: -ms-flexbox; display: flex; -ms-flex-align: start; align-items: flex-start; -ms-flex-pack: start; justify-content: flex-start; opacity: 1; }
 .app_list.app_list-list .app_item__grid_item { margin-bottom: 10px; }
 .app_list.app_list-grid .app_item__grid_item { margin-bottom: 10px; padding: 0 15px; -ms-flex: 0 0 33.33%; flex: 0 0 33.33%; width: 33.33%; }
 .app_list.app_list-grid .app_item { height: auto; -ms-flex-wrap: wrap; flex-wrap: wrap; }
@@ -287,7 +287,7 @@
 .app_list.app_list-grid .app_item__lb { -ms-flex: 0 0 40%; flex: 0 0 40%; -ms-flex-direction: column; flex-direction: column; padding: 10px; box-sizing: border-box; width: 40%; -ms-flex-item-align: stretch; align-self: stretch; -ms-flex-align: end; align-items: flex-end; }
 .app_list.app_list-grid .app_item__compare { -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; }
 .app_list.app_list-grid .app_item__compare_icon-compare { margin-top: 0; margin-bottom: 0; }
-.app_list.app_list-grid .app_item__rooms { padding: 0; }
+.app_list.app_list-grid .app_item__rooms { padding: 0; display: block; }
 .app_list.app_list-grid .app_item__rooms:before { content: 'Апартаменты: '; }
 .app_list.app_list-grid .app_item__area { padding: 0; }
 .app_list.app_list-grid .app_item__area:before { content: 'Площадь: '; }
@@ -304,6 +304,13 @@
 .app_list.app_list-grid .app_item__btn { margin-top: 10px; }
 
 
+.app_list.app_list-list .app_item__grid_item:first-child .app_item__rooms:before { content: 'Комнатность'; position: absolute; margin: auto; top: -25px; left: 0; right: 0; text-align: center; font-size: 12px; text-transform: uppercase; color: #0d233f; font-weight: 400; }
+.app_list.app_list-list .app_item__grid_item:first-child .app_item__area:before { content: 'Площадь'; position: absolute; margin: auto; top: -25px; left: 0; right: 0; text-align: center; font-size: 12px; text-transform: uppercase; color: #0d233f; font-weight: 400; }
+.app_list.app_list-list .app_item__grid_item:first-child .app_item__flor:before { content: 'Этаж'; position: absolute; margin: auto; top: -25px; left: 0; right: 0; text-align: center; font-size: 12px; text-transform: uppercase; color: #0d233f; font-weight: 400; }
+.app_list.app_list-list .app_item__grid_item:first-child .app_item__price:before { content: 'цена'; position: absolute; margin: auto; top: -25px; left: 0; right: 0; text-align: center; font-size: 12px; text-transform: uppercase; color: #0d233f; font-weight: 400; }
+
+.app_list.loading { opacity: 0; }
+
 .pagi { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; margin-bottom: 25px; -ms-flex-align: center; align-items: center; }
 .pagi__link-arrow { margin: 0 5px; }
 .pagi__link-arrow svg { display: block; line-height: 1; fill: #32bcc1; transition: all .2s ease; }
@@ -318,6 +325,7 @@
 .pagi__link-num:hover { background-color: #32bcc1; border-color: #fff; color: #fff;  }
 
 
-
-
-
+.hash { margin-bottom: 15px; }
+.hash__item { font-size: 14px; text-transform: uppercase; margin-bottom: 10px; font-weight: 300; list-style-type: disc; list-style-position: inside; }
+.hash__item-selected { font-weight: 600; }
+.hash__item:nth-child(5n+1) { clear: left; }
