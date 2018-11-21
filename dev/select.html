@@ -354,8 +354,12 @@
 						<a href="" class="filter_sort__item filter_sort__item-active"><i class="icon">↓</i>срок сдачи</a>
 
 						<div class="cat_type_icons">
-							<a href="javascript:;" onclick="$('.app_list').addClass('loading'); setTimeout(()=>{ $('.app_list').removeClass('app_list-grid').addClass('app_list-list')}, 100); setTimeout(()=>{ $('.app_list').removeClass('loading')}, 300);" class="">111</a>
-							<a href="javascript:;" onclick="$('.app_list').addClass('loading'); setTimeout(()=>{ $('.app_list').removeClass('app_list-list').addClass('app_list-grid')}, 100); setTimeout(()=>{ $('.app_list').removeClass('loading')}, 300);" class="">222</a>
+							<a href="javascript:;" onclick="$('.app_list').addClass('loading'); setTimeout(()=>{ $('.app_list').removeClass('app_list-grid').addClass('app_list-list')}, 100); setTimeout(()=>{ $('.app_list').removeClass('loading')}, 300); $(this).next().removeClass('active'); $(this).addClass('active')" class="active">
+								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><defs><style>.cls-1{fill:#fff;stroke:#c3518c;stroke-miterlimit:10;}</style></defs><title>button</title><rect class="cls-1" x="0.5" y="0.5" width="29" height="7"/><rect class="cls-1" x="0.5" y="12.5" width="29" height="7"/></svg>
+							</a>
+							<a href="javascript:;" onclick="$('.app_list').addClass('loading'); setTimeout(()=>{ $('.app_list').removeClass('app_list-list').addClass('app_list-grid')}, 100); setTimeout(()=>{ $('.app_list').removeClass('loading')}, 300); $(this).prev().removeClass('active'); $(this).addClass('active')" class="">
+								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.79 20.09"><defs><style>.cls-1{fill:#fff;stroke:#c3518c;stroke-miterlimit:10;}</style></defs><title>button</title><rect class="cls-1" x="0.5" y="12.5" width="7.79" height="7.09"/><rect class="cls-1" x="0.5" y="0.5" width="7.79" height="7.09"/><rect class="cls-1" x="13.5" y="12.5" width="7.79" height="7.09"/><rect class="cls-1" x="13.5" y="0.5" width="7.79" height="7.09"/><rect class="cls-1" x="26.5" y="12.5" width="7.79" height="7.09"/><rect class="cls-1" x="26.5" y="0.5" width="7.79" height="7.09"/></svg>
+							</a>
 						</div>
 					</div>
 				</div>

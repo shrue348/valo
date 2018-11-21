@@ -241,6 +241,9 @@
 
 
 .cat_type_icons { margin-left: auto; }
+.cat_type_icons a { margin-left: 25px; }
+.cat_type_icons svg { width: 30px; height: 20px; }
+.cat_type_icons a.active .cls-1 { fill: #0d233f; }
 
 
 .app_list { padding-top: 6px; border-top: 2px solid #3b4c61; margin-bottom: 50px; transition: all .2s ease; }
