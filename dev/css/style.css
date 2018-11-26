@@ -983,12 +983,13 @@ select {
 .managers_top { padding: 45px 0 35px; }
 .managers_title { font-size: 59px; color: #fff; font-weight: 100; text-align: center; letter-spacing: -1px; margin-bottom: 30px; }
 .managers_list { display: -ms-flexbox; display: flex; -ms-flex-align: end; align-items: flex-end; }
+.managers_list .slick-track { display: flex; align-items: flex-end; }
 .managers_item__title { color: #fff; font-size: 20px; font-weight: bold; text-transform: uppercase; position: relative; padding-top: 25px; padding-left: 6px; line-height: 1.1; height: 2.2em;}
 .managers_item__title:before { top: -3px; left: 0; content: ''; position: absolute; border-top: 4px solid #00b6bd; width: 0; max-width: 244px; transition: all 1s ease; transition-delay: 1s; }
 
 .managers_title.full-visible + .managers_list .managers_item__title:before { width: 100%; }
 
-.managers_form { background-color: rgba(255,255,255,.6); padding: 29px 0; }
+.managers_form { background-color: rgba(255,255,255,.6); padding: 13px 0; }
 .managers_form form { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
 .managers_form_success { text-align: center; color: #fff; font-weight: 100; font-size: 20px; display: none; }
 .managers_item:nth-child(2) { transition-delay: .2s !important; }
@@ -1009,7 +1010,7 @@ select {
 /*-----------------------*/
 .dropdown { position: relative; }
 .dropdown.open .dropdown_data { display: block; }
-.dropdown_data { position: absolute; display: none; border: 1px solid #1f334d; background-color: #fff; left: 0; top: 42px; width: 100%; box-sizing: border-box; }
+.dropdown_data { position: absolute; display: none; border: 1px solid #1f334d; background-color: #fff; left: 0; top: 42px; width: 100%; box-sizing: border-box; z-index: 10; }
 .dropdown_btn { 
   height: 40px;
   line-height: 36px;
@@ -1065,34 +1066,6 @@ select {
 }
 
 
-.modal-open { overflow: hidden;}
-.modal { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; display: none; overflow: hidden; }
-.modal.fade .modal-dialog {
-  transition:         transform .3s ease-out;
-  transform: translate(0, -25%);
-}
-.modal.in .modal-dialog {
-  transform: translate(0, 0);
-}
-.modal-open .modal { overflow-x: hidden; overflow-y: auto;}
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
-  background-color: #fff; 
-  border: 0px solid #abbdab;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6); 
-  box-sizing: border-box; 
-  left: 0; margin: auto; max-width: 310px; outline: 0 none; right: 0; top: 10%; width: 100%; z-index: 1050;
-}
-.modal .close { border: medium none; cursor: pointer; display: block; padding: 0; position: absolute; right: 10px; top: 10px; transition: all 0.3s linear 0s; width: 30px; height: 30px; background: url(../img/close.png) no-repeat scroll center transparent;}
-
-.modal-backdrop { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; background-color: #000;}
-.modal-backdrop.fade { filter: alpha(opacity=0); opacity: 0;}
-.modal-backdrop.in { filter: alpha(opacity=50); opacity: .5;}
-.modal_check { color: #848282; font-size: 11px; margin-bottom: 40px; }
-
-
 .check { display: block; margin-bottom: 8px; }
 .check input[type=checkbox] { display: none; }
 .check__title { padding: 0 30px 0 0; position: relative; font-size: 14px; text-transform: uppercase; }
@@ -1108,126 +1081,80 @@ select {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modal-open { overflow: hidden;}
+.modal { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; display: none; overflow: hidden; -webkit-overflow-scrolling:touch}
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
+          transition:         transform .3s ease-out;
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+       -o-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.modal-open .modal { overflow-x: hidden; overflow-y: auto;}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  background-color: #fff; 
+  border: 0px solid #abbdab;
+  box-sizing: border-box; 
+  left: 0; 
+  margin: auto; 
+  max-width: 310px; 
+  outline: 0 none; 
+  right: 0; 
+  top: 10%; 
+  width: 100%; 
+  z-index: 1050;
+  box-sizing: border-box;
+  padding: 35px 20px 20px;
+  z-index: 1050;
+  margin: auto;
+  width: 100%;
+  max-width: 310px;
+  background-color: #f0f0f0;
+  border: 1px solid #1c2840;
+}
+.modal .close {
+  border: medium none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 23px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s linear 0s;
+  width: 23px;
+  z-index: 10;
+  font-size: 20px;
+}
+.modal .close:hover { background-color: #fff; }
+.modal .close:active { background-color: #f0f0f0; }
+.modal-backdrop { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; background-color: #000;}
+.modal-backdrop.fade { filter: alpha(opacity=0); opacity: 0;}
+.modal-backdrop.in { filter: alpha(opacity=50); opacity: .5;}
+
+.modal-dialog { color: #1c2840; }
+.modal_title { font-size: 30px; font-weight: bold; text-align: center; margin-bottom: 10px; }
+.modal_subtitle { font-size: 12px; text-align: center; margin-bottom: 10px; }
+
+.modal-dialog input[type=text],
+.modal-dialog textarea { width: 100%; margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px; }
+.modal-dialog textarea { padding-left: 15px; }
+.modal-dialog .btn { margin-left: auto; margin-right: auto; display: block; }
+.modal-dialog .check { margin-bottom: 15px; }
+.modal-dialog .check__title { font-size: 10px; padding-right: 0; padding-left: 30px; }
+.modal-dialog .check__title:after { right: initial; left: 0; }
 
 
 
