@@ -794,7 +794,7 @@
 
 		<div class="call_btns">
 			<div class="call_btns_wrap">
-				<a href="javascript:;" class="call_btns_item call_btns_item-call">
+				<a href="javascript:;" class="call_btns_item call_btns_item-call" data-toggle="modal" data-target="#modal_call">
 					<div class="call_btns_item__icon">
 						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 viewBox="0 0 10.8 10.8" style="enable-background:new 0 0 10.8 10.8;" xml:space="preserve">
@@ -814,7 +814,7 @@
 					</div>
 					<div class="call_btns_item__label">Заказать звонок</div>
 				</a>
-				<a href="javascript:;" class="call_btns_item call_btns_item-mail">
+				<a href="javascript:;" class="call_btns_item call_btns_item-mail" data-toggle="modal" data-target="#modal_mail">
 					<div class="call_btns_item__icon">
 						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 viewBox="0 0 10.3 8" style="enable-background:new 0 0 10.3 8;" xml:space="preserve">
@@ -852,5 +852,51 @@
 		<div class="new_footer__copy">© 2018 ООО «ГАЛС» Сайт не является публичной офертой*</div>
 		<a href="#" class="new_footer__link">Разрешительная документация</a>
 		<a href="#" class="new_footer__link">Политика конфиденциальности</a>
+	</div>
+</div>
+
+
+<div id="modal_call" class="modal fade" >
+	<div class="modal-dialog">
+		<a href="javascript:;" class="close" data-dismiss="modal"><i class="icon-cancel"></i></a>
+
+		<div class="modal_title">Заказать звонок:</div>
+		<div class="modal_subtitle">Вы можете оставить свои контактные данные и наши менеджеры свяжутся с вами в ближайшее вермя.</div>
+		<form action="">
+				<input type="text" class="form_input form_input-name" placeholder="Ваше имя" name="name">
+				<input type="text" class="form_input form_input-phone" placeholder="Телефон" name="phone">
+				<input type="text" class="form_input form_input-date" placeholder="Удобное время" name="date">
+
+				<label class="check">
+					<input type="checkbox">
+					<div class="check__title">Согласен с политикой обработки персональных данных</div>
+				</label>
+				<button class="btn">Отправить <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.005 L10.004,9.999 L-0.000,20.002 L5.726,10.335 L-0.000,-0.005 Z"></path></svg></button>
+			</form>
+			<div class="contacts_form_success">Спасибо!</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal_mail" class="modal fade" >
+	<div class="modal-dialog">
+		<a href="javascript:;" class="close" data-dismiss="modal"><i class="icon-cancel"></i></a>
+
+		<div class="modal_title">Написать письмо:</div>
+		<div class="modal_subtitle">Оставьте свои пожелания или задайте вопрос</div>
+
+
+		<form action="">
+				<input type="text" class="form_input form_input-name" placeholder="Ваше имя" name="name">
+				<input type="text" class="form_input form_input-phone" placeholder="Телефон" name="phone">
+				<textarea class="form_input form_input-text" placeholder="Текст сообщения"></textarea>
+				<label class="check">
+					<input type="checkbox">
+					<div class="check__title">Согласен с политикой обработки персональных данных</div>
+				</label>
+				<button class="btn">Отправить <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.005 L10.004,9.999 L-0.000,20.002 L5.726,10.335 L-0.000,-0.005 Z"></path></svg></button>
+			</form>
+			<div class="contacts_form_success">Спасибо!</div>
+		</div>
 	</div>
 </div>

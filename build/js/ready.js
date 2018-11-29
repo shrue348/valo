@@ -536,21 +536,21 @@ $(function(){
   var snapSlider2 = document.getElementById('slider-range2');
 
   noUiSlider.create(snapSlider2, {
-    start: [2.5, 6.5],
+    start: [2500000, 6500000],
     connect: true,
-    step: .1,
+    step: 100000,
     tooltips: false,
     format: {
       from: function ( value ) {
-        return number_format(value, 0, ',', ' ');
+        return number_format(value, 0, ',', '');
       },
       to: function ( value ) {
-        return number_format(value, 1, ',', ' ');
+        return number_format(value, 0, ',', '');
       }
     },
     range: {
-      'min': 2.5,
-      'max': 6.5
+      'min': 2500000,
+      'max': 6500000
     }
   });
 

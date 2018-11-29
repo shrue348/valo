@@ -65,6 +65,7 @@
 
 
 .left_menu_in { font-size: 14px; }
+.left_menu_in.affix { position: fixed; top: 120px; }
 .left_menu_in__item { margin-bottom: 13px; position: relative; padding-left: 33px; }
 .left_menu_in__item:before { position: absolute; left: 0; top: .5em; content: ''; width: 4px; height: 3px; background-color: #e2e4e6; border-radius: 4px; }
 .left_menu_in__item:hover:before { background-color: #fff; }
@@ -236,13 +237,22 @@
 .filter_drop_list__item {}
 .filter_sort { display: -ms-flexbox; display: flex; font-size: 12px; margin-bottom: 15px; }
 .filter_sort__title { margin-right: 15px; }
-.filter_sort__item { margin-right: 15px; text-decoration: underline;  }
+.filter_sort__item { margin-right: 15px;  }
 .filter_sort__item-active { color: #e0508f; }
-
+.filter_sort__item span { text-decoration: underline; }
 
 .filter_slider__range { margin-bottom: 8px; margin-top: -15px; }
 .filter_slider__val { background-color: #fff; text-align: center; white-space: nowrap; color: #21354e; border: 1px solid #21354e; height: 40px; line-height: 40px; box-sizing: border-box; }
 .filter_slider__label { text-align: center; margin-top: 5px; font-size: 14px; text-transform: uppercase; color: #21354e; }
+
+#slider-snap-value-lower1:before { content: 'от: '; }
+#slider-snap-value-lower2:before { content: 'от: '; }
+#slider-snap-value-upper1:before { content: 'до: '; }
+#slider-snap-value-upper2:before { content: 'до: '; }
+#slider-snap-value-lower1 { text-align: left; padding: 0 10px; }
+#slider-snap-value-lower2 { text-align: left; padding: 0 10px; }
+#slider-snap-value-upper1 { text-align: left; padding: 0 10px; }
+#slider-snap-value-upper2 { text-align: left; padding: 0 10px; }
 
 
 .cat_type_icons { margin-left: auto; }
@@ -255,10 +265,8 @@
 .app_item { display: flex; align-items: stretch; height: 132px; background-color: rgba(255,255,255,.76); border: 1px solid #9b9b9c; transition: all .2s ease; }
 .app_item__grid_item { margin-bottom: 10px; box-sizing: border-box; }
 .app_item__img_block { flex: 3 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; padding-left: 35px; }
-
 .app_item__props { flex: 6 1 auto; display: flex; align-items: stretch; justify-content: center; }
 .app_item__lb { flex: 5 1 auto; display: flex; align-items: stretch; justify-content: center; }
-
 .app_item__rooms { flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: flex; align-items: center; }
 .app_item__area { flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: flex; align-items: center; }
 .app_item__flor { flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: flex; align-items: center; }
@@ -331,6 +339,7 @@
 .pagi__link-num { width: 27px; font-size: 16px; }
 .pagi__link-side:hover, 
 .pagi__link-num:hover { background-color: #32bcc1; border-color: #fff; color: #fff;  }
+.pagi__link-num-active { background-color: #32bcc1; border-color: #fff; color: #fff;  }
 
 
 .hash { margin-bottom: 15px; }
