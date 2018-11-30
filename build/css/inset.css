@@ -349,7 +349,7 @@
 
 
 
-.call_btns { position: relative; }
+.call_btns { position: relative; position: fixed; margin: auto; z-index: 10; max-width: 1420px; left: 0; right: 0; bottom: 50px; }
 .call_btns_wrap { position: absolute; left: 15px; bottom: 0; z-index: 3; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
 .call_btns_item { text-align: center; margin-bottom: 5px; }
 .call_btns_item__icon { height: 40px; width: 40px; text-align: center; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; box-sizing: border-box; background-color: #fff; border-radius: 40px; margin-left: auto; margin-right: auto; margin-bottom: 3px; }

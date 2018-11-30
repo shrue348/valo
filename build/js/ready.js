@@ -103,6 +103,30 @@ $(function() {
 });  
 
 
+// back to top
+$(function(){
+  $("#backToTop").addClass('hide'); //Back to top
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      console.log(1)
+      $('#backToTop').removeClass('hide');
+    } else {
+      console.log(21)
+      $('#backToTop').addClass('hide');
+    }
+  })
+})
+
+// back to top
+$(function(){
+  $('.call_btns_item-up').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 700);
+    return false;
+  });
+})
+
 
 // ждем загрузки картинок
 $(window).load(function(){
@@ -561,16 +585,5 @@ $(function(){
 
   snapSlider2.noUiSlider.on('update', function (values, handle) {
     snapValues2[handle].innerHTML = values[handle];
-  });
-})
-
-
-// back to top
-$(function(){
-  $('.call_btns_item-up').click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 700);
-    return false;
   });
 })
