@@ -253,6 +253,14 @@
 #slider-snap-value-lower2 { text-align: left; padding: 0 10px; }
 #slider-snap-value-upper1 { text-align: left; padding: 0 10px; }
 #slider-snap-value-upper2 { text-align: left; padding: 0 10px; }
+.filter_slider__val input[type=text] { padding: 0; margin: 0; border: 0 none; }
+
+#slider-snap-value-lower1 input,
+#slider-snap-value-upper1 input { width: 50px; }
+#slider-snap-value-lower2 input,
+#slider-snap-value-upper2 input { width: 80px; }
+
+
 
 
 .cat_type_icons { margin-left: auto; }

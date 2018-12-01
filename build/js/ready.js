@@ -108,10 +108,8 @@ $(function(){
   $("#backToTop").addClass('hide'); //Back to top
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
-      console.log(1)
       $('#backToTop').removeClass('hide');
     } else {
-      console.log(21)
       $('#backToTop').addClass('hide');
     }
   })
@@ -403,7 +401,7 @@ $(function(){
 
 
 
-//карта
+// //карта
 $(function(){
   // if ( location.href == '/' ){
     ymaps.ready(init);
@@ -547,13 +545,21 @@ $(function(){
   });
 
   var snapValues = [
-    document.getElementById('slider-snap-value-lower1'),
-    document.getElementById('slider-snap-value-upper1')
+    $('#slider-snap-value-lower1 input'),
+    $('#slider-snap-value-upper1 input')
   ];
 
   snapSlider.noUiSlider.on('update', function (values, handle) {
-    snapValues[handle].innerHTML = values[handle];
+    snapValues[handle].val(values[handle])
   });
+
+  $('#slider-snap-value-lower1 input').on('change', function(){
+    snapSlider.noUiSlider.set([ $('#slider-snap-value-lower1 input').val(), null]);
+  });
+  $('#slider-snap-value-upper1 input').on('change', function(){
+    snapSlider.noUiSlider.set([null, $('#slider-snap-value-upper1 input').val()]);
+  });
+
 
   // slider 2
 
@@ -579,11 +585,18 @@ $(function(){
   });
 
   var snapValues2 = [
-    document.getElementById('slider-snap-value-lower2'),
-    document.getElementById('slider-snap-value-upper2')
+    $('#slider-snap-value-lower2 input'),
+    $('#slider-snap-value-upper2 input')
   ];
 
   snapSlider2.noUiSlider.on('update', function (values, handle) {
-    snapValues2[handle].innerHTML = values[handle];
+    snapValues2[handle].val(values[handle])
+  });
+
+  $('#slider-snap-value-lower2 input').on('change', function(){
+    snapSlider2.noUiSlider.set([ $('#slider-snap-value-lower2 input').val(), null]);
+  });
+  $('#slider-snap-value-upper2 input').on('change', function(){
+    snapSlider2.noUiSlider.set([null, $('#slider-snap-value-upper2 input').val()]);
   });
 })

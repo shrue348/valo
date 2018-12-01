@@ -1149,7 +1149,7 @@ select {
 .check input[type=checkbox]:checked + .check__title:after { background-color: #e0508f; border-color: #fff; }
 
 .dropdown_data .check { margin-bottom: 0; }
-.dropdown_data .check__title { padding: 5px 35px 5px 8px; }
+.dropdown_data .check__title { padding: 5px 35px 5px 8px; white-space: nowrap; }
 .dropdown_data .check input[type=checkbox]:checked + .check__title { background-color: rgba(21,185,191,.63); }
 .dropdown_data .check__title:after { right: 8px; }
 
