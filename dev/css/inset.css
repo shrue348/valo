@@ -256,9 +256,9 @@
 .filter_slider__val input[type=text] { padding: 0; margin: 0; border: 0 none; }
 
 #slider-snap-value-lower1 input,
-#slider-snap-value-upper1 input { width: 50px; }
+#slider-snap-value-upper1 input { width: 25px; }
 #slider-snap-value-lower2 input,
-#slider-snap-value-upper2 input { width: 80px; }
+#slider-snap-value-upper2 input { width: 56px; }
 
 
 
@@ -313,7 +313,7 @@
 .app_list.app_list-grid .app_item__compare_icon-compare { margin-top: 0; margin-bottom: 0; }
 .app_list.app_list-grid .app_item__rooms { padding: 0; display: block; align-items: baseline;}
 .app_list.app_list-grid .app_item__rooms:before { content: 'Апартаменты: '; }
-.app_list.app_list-grid .app_item__area { padding: 0; align-items: baseline;}
+.app_list.app_list-grid .app_item__area { padding: 0; }
 .app_list.app_list-grid .app_item__area:before { content: 'Площадь: '; }
 .app_list.app_list-grid .app_item__flor { padding: 0; align-items: baseline;}
 .app_list.app_list-grid .app_item__flor:before { content: 'Этаж: '; }
