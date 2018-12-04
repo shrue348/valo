@@ -415,8 +415,7 @@ $(function(){
       }),
 
       myGeoObject = new ymaps.GeoObject({
-        geometry: {
-            type: "Point",
+        geometry: {type: "Point",
             coordinates: [55.76, 37.64]
         },
         properties: {
@@ -442,27 +441,28 @@ $(function(){
   let counter = 2
 
   $('.lvl__more').on('click', function(){
-    $.get('_europe.html', function(data) {
-      var elementClick = '.lvl__more'
-      var destination = $(elementClick).offset().top;
-      setTimeout(function(){
-        jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1600);
-      }, 300)
-        
-      $("#lvl").css({ height: $("#lvl_inside").height()});
-      $(data).appendTo('#lvl_inside')
-      $("#lvl").css({ height: $("#lvl_inside").height()});
+    var data = '<div class="lvl_item wide"><div class="wide__in"><div class="lvl_item__img"><div class="gdlr-core-pbf-background-wrap"><div class="gdlr-core-parallax gdlr-core-js" data-parallax-speed="0" style="background-image: url(img/lvl_1.jpg);"></div></div></div></div><div class="wide__in"><div class="lvl_item__info animated fade fade-right"><img src="img/lvl_icon_1.png" alt="БАССЕЙН и SPA" class="lvl_item__ico"><div class="lvl_item__title">Бассейн и SPA</div><div class="lvl_item__desc">Собственный бассейн и SPA-комплекс в апарт-отеле − огромное преимущество при прохождении сертификации. Эти услуги позволят гостям комплекса хорошо проводить время в отеле, заняться здоровьем, внешностью и расслабиться в перерывах между работой, деловыми мероприятиями, осмотром достопримечательностей города и т. д. И главное  − жителям VALO никуда не придется ехать. Достаточно просто спуститься на первый этаж собственного апарт-комплекса, где их ждут просторный бассейн и разнообразные SPA-услуги.</div></div></div></div><div class="lvl_item wide"><div class="wide__in"><div class="lvl_item__img"><div class="gdlr-core-pbf-background-wrap"><div class="gdlr-core-parallax gdlr-core-js" data-parallax-speed="0" style="background-image: url(img/lvl_2.jpg);"></div></div></div></div><div class="wide__in"><div class="lvl_item__info animated fade fade-left"><img src="img/lvl_icon_2.png" alt="Фитнес" class="lvl_item__ico"><div class="lvl_item__title">Фитнес</div><div class="lvl_item__desc">Спорт и фитнес − неотъемлемая часть жизни в большом городе. В путешествиях туристы  обращают внимание на наличие спортзала при отеле или в апартаментах − это уже стало стандартом, а не роскошью. Фитнес-клуб VALO позволит гостям комплекса постоянно поддерживать себя в форме и заниматься по удобному для себя графику. Залы будут оборудованы современными разнообразными тренажерами на любой вкус, а профессиональные тренеры помогут разработать программу спортивных занятий в зависимости от пожеланий клиента. </div></div></div></div><div class="lvl_item wide"><div class="wide__in"><div class="lvl_item__img"><div class="gdlr-core-pbf-background-wrap"><div class="gdlr-core-parallax gdlr-core-js" data-parallax-speed="0" style="background-image: url(img/lvl_3.jpg);"></div></div></div></div><div class="wide__in"><div class="lvl_item__info animated fade fade-right"><img src="img/lvl_icon_3.png" alt="Клининг" class="lvl_item__ico"><div class="lvl_item__title">Клининг</div><div class="lvl_item__desc">Служба клининга актуальна для тех, у кого нет времени или желания заниматься домашними делами. Профессиональная уборка позволяет поддерживать апартаменты в чистоте. У вас будут работать опытные специалисты, превосходно разбирающиеся во всех тонкостях своего дела. При этом они используют только качественное оборудование и экологичные моющие средства. Наша служба безопасности гарантирует квалификацию и надежность каждого сотрудника.</div></div></div></div>'
+    var elementClick = '.lvl__more'
+    var destination = $(elementClick).offset().top;
+    setTimeout(function(){
+      jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1600);
+    }, 300)
+      
+    $("#lvl").css({ height: $("#lvl_inside").height()});
+    $(data).appendTo('#lvl_inside')
+    $("#lvl").css({ height: $("#lvl_inside").height()});
 
-      counter += 3
+    counter += 3
 
-      setTimeout(function(){ //чтобы анимация была после скролла
-        $('.animated').viewportChecker({
-          classToAdd: 'in',
-          offset: 100,
-          invertBottomOffset: true,
-        })
-      },700)
-    });
+    setTimeout(function(){ //чтобы анимация была после скролла
+      $('.animated').viewportChecker({
+        classToAdd: 'in',
+        offset: 100,
+        invertBottomOffset: true,
+      })
+    },700)
+
+
   })
 })
 
@@ -526,77 +526,81 @@ $(function(){
 
   var snapSlider = document.getElementById('slider-range1');
 
-  noUiSlider.create(snapSlider, {
-    start: [0, 100],
-    connect: true,
-    tooltips: false,
-    format: {
-      from: function ( value ) {
-        return number_format(value, 0, ',', ' ');
+  if (snapSlider) {
+    noUiSlider.create(snapSlider, {
+      start: [0, 100],
+      connect: true,
+      tooltips: false,
+      format: {
+        from: function ( value ) {
+          return number_format(value, 0, ',', ' ');
+        },
+        to: function ( value ) {
+          return number_format(value, 0, ',', ' ');
+        }
       },
-      to: function ( value ) {
-        return number_format(value, 0, ',', ' ');
+      range: {
+        'min': 0,
+        'max': 100
       }
-    },
-    range: {
-      'min': 0,
-      'max': 100
-    }
-  });
+    });
 
-  var snapValues = [
-    $('#slider-snap-value-lower1 input'),
-    $('#slider-snap-value-upper1 input')
-  ];
+    var snapValues = [
+      $('#slider-snap-value-lower1 input'),
+      $('#slider-snap-value-upper1 input')
+    ];
 
-  snapSlider.noUiSlider.on('update', function (values, handle) {
-    snapValues[handle].val(values[handle])
-  });
+    snapSlider.noUiSlider.on('update', function (values, handle) {
+      snapValues[handle].val(values[handle])
+    });
 
-  $('#slider-snap-value-lower1 input').on('change', function(){
-    snapSlider.noUiSlider.set([ $('#slider-snap-value-lower1 input').val(), null]);
-  });
-  $('#slider-snap-value-upper1 input').on('change', function(){
-    snapSlider.noUiSlider.set([null, $('#slider-snap-value-upper1 input').val()]);
-  });
-
-
+    $('#slider-snap-value-lower1 input').on('change', function(){
+      snapSlider.noUiSlider.set([ $('#slider-snap-value-lower1 input').val(), null]);
+    });
+    $('#slider-snap-value-upper1 input').on('change', function(){
+      snapSlider.noUiSlider.set([null, $('#slider-snap-value-upper1 input').val()]);
+    });
+  }
+    
   // slider 2
 
   var snapSlider2 = document.getElementById('slider-range2');
 
-  noUiSlider.create(snapSlider2, {
-    start: [2500000, 6500000],
-    connect: true,
-    step: 100000,
-    tooltips: false,
-    format: {
-      from: function ( value ) {
-        return number_format(value, 0, ',', '');
+  if (snapSlider2) {
+    noUiSlider.create(snapSlider2, {
+      start: [2500000, 6500000],
+      connect: true,
+      step: 100000,
+      tooltips: false,
+      format: {
+        from: function ( value ) {
+          return number_format(value, 0, ',', '');
+        },
+        to: function ( value ) {
+          return number_format(value, 0, ',', '');
+        }
       },
-      to: function ( value ) {
-        return number_format(value, 0, ',', '');
+      range: {
+        'min': 2500000,
+        'max': 6500000
       }
-    },
-    range: {
-      'min': 2500000,
-      'max': 6500000
-    }
-  });
+    });
 
-  var snapValues2 = [
-    $('#slider-snap-value-lower2 input'),
-    $('#slider-snap-value-upper2 input')
-  ];
+    var snapValues2 = [
+      $('#slider-snap-value-lower2 input'),
+      $('#slider-snap-value-upper2 input')
+    ];
 
-  snapSlider2.noUiSlider.on('update', function (values, handle) {
-    snapValues2[handle].val(values[handle])
-  });
+    snapSlider2.noUiSlider.on('update', function (values, handle) {
+      snapValues2[handle].val(values[handle])
+    });
 
-  $('#slider-snap-value-lower2 input').on('change', function(){
-    snapSlider2.noUiSlider.set([ $('#slider-snap-value-lower2 input').val(), null]);
-  });
-  $('#slider-snap-value-upper2 input').on('change', function(){
-    snapSlider2.noUiSlider.set([null, $('#slider-snap-value-upper2 input').val()]);
-  });
+    $('#slider-snap-value-lower2 input').on('change', function(){
+      snapSlider2.noUiSlider.set([ $('#slider-snap-value-lower2 input').val(), null]);
+    });
+    $('#slider-snap-value-upper2 input').on('change', function(){
+      snapSlider2.noUiSlider.set([null, $('#slider-snap-value-upper2 input').val()]);
+    });
+  }
+    
 })
