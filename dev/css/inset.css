@@ -279,7 +279,7 @@
 .app_item__area { flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: flex; align-items: center; }
 .app_item__flor { flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: flex; align-items: center; }
 .app_item__price { flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; position: relative; display: flex; align-items: center; }
-.app_item__compare { flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease;  }
+.app_item__compare { flex: 2 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; display: flex; align-items: center; justify-content: center; }
 .app_item__btn_block { flex: 3 1 auto; box-sizing: border-box; padding: 15px 30px; font-size: 14px; font-weight: 300; color: #0d233f; transition: all .2s ease; padding-right: 35px; align-self: center;}
 .app_item__btn { background-color: #fff; border: 1px solid #0d233f; color: #0d233f; text-align: center; height: 37px; line-height: 37px; display: block; font-size: 12px; font-weight: 300; text-transform: uppercase; padding: 0 15px; transition: all .2s ease; }
 .app_item__btn:hover { background-color: #0d233f; border: 1px solid #fff; color: #fff; }
