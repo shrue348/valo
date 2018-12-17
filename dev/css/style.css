@@ -1078,6 +1078,7 @@ select {
 .form_input-name { background: url(../img/input_name.png) no-repeat scroll 20px center #47586b; }
 .form_input-phone { background: url(../img/input_phone.png) no-repeat scroll 20px center #47586b;  }
 .form_input-date { background: url(../img/input_date.png) no-repeat scroll 20px center #47586b;  }
+.form_input-email { background: url(../img/input_email.png) no-repeat scroll 20px center / 19px #47586b;  }
 
 
 

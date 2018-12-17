@@ -434,9 +434,8 @@ $(function(){
     
 })
 
-
-
 // узнать больше 
+
 $(function(){
   let counter = 2
 
@@ -461,35 +460,33 @@ $(function(){
         invertBottomOffset: true,
       })
     },700)
-
-
   })
 })
 
-
 //fancubox
+
 $(function() {
   $(".fancybox").fancybox();
 });
 
-
 // Открываем страницы из select как в faq
+
 $(function(){
   $('.left_menu_in-select').on('change', function(){
     location.href = $(this).val()
   })
 })
 
-
 // не закрывать фильтр при клике на чекбоксы
+
 $(function(){
   $(document).on('click', '.filter .dropdown .dropdown_data', function (e) {
     e.stopPropagation();
   });
 })
 
-
 // включаем второй каталог при ресайзе меньше 1200 
+
 $(function () {
   function setCat () {
     $('.app_list').addClass('loading'); 
@@ -520,6 +517,7 @@ $(function () {
 
 
 // ui range slider
+
 $(function(){
 
   // slider 1
@@ -602,5 +600,18 @@ $(function(){
       snapSlider2.noUiSlider.set([null, $('#slider-snap-value-upper2 input').val()]);
     });
   }
-    
+})
+
+
+// app_cart slider
+
+$(function(){
+  $('.app_card__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    arrows: true,
+    prevArrow: '<button type="button" class="app_card_arrow app_card_arrow-left"></button>',
+    nextArrow: '<button type="button" class="app_card_arrow app_card_arrow-right"></button>',
+  })  
 })
