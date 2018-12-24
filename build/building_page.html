@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="css/iconic.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/selectbox.css">
+	<link rel="stylesheet" href="css/nouislider.css">
+	<link rel="stylesheet" href="css/datepicker.css">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -22,6 +24,9 @@
 	<script src="js/parallax.js"></script>
 	<script src="js/lunbo.js"></script>
 	<script src="js/selectbox.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/bootstrap-datepicker.ru.js"></script>
 	<script src="js/ready.js"></script>
 
 
@@ -48,7 +53,7 @@
 	<div class="header_menu-hor">
 		<div class="wrapper">
 			<nav class="menu_hor">
-				<a href="javascript:;" class="menu__toggle-inside"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="31px"><image  x="0px" y="0px" width="54px" height="31px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAfCAQAAAAG7/aoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBMUCSlt24sQAAAAPElEQVRIx2P8/5+BboCJflaNWkYlwEjH9DGMg3HUslHL8AIWhtGCeNQyPGC0IB61bNQy2oPRgnjUMrwAADrCBjqc0jTwAAAAAElFTkSuQmCC" /></svg></a>
+				<a href="javascript:;" class="menu__toggle-inside"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="31px"><image	x="0px" y="0px" width="54px" height="31px"	xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAfCAQAAAAG7/aoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCBMUCSlt24sQAAAAPElEQVRIx2P8/5+BboCJflaNWkYlwEjH9DGMg3HUslHL8AIWhtGCeNQyPGC0IB61bNQy2oPRgnjUMrwAADrCBjqc0jTwAAAAAElFTkSuQmCC" /></svg></a>
 
 									<div class="menu__wrap">
 										<div class="menu__wrap-inside wrapper">
@@ -329,8 +334,8 @@
 
 				<ul class="menu_hor__list">
 					<li class="menu_hor__item"><a href="" class="menu_hor__link menu_hor__link-selected">О проекте</a></li>
-					<li class="menu_hor__item"><a href="select.html" class="menu_hor__link">Выбор апартаментов</a></li>
-					<li class="menu_hor__item"><a href="" class="menu_hor__link">Программа доходности</a></li>
+					<li class="menu_hor__item"><a href="" class="menu_hor__link">Планировки</a></li>
+					<li class="menu_hor__item"><a href="" class="menu_hor__link">Доходные программы</a></li>
 					<li class="menu_hor__item"><a href="" class="menu_hor__link">Как купить</a></li>
 					<li class="menu_hor__item"><a href="building.html" class="menu_hor__link">Ход строительства</a></li>
 					<li class="menu_hor__item"><a href="contacts.html" class="menu_hor__link">Контакты</a></li>
@@ -349,7 +354,7 @@
 								<rect id="SVGID_1_" width="580" height="580"/>
 							</defs>
 							<clipPath id="SVGID_2_">
-								<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+								<use xlink:href="#SVGID_1_"	style="overflow:visible;"/>
 							</clipPath>
 							<path class="menu_hor__icon-calc" d="M300.3,279.6V0h5.6c64.5,0,129,0,193.5,0C544.7,0,580,35.3,580,80.8c0,64.5,0,129,0,193.5v5.3H300.3z
 								 M519.6,120.4H360.2v39.4h159.4V120.4z"/>
@@ -365,7 +370,7 @@
 						</g>
 						</svg>
 					</a>
-					<a href="" class="menu_hor__icon">
+					<a href="favorite.html" class="menu_hor__icon">
 						<span class="menu_hor__icon-desc">Избранное</span>
 						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 viewBox="0 0 598.3 568.8" style="enable-background:new 0 0 598.3 568.8;" xml:space="preserve">
@@ -377,7 +382,7 @@
 								<rect id="SVGID_1_" width="598.3" height="568.8"/>
 							</defs>
 							<clipPath id="SVGID_2_">
-								<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+								<use xlink:href="#SVGID_1_"	style="overflow:visible;"/>
 							</clipPath>
 							<path class="menu_hor__icon-star" d="M0,216.4c78.2,1.9,154.9,3.8,232.4,5.7c22.1-74,44.1-148,66.2-221.9l1-0.2c22,73.9,44.1,147.8,66.2,222.2
 								c77-1.9,154.1-3.8,232.5-5.7c-2.4,1.7-3.8,2.9-5.3,3.9c-60.4,41.7-120.9,83.5-181.4,125c-3.8,2.6-4.6,4.7-3,9.2
@@ -387,7 +392,7 @@
 						</g>
 						</svg>
 					</a>
-					
+
 					<a href="#" class="menu_hor__icon menu_hor__icon-search-toggle2">
 						<span class="menu_hor__icon-desc">Поиск</span>
 						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -400,7 +405,7 @@
 								<rect id="SVGID_1_" width="422.5" height="423.8"/>
 							</defs>
 							<clipPath id="SVGID_2_">
-								<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+								<use xlink:href="#SVGID_1_"	style="overflow:visible;"/>
 							</clipPath>
 							<path class="menu_hor__icon-glass" d="M264,0c77.3,0.9,142.6,55.8,156.1,132.1c14.9,84.1-41.5,165.8-125.9,182c-32.5,6.3-63.9,2.7-94.1-10.7
 								c-3.4-1.5-5.2-1-7.6,1.5c-34.5,34.8-68.9,69.7-103.8,104c-15.2,14.9-34.1,18.6-54.1,11.3c-19.8-7.2-31.4-22-34.1-43
@@ -431,89 +436,114 @@
 
 
 <div class="main_inside_flex relative clear" style="background: url(img/faq_back.jpg) no-repeat fixed center / cover transparent;">
-	<!--  !!!футер внутри .main_inside_flex -->
+	<!--	!!!футер внутри .main_inside_flex -->
 
 
-	<div class="main_inside">
+
+	<div class="main_inside main_inside-white">
 		<div class="main_inside__in">
 			<div class="wrapper">
 				
-				<ul class="main_inside_tabs buy_tabs">
-					<li><a href="#tab1" class="buy_tabs__item">О компании</a></li>
-					<li><a href="#tab1" class="buy_tabs__item">Документы</a></li>
-					<li><a href="#tab3" class="buy_tabs__item">Управляющая компания</a></li>
-					<li><a href="#tab3" class="buy_tabs__item">Партнеры</a></li>
-					<li><a href="#tab3" class="buy_tabs__item">Блог компании</a></li>
-					<li class="active"><a href="#tab2" class="buy_tabs__item">FAQ</a></li>
-					<li><a href="#tab3" class="buy_tabs__item">Контакты</a></li>
-				</ul>
-
-				<div class="breadcrumbs">
-					<a href="" class="breadcrumbs__link">Главная</a>
-					<a href="" class="breadcrumbs__link">О проекте</a>
-					<span class="breadcrumbs__item">О компании</span>
-				</div>
-
-
-				<div class="main_inside__header">
-					<h1>О компании</h1>
-					<div class="main_inside__subtitle">
-						<p>- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software</p>
+			
+				<div class="main_inside__header-sel">
+					<div class="breadcrumbs">
+						<a href="" class="breadcrumbs__link">Главная</a>
+						<a href="" class="breadcrumbs__link">О проекте</a>
+						<span class="breadcrumbs__item">Избранное</span>
 					</div>
-				</div>
 
 
-				<div class="page_row">
-					<div class="page_row__center">
 					
-						<div class="about_list">
-							<div class="about_item">
-								<div class="about_item__title">Застройщик ООО «ГАЛС»</div>
-								<div class="about_item__info">
-									<div class="about_item__desc">Застройщиком VALO выступает ООО «ГАЛС». Владея большим земельным банком в городе, «ГАЛС» выбрал выигрышный для возведения комплекса участок – напротив метро «Бухарестская». Особое внимание застройщик и его партнеры при реализации проекта уделяют архитектурному облику VALO, что позволит органично вписать его в существующую застройку кварталов. Основные принципы, которыми руководствуются застройщик, генеральный подрядчик и управляющая компания, − это европейское качество, прозрачные и надежные доходные программы для инвесторов, комфортные условия проживания для гостей и инфраструктура высокого уровня.</div>
-								</div>
-								<div class="about_item__info-hidden" style="display: none;">
-									<div class="about_item__desc">
-										<p>Застройщиком VALO выступает ООО «ГАЛС». Владея большим земельным банком в городе, «ГАЛС» выбрал выигрышный для возведения комплекса участок – напротив метро «Бухарестская». Особое внимание застройщик и его партнеры при реализации проекта уделяют архитектурному облику VALO, что позволит органично вписать его в существующую застройку кварталов. Основные принципы, которыми руководствуются застройщик, генеральный подрядчик и управляющая компания, − это европейское качество, прозрачные и надежные доходные программы для инвесторов, комфортные условия проживания для гостей и инфраструктура высокого уровня.</p>
-										<p>Застройщиком VALO выступает ООО «ГАЛС». Владея большим земельным банком в городе, «ГАЛС» выбрал выигрышный для возведения комплекса участок – напротив метро «Бухарестская». Особое внимание застройщик и его партнеры при реализации проекта уделяют архитектурному облику VALO, что позволит органично вписать его в существующую застройку кварталов. Основные принципы, которыми руководствуются застройщик, генеральный подрядчик и управляющая компания, − это европейское качество, прозрачные и надежные доходные программы для инвесторов, комфортные условия проживания для гостей и инфраструктура высокого уровня.</p>
-										<p>Застройщиком VALO выступает ООО «ГАЛС». Владея большим земельным банком в городе, «ГАЛС» выбрал выигрышный для возведения комплекса участок – напротив метро «Бухарестская». Особое внимание застройщик и его партнеры при реализации проекта уделяют архитектурному облику VALO, что позволит органично вписать его в существующую застройку кварталов. Основные принципы, которыми руководствуются застройщик, генеральный подрядчик и управляющая компания, − это европейское качество, прозрачные и надежные доходные программы для инвесторов, комфортные условия проживания для гостей и инфраструктура высокого уровня.</p>
-									</div>
-								</div>
-								<div class="relative alignright">
-									<a href="google.ru" class="about_item__more_link">Подробнее <i class="icon-right"></i></a>
-								</div>
-							</div>
+					
+					<div class="main_inside__header">
+	
+						<h1>Апрель 2018</h1>
 
-							<div class="about_item">
-								<div class="about_item__title">Генеральный подрядчик «Лемминкйянен»</div>
-								<div class="about_item__info">
-									<div class="about_item__desc">
-										<p>Лемминкяйнен (фин. Lemminkäinen) — финский концерн, основанный в 1910 году. Специализируется на строительстве дорог, возведении и реконструкции зданий и производстве строительных материалов. ОАО «Лемминкяйнен» (Lemminkäinen Oyj) – это крупный строительный концерн, осуществляющий свою деятельность в Финляндии и за её пределами.</p>
-										<p>Компания «Лемминкяйнен» была основана в 1910 году в Хельсинки как асфальтовое акционерное общество.</p>
-									</div>
-									<div class="about_item__img_wrap">
-										<img src="img/lemminkainen_big.png" alt="">
-									</div>
+						<div class="page_row">
+							<div class="page_row__left page_row__left-280">
+								<div id="calendar"></div>
+							</div>
+							<div class="page_row__center">
+								<div class="mgb30">
+									<select class="select left_menu_in-select">
+										<option value="/href">I очередь</option>
+										<option value="/href" selected="">II очередь</option>
+										<option value="/href">III очередь</option>
+									</select>
 								</div>
-								<div class="about_item__info-hidden" style="display: none;">
-									<div class="about_item__desc">
-										<p>С 1 января 2011 года концерн Лемминкяйнен реорганизовал свою деятельность по трем основным направлениям: строительство зданий и сооружений, строительство инфраструктуры, инженерно-технический монтаж и техническое обслуживание объектов недвижимости. Начиная с 01.01.2012 «Международная деятельность» становится четвертым бизнес-сегментом концерна Лемминкяйнен, целью которого является более эффективное управление растущими рынками при руководстве и развитии деятельности.</p>
-										<p>Головное предприятие ОАО «Лемминкяйнен» осуществляет общее руководство и финансирование, а также экономическое, кадровое, юридическое и информационное обеспечение.</p>
-										<p>Объем продаж концерна Лемминкяйнен за 2012 г. составил 2267,6 млн евро, 934,3 млн из которых принесли международные проекты концерна. Операционная прибыль ОАО «Лемминкяйнен» в 2012 г. составила 50,1 млн евро. В концерне работает около 8200 человек.</p>
-										<p>Большинство проектов концерна сосредоточено в странах Балтийского региона, но благодаря высокому профессионализму в области строительства Лемминкяйнен привлекает клиентов по всему миру.</p>
-										<p>С 1995 года акции концерна Лемминкяйнен котируются на Хельсинкской фондовой бирже NASDAQ OMX Helsinki Ltd. Осенью 2012 года руководство концерна (совместно с руководством восьми других компаний) было привлечено к судебному разбирательству по обвинению о искусственном завышении цен на асфальт с помощью картеля в период с 1994 по 2002 годы.[1]</p>
-										<p>В России Лемминкяйнен получил известность с 1970-х. География проектов компании в России достаточно широка – Кострома, Тверь, Калуга, Санкт-Петербург и Ленинградская область, Москва и Московская область и т.д. В июне 2016 г. стало известно, что компания сокращает 5 из 6 российских юрлиц и меняет стратегию, перейдя от девелоперской деятельности к генподрядам[2]. Впериод 2013-2016 года компания выполняла работы по строительству Жилого Района в Истринском районе московской области под названием ЖК «Сампо», строительство завода по производству лаков и красок «Текнос», а также заканчивала строительство ЖК “Тапиола». В 2017 г. проектами компании в стадии реализации являлись: апарт-комплекс VALO, ЖК «РЕНЕССАНС», ЖК «БАЛТИЙСКАЯ ЖЕМЧУЖИНА», ЖК «РАНТАЛА» в г.Сосновый Бор. В феврале 2018 г. стало известно о слиянии российской дочки Лемминкяйнен с концерном ЮИТ[3]. Объединенная компания продолжит реализацию проектов Лемминкяйнен совместными усилиями, но уже под брендом ЮИТ.</p>
-									</div>
-								</div>
-								<div class="relative alignright">
-									<a href="google.ru" class="about_item__more_link">Подробнее <i class="icon-right"></i></a>
+
+								<div class="main_inside__subtitle">
+									<h5>I очередь</h5>
+									<p>- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 								</div>
 							</div>
-						</div><!--/about_list-->
-						
+						</div>
+					</div>
+
+
+					<h2 class="icon-photo mgb30">Фото. 4 апреля 2018</h2>
+
+					<div class="building_slider-inside baguetteBox">
+						<div class="building_car_item-inside">
+							<a href="img/building_slider.png" class="building_car_item-inside__link fancybox" data-fancybox="gallery" rel="group">
+								<img src="img/building_slider.png" alt="" class="building_car_item-inside__img">
+							</a>
+						</div>
+						<div class="building_car_item-inside">
+							<a href="img/building_slider.png" class="building_car_item-inside__link fancybox" data-fancybox="gallery" rel="group">
+								<img src="img/building_slider.png" alt="" class="building_car_item-inside__img">
+							</a>
+						</div>
+						<div class="building_car_item-inside">
+							<a href="img/building_slider.png" class="building_car_item-inside__link fancybox" data-fancybox="gallery" rel="group">
+								<img src="img/building_slider.png" alt="" class="building_car_item-inside__img">
+							</a>
+						</div>
+						<div class="building_car_item-inside">
+							<a href="img/building_slider.png" class="building_car_item-inside__link fancybox" data-fancybox="gallery" rel="group">
+								<img src="img/building_slider.png" alt="" class="building_car_item-inside__img">
+							</a>
+						</div>
+						<div class="building_car_item-inside">
+							<a href="img/building_slider.png" class="building_car_item-inside__link fancybox" data-fancybox="gallery" rel="group">
+								<img src="img/building_slider.png" alt="" class="building_car_item-inside__img">
+							</a>
+						</div>
+						<div class="building_car_item-inside">
+							<a href="img/building_slider.png" class="building_car_item-inside__link fancybox" data-fancybox="gallery" rel="group">
+								<img src="img/building_slider.png" alt="" class="building_car_item-inside__img">
+							</a>
+						</div>
+						<div class="building_car_item-inside">
+							<a href="img/building_slider.png" class="building_car_item-inside__link fancybox" data-fancybox="gallery" rel="group">
+								<img src="img/building_slider.png" alt="" class="building_car_item-inside__img">
+							</a>
+						</div>
+						<div class="building_car_item-inside">
+							<a href="img/building_slider.png" class="building_car_item-inside__link fancybox" data-fancybox="gallery" rel="group">
+								<img src="img/building_slider.png" alt="" class="building_car_item-inside__img">
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
+
+				<hr class="fat mgb45">
+					
+				<div class="main_inside__header-sel">
+					<h2 class="icon-video mgb30">Видео. 4 апреля 2018</h2>
+					
+					<div class="video">
+						<div class="video_ratio">
+							<div class="video_content">
+								<div class="video_replace" data-video="ZPywSHeoAic"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div><!--/wrapper-->
 		</div>
 
 		<div class="call_btns">
@@ -560,7 +590,7 @@
 					</div>
 					<div class="call_btns_item__label">Написать письмо</div>
 				</a>
-				<a href="javascript:;" class="call_btns_item call_btns_item-up" id="backToTop">>
+				<a href="javascript:;" class="call_btns_item call_btns_item-up" id="backToTop">
 					<div class="call_btns_item__icon">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px"><path fill-rule="evenodd"  fill="rgb(0, 182, 189)" d="M-0.000,-0.006 L10.004,9.998 L-0.000,20.002 L5.726,10.335 L-0.000,-0.006 Z"/></svg>
 					</div>
@@ -568,6 +598,7 @@
 				</a>
 			</div>
 		</div>
+
 	</div>
 </div>
 
@@ -612,8 +643,8 @@
 
 
 		<form action="">
-				<input type="text" class="form_input form_input-name" placeholder="Ваше имя" name="name">
-				<input type="text" class="form_input form_input-phone" placeholder="Телефон" name="phone">
+	
+				<input type="text" class="form_input form_input-email" placeholder="E-mail" name="email">
 				<textarea class="form_input form_input-text" placeholder="Текст сообщения"></textarea>
 				<label class="check">
 					<input type="checkbox">

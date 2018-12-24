@@ -100,6 +100,7 @@ $(function(){
 
 $(function() { 
   $('select.select').selectbox();
+
 });  
 
 
@@ -401,38 +402,6 @@ $(function(){
 
 
 
-// //карта
-$(function(){
-  // if ( location.href == '/' ){
-    ymaps.ready(init);
-
-    function init() {
-      var myMap = new ymaps.Map("map", {
-          center: [55.76, 37.64],
-          zoom: 14
-      },{
-          searchControlProvider: 'yandex#search'
-      }),
-
-      myGeoObject = new ymaps.GeoObject({
-        geometry: {type: "Point",
-            coordinates: [55.76, 37.64]
-        },
-        properties: {
-            iconContent: 'VALO',
-            hintContent: 'Апарт-комплекс по-фински'
-        }
-
-      },{
-        preset: 'islands#blackStretchyIcon',
-        draggable: false
-      });
-
-      myMap.geoObjects.add(myGeoObject);
-    }
-  // }
-    
-})
 
 // узнать больше 
 
@@ -600,7 +569,7 @@ $(function(){
       snapSlider2.noUiSlider.set([null, $('#slider-snap-value-upper2 input').val()]);
     });
   }
-})
+});
 
 
 // app_cart slider
@@ -614,4 +583,70 @@ $(function(){
     prevArrow: '<button type="button" class="app_card_arrow app_card_arrow-left"></button>',
     nextArrow: '<button type="button" class="app_card_arrow app_card_arrow-right"></button>',
   })  
-})
+});
+
+// building slider
+
+$(function(){
+  $('.building_slider').slick({
+    slidesPerRow: 3,
+    rows: 2,
+    swipeToSlide: true,
+    arrows: true,
+    prevArrow: '<button type="button" class="staff_arrow staff_arrow-left"></button>',
+    nextArrow: '<button type="button" class="staff_arrow staff_arrow-right"></button>',
+  })  
+});
+
+$(function(){
+  $('.building_slider-inside').slick({
+    slidesPerRow: 3,
+    rows: 2,
+    swipeToSlide: true,
+    arrows: true,
+    prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-left"></button>',
+    nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-right"></button>',
+  })  
+});
+
+$(function(){
+  $('#calendar').datepicker({
+    language: "ru", 
+    calendarWeeks: false, 
+    todayHighlight: true
+  });
+});
+
+// //карта
+
+$(function(){
+  // if ( location.href == '/' ){
+    ymaps.ready(init);
+
+    function init() {
+      var myMap = new ymaps.Map("map", {
+          center: [55.76, 37.64],
+          zoom: 14
+      },{
+          searchControlProvider: 'yandex#search'
+      }),
+
+      myGeoObject = new ymaps.GeoObject({
+        geometry: {type: "Point",
+            coordinates: [55.76, 37.64]
+        },
+        properties: {
+            iconContent: 'VALO',
+            hintContent: 'Апарт-комплекс по-фински'
+        }
+
+      },{
+        preset: 'islands#blackStretchyIcon',
+        draggable: false
+      });
+
+      myMap.geoObjects.add(myGeoObject);
+    }
+  // }
+    
+});
