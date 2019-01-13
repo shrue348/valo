@@ -245,8 +245,8 @@
 	.staff_title { font-size: 70px; padding-right: 309px; }
 	.staff_subtitle { font-size: 24px; padding-right: 309px; }
 	.staff_desc { font-size: 24px; }
-	.staff_arrow.staff_arrow-left { display: none !important; }
-	.staff_arrow.staff_arrow-right { transform: scale(2); }
+	.staff .staff_arrow.staff_arrow-left { display: none !important; }
+	.staff .staff_arrow.staff_arrow-right { transform: scale(2); }
 
 
 	.l_block__title { font-size: 70px; text-align: left; }
@@ -537,7 +537,7 @@
 	.staff .wide__in:last-child { width: 131px; height: 106px; }
 	.staff_slider_left { padding-left: 17px; padding-right: 35px; }
 	.staff_slider_left__item { padding: 10px 0; }
-	.staff_arrow.staff_arrow-right { transform: scale(1); right: 17px; }
+	.staff .staff_arrow.staff_arrow-right { transform: scale(1); right: 17px; }
 
 		
 	.l_block__title { font-size: 30px; }

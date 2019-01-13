@@ -7,7 +7,7 @@
   color: #fff;
   text-transform: uppercase;
   position: relative;
-  transition: background-color .2s ease;
+  transition: all .2s ease;
   text-align: center;
   border: 2px solid #fff;
   font-size: 20px;
@@ -16,7 +16,7 @@
 	background: url("data:image/svg+xml;base64,PHN2ZyAKIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogd2lkdGg9IjIwcHgiIGhlaWdodD0iMTBweCI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgIGZpbGw9InJnYigyNTUsIDI1NSwgMjU1KSIKIGQ9Ik0yMC4wMDYsLTAuMDAwIEwxMC4wMDEsMTAuMDAzIEwtMC4wMDIsLTAuMDAwIEw5LjY2NSw1LjcyNiBMMjAuMDA2LC0wLjAwMCBaIi8+Cjwvc3ZnPg==") no-repeat scroll calc(100% - 10px) center / 13px rgba(13,35,63, .9);
 	cursor: pointer;
 }
-.selectbox .select:active { background-color: rgba(255,255,255,.4); }
+.selectbox .select:active { opacity: .8; }
 .selectbox .selected,
 .selectbox .sel { background-color: rgba(63,85,113,.9); }
 

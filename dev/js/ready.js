@@ -343,9 +343,6 @@ function sliders(){
     })
   }
 
-
-
-
   if (screen.width >= 1200) {
     $('.func_icons.slick-initialized').slick('unslick');
   } else {
@@ -370,9 +367,8 @@ $(function(){
   });
 })
 
-
-
 // переключалка банков
+
 jQuery.fn.swap = function(b) {
   b = jQuery(b)[0];
   var a = this[0],
@@ -399,9 +395,6 @@ $(function(){
     $(this).children().swap('.buy_cards_big .buy_cards_item__in');
   })
 })
-
-
-
 
 // узнать больше 
 
@@ -595,7 +588,22 @@ $(function(){
     arrows: true,
     prevArrow: '<button type="button" class="staff_arrow staff_arrow-left"></button>',
     nextArrow: '<button type="button" class="staff_arrow staff_arrow-right"></button>',
-  })  
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesPerRow: 2,
+          rows: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          rows: 1
+        }
+      }
+    ]
+  })
 });
 
 $(function(){
@@ -606,6 +614,21 @@ $(function(){
     arrows: true,
     prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-left"></button>',
     nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-right"></button>',
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesPerRow: 2,
+          rows: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          rows: 1
+        }
+      }
+    ]
   })  
 });
 
