@@ -1,6 +1,5 @@
 'use strict';
 
-
 function number_format(number, decimals, dec_point, separator ) {
   number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
   var n = !isFinite(+number) ? 0 : +number,
@@ -28,9 +27,8 @@ function number_format(number, decimals, dec_point, separator ) {
   return s.join(dec);
 }
 
-
-
 // гл счетчик
+
 $(function(){
   if(document.querySelector('[data-js="counter-days"]') && location.href == '/') {
     var counterDays = new Counter(document.querySelector('[data-js="counter-days"]')),
@@ -100,11 +98,10 @@ $(function(){
 
 $(function() { 
   $('select.select').selectbox();
-
 });  
 
-
 // back to top
+
 $(function(){
   $("#backToTop").addClass('hide'); //Back to top
   $(window).scroll(function () {
@@ -117,6 +114,7 @@ $(function(){
 })
 
 // back to top
+
 $(function(){
   $('.call_btns_item-up').click(function () {
     $('body,html').animate({
@@ -126,14 +124,14 @@ $(function(){
   });
 })
 
-
 // ждем загрузки картинок
+
 $(window).load(function(){
   $('.header').addClass('loaded')
 })
 
-
 //плавный скролл к якорю
+
 $(function(){ 
   $("a.scrollto").on('click touchend', function () {
     var elementClick = $(this).attr("href")
@@ -143,14 +141,14 @@ $(function(){
   });
 });
 
-
 // маска формы
+
 $(function(){
   $('[name=phone]').mask("+7 (999) 999-9999");
 })
 
-
 // переключалка гл меню
+
 $(function(){
   $('.menu__toggle, .menu__toggle-inside').on('click', function(){
     $('.menu__wrap').toggleClass('menu__wrap-active')
@@ -158,8 +156,8 @@ $(function(){
   })
 })
 
-
 // переключалка поиска
+
 $(function(){
   $('.menu_hor__icon-search-toggle1').on('click', function(){
     $('.menu_icons_search-1').slideToggle()
@@ -171,6 +169,7 @@ $(function(){
 })
 
 //вебкамера
+
 $(function(){
   $('.photo_webcam__start').on('click', function(){
     $(this).next().show()
@@ -178,8 +177,8 @@ $(function(){
   })
 })
 
-
 // анимации текста
+
 $(function(){
   $('.header_title, .header_subtitle, .header_desc, .header_i, .header_counter').viewportChecker({ // хедер
     classToAdd: 'in',
@@ -193,8 +192,8 @@ $(function(){
   });
 })
 
-
 // слайдеры
+
 $(function(){
   $('.header_slider').slick({
     arrows: false,
@@ -218,8 +217,6 @@ $(function(){
     focusOnSelect: true,
     infinite: true
   });
-
-
 
   $('.blog_list').slick({
     centerMode: true,
@@ -296,7 +293,6 @@ $(function(){
     infinite: true
   });
 
-
   $('.func_carousel').lunbo({
       num: 5,
       maxWidth: 500,
@@ -306,8 +302,6 @@ $(function(){
       animationTime: 300,
       showTime: 4000
   });
-
-
 
   $('.news_list').slick({
     centerMode: true,
@@ -342,16 +336,12 @@ $(function(){
 
 
   $('.news_slider').slick({
-
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
-
     prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-left"></button>',
     nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-right"></button>',
   })
-
-
 
 })
 
@@ -402,6 +392,90 @@ function sliders(){
       nextArrow: '<button type="button" class="func_arrow-slick func_arrow-slick-right"></button>'
     })
   }
+
+  // building slider
+
+  if (screen.width > 480) {
+    $('.building_slider.slick-initialized').slick('unslick');
+    $('.building_slider-inside.slick-initialized').slick('unslick');
+
+    $('.building_slider').not('.slick-initialized').slick({
+      slidesPerRow: 3,
+      rows: 2,
+      swipeToSlide: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="staff_arrow staff_arrow-left"></button>',
+      nextArrow: '<button type="button" class="staff_arrow staff_arrow-right"></button>',
+      responsive: [
+        {
+          breakpoint: 980,
+          settings: {
+            slidesPerRow: 2,
+            rows: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            rows: 1
+          }
+        }
+      ]
+    });
+
+    $('.building_slider-inside').not('.slick-initialized').slick({
+      slidesPerRow: 3,
+      rows: 2,
+      swipeToSlide: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-left"></button>',
+      nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-right"></button>',
+      responsive: [
+        {
+          breakpoint: 980,
+          settings: {
+            slidesPerRow: 2,
+            rows: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            rows: 1
+          }
+        }
+      ]
+    })  
+
+  } else {
+
+    $('.building_slider.slick-initialized').slick('unslick');
+    $('.building_slider-inside.slick-initialized').slick('unslick');
+
+    $('.building_slider').not('.slick-initialized').slick({
+      //centerMode: true,
+      slidesPerRow: 1,
+      rows: 1,
+      swipeToSlide: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="staff_arrow staff_arrow-left"></button>',
+      nextArrow: '<button type="button" class="staff_arrow staff_arrow-right"></button>',
+  
+    });
+
+    $('.building_slider-inside').not('.slick-initialized').slick({
+      //centerMode: true,
+      slidesPerRow: 1,
+      rows: 1,
+      swipeToSlide: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-left"></button>',
+      nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-right"></button>',
+
+    })  
+
+  }
+
 
   //ставим ширину слайдера как у слайда
   var w = $('.photo .photo_list').find('img').width()
@@ -625,59 +699,7 @@ $(function(){
   })  
 });
 
-// building slider
 
-$(function(){
-  $('.building_slider').slick({
-    slidesPerRow: 3,
-    rows: 2,
-    swipeToSlide: true,
-    arrows: true,
-    prevArrow: '<button type="button" class="staff_arrow staff_arrow-left"></button>',
-    nextArrow: '<button type="button" class="staff_arrow staff_arrow-right"></button>',
-    responsive: [
-      {
-        breakpoint: 980,
-        settings: {
-          slidesPerRow: 2,
-          rows: 2,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          rows: 1
-        }
-      }
-    ]
-  })
-});
-
-$(function(){
-  $('.building_slider-inside').slick({
-    slidesPerRow: 3,
-    rows: 2,
-    swipeToSlide: true,
-    arrows: true,
-    prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-left"></button>',
-    nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-right"></button>',
-    responsive: [
-      {
-        breakpoint: 980,
-        settings: {
-          slidesPerRow: 2,
-          rows: 2,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          rows: 1
-        }
-      }
-    ]
-  })  
-});
 
 $(function(){
   $('#calendar').datepicker({

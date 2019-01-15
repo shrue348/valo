@@ -219,8 +219,8 @@ h1, .h1, h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {}
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { line-height: 1.2; }
 
 h1, .h1 { font-size: 70px; margin-bottom: 20px; line-height: 1; color: #0d233f; font-family: 'Roboto'; font-weight: 600; color: #fff; margin-top: -.05em; }
-h2, .h2 { font-size: 30px; margin-bottom: 10px; color: #0d233f; font-family: 'Roboto'; font-weight: 300; text-transform: uppercase; }
-h3, .h3 { font-size: 18px; margin-bottom: 10px; color: #0d233f; font-family: 'Roboto'; font-weight: 300; text-transform: uppercase; }
+h2, .h2 { font-size: 30px; margin-bottom: 10px; font-family: 'Roboto'; font-weight: 300; text-transform: uppercase; }
+h3, .h3 { font-size: 18px; margin-bottom: 10px; font-family: 'Roboto'; font-weight: 300; text-transform: uppercase; }
 h4, .h4 { font-size: 17px; font-weight: 600;}
 h5, .h5 { font-size: 16px; font-weight: 600;}
 h6, .h6 { font-size: 15px; font-weight: 600;}
@@ -347,7 +347,7 @@ select {
     width: 3px;
     z-index: 1;
 }
-.txt a { font-weight: bold; text-decoration: underline; }
+.txt a { font-weight: bold; text-decoration: underline; color: currentColor; }
 .txt a:hover { text-decoration: none; }
 
 .txt blockquote { border: 2px solid #0d233f; padding: 7px 120px 7px 8px; margin-bottom: 35px; position: relative; min-height: 102px; }

@@ -823,6 +823,10 @@
 	.app_card__bottom .app_item__btn { font-size: 16px; padding: .5em 1em; display: none; }
 	.app_card__bottom span { font-size: 15px; }
 
+
+	.building_slider,
+	.building_slider-inside { margin-left: 20px; margin-right: 20px; }
+
 }
 
 @media (max-width: 340px) {
