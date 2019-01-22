@@ -1,6 +1,6 @@
 
 
-/*@font-face {
+@font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto/Roboto-Italic.eot');
   src: local('Roboto Italic'), local('Roboto-Italic'),
@@ -9,7 +9,7 @@
       url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
-}*/
+}
 
 @font-face {
   font-family: 'Roboto';
@@ -397,8 +397,9 @@ select {
 }
 .btn_white:hover { background-color: #095b94; color: #fff; }
 
-.styled-btn {    
-  display: -ms-inline-flexbox;    
+.styled-btn {
+  box-sizing: border-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-align: center;
       align-items: center;

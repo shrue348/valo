@@ -713,23 +713,59 @@ $(function(){
 
 $(function(){
   // if ( location.href == '/' ){
+    // ymaps.ready(init);
+
+    // function init() {
+    //   var myMap = new ymaps.Map("map", {
+    //       center: [55.76, 37.64],
+    //       zoom: 14
+    //   },{
+    //       searchControlProvider: 'yandex#search'
+    //   }),
+
+    //   myGeoObject = new ymaps.GeoObject({
+    //     geometry: {type: "Point",
+    //         coordinates: [55.76, 37.64]
+    //     },
+    //     properties: {
+    //         iconContent: 'VALO',
+    //         hintContent: 'Апарт-комплекс по-фински'
+    //     }
+
+    //   },{
+    //     preset: 'islands#blackStretchyIcon',
+    //     draggable: false
+    //   });
+
+    //   myMap.geoObjects.add(myGeoObject);
+    // }
+  // }
+    
+});
+
+
+// карта в локации
+
+$(function(){
+  // if ( location.href == '/' ){
     ymaps.ready(init);
 
     function init() {
-      var myMap = new ymaps.Map("map", {
+      var myMap = new ymaps.Map("location_map", {
           center: [55.76, 37.64],
           zoom: 14
       },{
           searchControlProvider: 'yandex#search'
       }),
 
-      myGeoObject = new ymaps.GeoObject({
-        geometry: {type: "Point",
-            coordinates: [55.76, 37.64]
+      Valo = new ymaps.GeoObject({
+        geometry: {
+          type: "Point",
+          coordinates: [55.76, 37.64]
         },
         properties: {
-            iconContent: 'VALO',
-            hintContent: 'Апарт-комплекс по-фински'
+          iconContent: 'VALO',
+          hintContent: 'Апарт-комплекс по-фински'
         }
 
       },{
@@ -737,7 +773,8 @@ $(function(){
         draggable: false
       });
 
-      myMap.geoObjects.add(myGeoObject);
+
+      myMap.geoObjects.add(Valo);
     }
   // }
     
