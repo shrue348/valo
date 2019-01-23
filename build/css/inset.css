@@ -567,6 +567,7 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 .location_icons__item-label { text-transform: uppercase; background-color: #0d233f; font-size: 10px; color: #fff; height: 24px; line-height: 24px; padding: 0 10px; border: 1px solid #fff; position: absolute; left: 75px; top: 50%; transform: translateY(-50%); opacity: 0; z-index: -2; transition: all .2s ease; white-space: nowrap; }
 .location_icons__item:hover .location_icons__item-label { z-index: 3; opacity: 1; }
 .location_info { padding: 35px 15px 28px 30px; background-color: rgba(255,255,255,.74); max-width: 373px; pointer-events: all; }
+.location_info#tab_2 { max-width: 474px; }
 
 .location_zoom  { position: absolute; right: 50px; bottom: 22px; }
 
