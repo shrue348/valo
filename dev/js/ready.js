@@ -341,14 +341,28 @@ $(function(){
     swipeToSlide: true,
     prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-left"></button>',
     nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-right"></button>',
+  })  
+
+
+
+  $('.location_gal__list').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-white staff_arrow-inside-left"></button>',
+    nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-white staff_arrow-inside-right"></button>',
   })
+
 
 })
 
 
 
 
+
 // включаем слайдеры на мобильной
+
 function sliders(){
   if (screen.width >= 1024) {
     $('.length__list.slick-initialized').slick('unslick');
