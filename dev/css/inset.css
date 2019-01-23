@@ -554,7 +554,7 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 
 .location { display: flex; }
 .location_icons { margin-right: 11px; }
-.location_icons__item { position: relative; }
+.location_icons__item { position: relative; pointer-events: all; }
 .location_icons__item { border: 2px solid #0d233f; background-color: #fff; width: 60px; height: 60px; border-radius: 60px; text-align: center; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; transition: all .2s ease; }
 .location_icons__item:hover { border: 2px solid #ffffff; background-color: #0d233f; }
 .location_icons__item:active { border: 2px solid #0d233f; background-color: rgba(13, 35, 63, .4); transition: all .05s ease; }
@@ -566,7 +566,7 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 
 .location_icons__item-label { text-transform: uppercase; background-color: #0d233f; font-size: 10px; color: #fff; height: 24px; line-height: 24px; padding: 0 10px; border: 1px solid #fff; position: absolute; left: 75px; top: 50%; transform: translateY(-50%); opacity: 0; z-index: -2; transition: all .2s ease; white-space: nowrap; }
 .location_icons__item:hover .location_icons__item-label { z-index: 3; opacity: 1; }
-.location_info { padding: 35px 15px 28px 30px; background-color: rgba(255,255,255,.74); max-width: 373px; }
+.location_info { padding: 35px 15px 28px 30px; background-color: rgba(255,255,255,.74); max-width: 373px; pointer-events: all; }
 
 .location_zoom  { position: absolute; right: 50px; bottom: 22px; }
 
@@ -579,9 +579,7 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 .location_list_item__icon:hover svg { fill: #e0508f; }
 
 .location_map { position: absolute; z-index: 0; margin: auto; top: 0; right: 0; bottom: 0; left: 0; }
-.location_overlay { position: absolute; z-index: 1; margin: auto; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(13, 35, 63, .4); }
-
-
+.location_overlay { position: absolute; z-index: 1; margin: auto; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(13, 35, 63, .4); pointer-events: none; }
 
 .location_icons__item-info svg { width: 28px; }
 .location_icons__item-objects svg { width: 38px; }
@@ -599,8 +597,8 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 
 
 
-
-
+.main_inside.main_inside-transparent { pointer-events: none; }
+.call_btns { pointer-events: all; }
 
 
 
