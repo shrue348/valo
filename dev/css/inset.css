@@ -152,7 +152,7 @@
 
 
 
-.btn_block-big { margin-top: 90px; margin-bottom: 110px; max-width: 440px; }
+.btn_block-big { margin-top: 70px; margin-bottom: 90px; max-width: 440px; }
 .btn_block-big .btn { margin-bottom: 10px; display: block; text-align: right; }
 .btn_block-big .faq_item__title { display: block; text-align: right; text-transform: uppercase; font-size: 14px; padding: 21px 50px 21px 30px; }
 .btn_block-big .faq_item__title.collapsed { background-color: rgba(87,181,187,.52); }
@@ -518,7 +518,11 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 
 
 .award { box-sizing: border-box; border: 2px solid #fff; padding: 15px 128px 15px 27px; margin: 50px auto; position: relative; max-width: 752px; min-height: 140px; font-size: 16px; }
-.award:after { position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); right: 18px;content: url(../img/award.png); }
+.award:after { position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); right: 18px; content: url(../img/award.png); }
+
+
+.award-invest { max-width: 782px; min-height: 108px; font-size: 31px; text-transform: uppercase; padding: 15px 108px 15px 20px; }
+.award-invest:after { position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); right: 18px; content: url(../img/award-invest.png); }
 
 
 .preims_list { display: flex; margin-bottom: 50px; }
@@ -593,7 +597,6 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 
 
 
-
 .commerce_icons_list { display: flex; flex-wrap: wrap; justify-content: center; max-width: 1024px; margin-left: auto; margin-right: auto; }
 .commerce_icons_item { flex: 0 0 auto; text-align: center; max-width: 183px; margin: 0 10px 41px; }
 .commerce_icons_item svg { height: 48px; margin-left: auto; margin-right: auto; margin-bottom: 15px; }
@@ -602,10 +605,11 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 
 
 
-
-
-
-
+.invest_list { display: flex; flex-wrap: wrap; margin-left: -15px; margin-right: -15px; }
+.invest_item { margin-bottom: 30px; flex: 0 0 50%; width: 50%; display: flex; align-items: center; padding: 0 15px; box-sizing: border-box; }
+.invest_item svg { margin-right: 24px; margin-top: 10px; flex: 0 0 52px; width: 52px; }
+.invest_item .st0 { fill: #fff; }
+.invest_item__desc { font-size: 16px; line-height: 1.25; }
 
 
 
