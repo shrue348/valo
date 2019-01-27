@@ -180,7 +180,7 @@
 	.gdlr-core-parallax { height: 100% !important; }
 	.header_slider * { height: 100%; }
 
-	.btn { height: 91px; line-height: 91px; font-size: 25px; padding: 0 30px; }
+	.btn {  font-size: 16px; padding: 15px 30px; line-height: 1.1; }
 	.btn svg { transform: scale(1.6); margin-left: 17px; vertical-align: baseline; }
 	.managers_form .btn { height: 52px; line-height: 52px; font-size: 14px; padding: 0 17px; }
 	.managers_form .btn svg { transform: scale(1); margin-left: 10px; vertical-align: middle; }
@@ -471,10 +471,27 @@
 	.app_card__bottom .app_item__btn { font-size: 26px; padding: .5em 1em; display: none; }
 	.app_card__bottom span { font-size: 35px; }
 
+	.txt { font-size: 20px; }
+	.txt h2 { font-size: 31px; }
+
+	.bottom_form__title { font-size: 31px; }
+
+	.styled-btn { font-size: 16px; }
+	.form_input { font-size: 20px; }
+	.commerce_icons_item__title { font-size: 24px; }
+
+
+	.portfel_table__row { flex-wrap: wrap; }
+	.portfel_table__cell { width: 32.33%; flex: 0 0 32.33%; font-size: 20px; }
+	.portfel_table__cell:first-child { flex: 0 0 100%; text-align: center; margin-bottom: 10px; justify-content: center; }
+	.portfel_table__row.portfel_table__row-title .portfel_table__cell { font-size: 31px; }
+	.portfel_table__row.portfel_table__row-big .portfel_table__cell:not(:first-child) { font-size: 31px; padding: 15px 15px;  }
+
+
 }
 			 
 @media (max-width: 767px) {
-	.btn { height: 39px; line-height: 39px; font-size: 11px; padding: 0 13px; }
+	.btn { line-height: 1.1; padding: 10px 25px; }
 	.btn svg { transform: scale(.6); vertical-align: middle; position: relative; top: -1px; margin-left: 5px; }
 
 	.wrapper { padding: 0 17px; }
@@ -826,6 +843,24 @@
 
 	.building_slider,
 	.building_slider-inside { margin-left: 20px; margin-right: 20px; }
+
+	.txt { font-size: 10px; }
+	.txt h2 { font-size: 13px; }
+
+	.bottom_form__title { font-size: 13px; }
+
+	.styled-btn { font-size: 13px; }
+	.btn { line-height: 1.1; padding: 8px 25px; font-size: 13px; }
+	.form_input { font-size: 11px; }
+	.commerce_icons_item__title { font-size: 10px; }
+	.commerce_icons_item svg { height: 55px; }
+	.commerce_icons_list.commerce_icons_list-invest .commerce_icons_item { max-width: 150px; flex: 0 0 150px; }
+
+	.portfel_table__row.portfel_table__row-title { font-size: 16px;  }
+	.portfel_table__row .portfel_table__cell:first-child { font-size: 13px;  }
+	.portfel_table__row .portfel_table__cell:not(:first-child) { font-size: 9px; padding: 7px;  }
+	.portfel_table__row.portfel_table__row-big .portfel_table__cell:not(:first-child) { font-size: 16px; }
+	.portfel_table__row.portfel_table__row-title .portfel_table__cell > span { top: -1.2em; }
 
 }
 

@@ -348,7 +348,7 @@ select {
     z-index: 1;
 }
 .txt a { font-weight: bold; text-decoration: underline; color: currentColor; }
-.txt a:hover { text-decoration: none; }
+.txt a:hover { text-decoration: none; color: #00b6bd; }
 
 .txt blockquote { border: 2px solid #0d233f; padding: 7px 120px 7px 8px; margin-bottom: 35px; position: relative; min-height: 102px; }
 .txt blockquote p { margin-bottom: 0; }

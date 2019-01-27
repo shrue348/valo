@@ -354,6 +354,7 @@ $(function(){
     nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-white staff_arrow-inside-right"></button>',
   })
 
+  
 
 })
 
@@ -797,11 +798,44 @@ $(function(){
 
 
 
+// слайдеры в отделке
 
+$(function(){
+  $('.tab-pane').not('.active').find('.building_slider-inside').slick('unslick')
 
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var target = $(e.target).attr('href') // activated tab
+    $(target).find('.building_slider-inside').not('.slick-slider').slick({
+      slidesPerRow: 3,
+      rows: 2,
+      swipeToSlide: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-left"></button>',
+      nextArrow: '<button type="button" class="staff_arrow-inside staff_arrow-inside-right"></button>',
+      responsive: [
+        {
+          breakpoint: 980,
+          settings: {
+            slidesPerRow: 2,
+            rows: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            rows: 1
+          }
+        }
+      ]
+    })
+  })
+})
 
-
-
+$(function(){
+  $('#otdelka_before_after').beforeafter({
+    message: ''
+  });
+})
 
 
 
