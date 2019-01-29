@@ -544,6 +544,13 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 .fullpay_block { margin-bottom: 52px; max-width: 1000px; margin-left: auto; margin-right: auto; }
 .fullpay_block__item { padding: 0; border: 2px solid #1c2840; padding: 17px 100px 17px 20px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; background: url(../img/fullpay_block__item.png) no-repeat scroll calc(100% - 20px) center transparent; margin-bottom: 18px; font-size: 16px; box-sizing: border-box; min-height: 102px; }
 
+.fullpay_block-full { max-width: 100%;  }
+.fullpay_block-full > .row { display: -ms-flexbox; display: flex; -ms-flex-align: stretch; align-items: stretch; }
+.fullpay_block-full > .row > .col-6 { margin-bottom: 10px; }
+
+.fullpay_block__item-award { background: url(../img/award.png) no-repeat scroll calc(100% - 15px) center transparent; min-height: 121px; padding-right: 120px; -ms-flex-align: start; align-items: flex-start; -ms-flex-direction: column; flex-direction: column; margin-bottom: 0; height: 100%; }
+.fullpay_block__item-award h2 { margin-bottom: 10px; margin-top: 0; }
+
 
 .invest_programs__item { margin-bottom: 40px; }
 .invest_programs__title { font-size: 59px; font-weight: bold; }
@@ -631,6 +638,7 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 
 .commerce_icons_list.commerce_icons_list-invest { max-width: 100%; -ms-flex-pack: distribute; justify-content: space-around; }
 .commerce_icons_list.commerce_icons_list-invest .commerce_icons_item { -ms-flex: 0 0 168px; flex: 0 0 168px; text-align: center; max-width: 168px; }
+
 
 .portfel_table { margin-top: 50px; }
 .portfel_table__row { margin-left: -5px; margin-right: -5px; margin-bottom: 20px; display: -ms-flexbox; display: flex; }
