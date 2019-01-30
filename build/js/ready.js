@@ -411,10 +411,15 @@ function sliders(){
   // building slider
 
   if (screen.width > 480) {
-    $('.building_slider.slick-initialized').slick('unslick');
-    $('.building_slider-inside.slick-initialized').slick('unslick');
 
-    $('.building_slider').not('.slick-initialized').slick({
+    if (window.isMobile) {
+      console.log('tack')
+
+      $('.building_slider.slick-initialized').slick('unslick');
+      $('.building_slider-inside.slick-initialized').slick('unslick');
+    }
+
+    $('.building_slider:not(.slick-initialized)').slick({
       slidesPerRow: 3,
       rows: 2,
       swipeToSlide: true,
@@ -438,7 +443,7 @@ function sliders(){
       ]
     });
 
-    $('.building_slider-inside').not('.slick-initialized').slick({
+    $('.building_slider-inside:not(.slick-initialized)').slick({
       slidesPerRow: 3,
       rows: 2,
       swipeToSlide: true,
@@ -462,12 +467,18 @@ function sliders(){
       ]
     })  
 
+    window.isMobile = false
+
   } else {
 
-    $('.building_slider.slick-initialized').slick('unslick');
-    $('.building_slider-inside.slick-initialized').slick('unslick');
+    if (!window.isMobile){
+      console.log('tick')
 
-    $('.building_slider').not('.slick-initialized').slick({
+      $('.building_slider.slick-initialized').slick('unslick');
+      $('.building_slider-inside.slick-initialized').slick('unslick');
+    }
+
+    $('.building_slider:not(.slick-initialized)').slick({
       //centerMode: true,
       slidesPerRow: 1,
       rows: 1,
@@ -478,7 +489,7 @@ function sliders(){
   
     });
 
-    $('.building_slider-inside').not('.slick-initialized').slick({
+    $('.building_slider-inside:not(.slick-initialized)').slick({
       //centerMode: true,
       slidesPerRow: 1,
       rows: 1,
@@ -489,6 +500,8 @@ function sliders(){
 
     })  
 
+    window.isMobile = true
+
   }
 
 
@@ -497,6 +510,9 @@ function sliders(){
   $('.photo .wide .wide__in:first-child').css({'flex': '0 0 '+w+"px"})
 }
 $(function(){ 
+  if (screen.width > 480) window.isMobile = false
+  else window.isMobile = true
+
   sliders() 
   $(window).on('resize', function(){
      sliders()
@@ -763,7 +779,10 @@ $(function(){
 
 $(function(){
   // if ( location.href == '/' ){
-    ymaps.ready(init);
+
+    var map = document.getElementById('location_map')
+
+    if (map) ymaps.ready(init);
 
     function init() {
       var myMap = new ymaps.Map("location_map", {
