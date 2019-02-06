@@ -329,7 +329,7 @@ select {
 }
 .form select:focus { background: url(../img/select_back-active.png) no-repeat scroll center right transparent;}
 
-.txt { line-height: 1.3; font-size: 16px; font-weight: 300; }
+.txt { line-height: 1.3; font-size: 16px; font-weight: 400; }
 .txt h2 { margin-top: 35px; margin-bottom: 24px; }
 .txt h2, .txt h3, .txt h4 { line-height: 1.3; font-weight: 600; }
 .txt p { margin-bottom: 24px;}
