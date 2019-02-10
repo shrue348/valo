@@ -108,6 +108,7 @@
 
 /*-- white pages --*/
 .main_inside.main_inside-white h1,
+.main_inside.main_inside-white .h1,
 .main_inside.main_inside-white .breadcrumbs__link,
 .main_inside.main_inside-white .breadcrumbs__link:after { color: #0d233f; }
 .main_inside.main_inside-white .buy_tabs__item { background-color: #0d233f; }
@@ -561,7 +562,10 @@ h2.icon-video:before { margin-left: 0; margin-right: 20px; position: relative; t
 .fullpay_block__item-img { background: none transparent; padding: 17px 20px; display: -ms-flexbox; display: flex; -ms-flex-align: start; align-items: flex-start; -ms-flex-pack: justify; justify-content: space-between; }
 .fullpay_block__item-img h2 { margin-bottom: 10px; margin-top: 0; }
 .fullpay_block__item-img img { margin-left: 15px; }
-.fullpay_block__item-img svg { width: 90px; height: 71px; }
+.fullpay_block__item-img svg { width: 100px; height: 100px; }
+.fullpay_block__item-img .st0 { fill: currentColor; }
+
+.st0 { fill: currentColor; }
 
 
 .invest_programs__item { margin-bottom: 40px; }
