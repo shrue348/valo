@@ -282,7 +282,7 @@ h4, h5, h6, .h4, .h5, .h6 { margin-bottom: 10px; }
 .mgt0 {margin-top: 0 !important;} .mgt5 {margin-top: 5px !important;} .mgt10 {margin-top: 10px !important;} .mgt15 {margin-top: 15px !important;} .mgt20 {margin-top: 20px !important;} .mgt25 {margin-top: 25px !important;} .mgt30 {margin-top: 30px !important;} .mgt35 {margin-top: 35px !important;} .mgt40 {margin-top: 40px !important;} .mgt45 {margin-top: 45px !important;} .mgt50 {margin-top: 50px !important;} .mgt70 {margin-top: 70px !important;} .mgt75 {margin-top: 75px !important;} .mgt80 {margin-top: 80px !important;} .mgt85 {margin-top: 85px !important;} .mgb0 {margin-bottom: 0px !important;}
 .mgb5 {margin-bottom: 5px !important;} .mgb10 {margin-bottom: 10px !important;} .mgb15 {margin-bottom: 15px !important;} .mgb20 {margin-bottom: 20px !important;} .mgb25 {margin-bottom: 25px !important;} .mgb30 {margin-bottom: 30px !important;} .mgb35 {margin-bottom: 35px !important;} .mgb40 {margin-bottom: 40px !important;} .mgb45 {margin-bottom: 45px !important;} .mgb50 {margin-bottom: 50px !important;} .mgb55 {margin-bottom: 55px !important;} .mgb60 {margin-bottom: 60px !important;} .mgb65 {margin-bottom: 65px !important;} .mgb70 {margin-bottom: 70px !important;} 
 .mgr0 {margin-right: 0 !important;} .mgr5 {margin-right: 5px !important;} .mgr10 {margin-right: 10px !important;} .mgr15 {margin-right: 15px !important;} .mgr20 {margin-right: 20px !important;} .mgr25 {margin-right: 25px !important;} .mgr30 {margin-right: 30px !important;} .mgr35 {margin-right: 35px !important;} .mgr40 {margin-right: 40px !important;} .mgr45 {margin-right: 45px !important;} .mgr50 {margin-right: 50px !important;} .mgr55 {margin-right: 55px !important;} .mgr60 {margin-right: 60px !important;} 
-.mgl5 {margin-left: 5px !important;} .mgl10 {margin-left: 10px !important;} .mgl15 {margin-left: 15px !important;} .mgl20 {margin-left: 20px !important;} .mgl25 {margin-left: 25px !important;} .mgl30 {margin-left: 30px !important;} .mgl35 {margin-left: 35px !important;} .mgl40 {margin-left: 40px !important;} .mgl45 {margin-left: 45px !important;} .mgl50 {margin-left: 50px !important;}
+.mgl0 {margin-left: 0 !important;} .mgl5 {margin-left: 5px !important;} .mgl10 {margin-left: 10px !important;} .mgl15 {margin-left: 15px !important;} .mgl20 {margin-left: 20px !important;} .mgl25 {margin-left: 25px !important;} .mgl30 {margin-left: 30px !important;} .mgl35 {margin-left: 35px !important;} .mgl40 {margin-left: 40px !important;} .mgl45 {margin-left: 45px !important;} .mgl50 {margin-left: 50px !important;}
 
 
 input[type=checkbox] { margin: -2px 4px 0 0;}
@@ -913,6 +913,16 @@ select {
 .buy_tabs__item:hover:before { right: -2px; bottom: -2px; opacity: 1; transition: right .3s ease, bottom .2s ease .3s, opacity 0s ease 0s;}
 .buy_tabs__item:after { content: ''; position: absolute; margin: auto; left: 100%; top: 100%; right: -2px; bottom: -2px; border-bottom: 2px solid #fff; border-left: 2px solid #fff; opacity: 0;}
 .buy_tabs__item:hover:after { left: -2px; top: -2px; opacity: 1; transition: left .3s ease .5s, top .2s ease .8s, opacity 0s ease .5s;}
+
+.buy__tit { color: #fff; font-size: 50px; font-weight: bold; }
+.buy__subtit { color: #fff; font-size: 39px; font-weight: 300; }
+.buy__bottom { color: #fff; font-size: 39px; font-weight: 300; text-align: right; }
+
+.buy_icons { display: flex; align-items: center; max-width: 800px; justify-content: center; margin-top: 40px; margin-bottom: 40px; margin-left: auto; margin-right: auto; }
+.buy_icons_item { padding: 0 15px; flex: 0 0 33%; display: flex; align-items: center; }
+.buy_icons_item__title { color: #fff; font-size: 18px; }
+.buy_icons_item svg { max-width: 38px; max-height: 52px; margin-right: 10px; width: 100%; height: 100%; }
+.buy_icons_item svg .st0 { fill: #11b5bc; }
 
 .buy_cards { display: -ms-flexbox; display: flex; }
 .buy_cards > .col-4 { margin-right: 40px; }
