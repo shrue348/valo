@@ -703,7 +703,14 @@ select {
 
 
 
-
+.lvl_items-hidden .lvl_item:nth-child(odd) .wide__in:last-child { -ms-flex-order: 1; order: 1; -ms-flex-pack: end; justify-content: flex-end;}
+.lvl_items-hidden .lvl_item:nth-child(odd) .wide__in:first-child { -ms-flex-order: 2; order: 2; }
+.lvl_items-hidden .lvl_item:nth-child(even) .wide__in:last-child { -ms-flex-order: 2; order: 2; -ms-flex-pack: start; justify-content: flex-start;}
+.lvl_items-hidden .lvl_item:nth-child(even) .wide__in:first-child { -ms-flex-order: 1; order: 1; }
+.lvl_items-hidden .lvl_item:nth-child(odd) .lvl_item__img { margin-left: 100px; }
+.lvl_items-hidden .lvl_item:nth-child(even) .lvl_item__img { margin-right: 100px; }
+.lvl_items-hidden .lvl_item:nth-child(odd) .lvl_item__info { padding-left: 30px; }
+.lvl_items-hidden .lvl_item:nth-child(even) .lvl_item__info { padding-right: 30px; }
 
 
 .comfort { padding: 48px 15px; color: #fefeff; }

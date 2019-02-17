@@ -562,7 +562,8 @@ $(function(){
     }, 300)
       
     $("#lvl").css({ height: $("#lvl_inside").height()});
-    $(data).appendTo('#lvl_inside')
+    $('.lvl_items-hidden').slideToggle()
+    $(this).slideToggle()
     $("#lvl").css({ height: $("#lvl_inside").height()});
 
     counter += 3
@@ -744,32 +745,32 @@ $(function(){
 
 $(function(){
   // if ( location.href == '/' ){
-    // ymaps.ready(init);
+    ymaps.ready(init);
 
-    // function init() {
-    //   var myMap = new ymaps.Map("map", {
-    //       center: [55.76, 37.64],
-    //       zoom: 14
-    //   },{
-    //       searchControlProvider: 'yandex#search'
-    //   }),
+    function init() {
+      var myMap = new ymaps.Map("map", {
+          center: [55.76, 37.64],
+          zoom: 14
+      },{
+          searchControlProvider: 'yandex#search'
+      }),
 
-    //   myGeoObject = new ymaps.GeoObject({
-    //     geometry: {type: "Point",
-    //         coordinates: [55.76, 37.64]
-    //     },
-    //     properties: {
-    //         iconContent: 'VALO',
-    //         hintContent: 'Апарт-комплекс по-фински'
-    //     }
+      myGeoObject = new ymaps.GeoObject({
+        geometry: {type: "Point",
+            coordinates: [55.76, 37.64]
+        },
+        properties: {
+            iconContent: 'VALO',
+            hintContent: 'Апарт-комплекс по-фински'
+        }
 
-    //   },{
-    //     preset: 'islands#blackStretchyIcon',
-    //     draggable: false
-    //   });
+      },{
+        preset: 'islands#blackStretchyIcon',
+        draggable: false
+      });
 
-    //   myMap.geoObjects.add(myGeoObject);
-    // }
+      myMap.geoObjects.add(myGeoObject);
+    }
   // }
     
 });
