@@ -171,6 +171,8 @@
 
 
 	.hash__item.col-2 { width: auto; }
+
+	.photo_webcam { height: 400px; }
 }
 
 
@@ -486,6 +488,8 @@
 	.portfel_table__cell:first-child { -ms-flex: 0 0 100%; flex: 0 0 100%; text-align: center; margin-bottom: 10px; -ms-flex-pack: center; justify-content: center; }
 	.portfel_table__row.portfel_table__row-title .portfel_table__cell { font-size: 31px; }
 	.portfel_table__row.portfel_table__row-big .portfel_table__cell:not(:first-child) { font-size: 31px; padding: 15px 15px;  }
+
+	.photo_webcam { height: 248px; } 
 
 
 }
