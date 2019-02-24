@@ -526,12 +526,13 @@ jQuery.fn.swap = function(b) {
       $this = $(this);
 
   $target.parent().removeClass('active')
+  $this.removeClass('active')
 
   setTimeout(function(){
     $target.empty()
     $this.children().clone().appendTo($target)
     $target.parent().addClass('active')
-
+    $this.addClass('active')
   }, 200)
 };
 

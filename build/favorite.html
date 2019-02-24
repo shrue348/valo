@@ -530,7 +530,7 @@
 								</svg>
 								<div class="big_icons__item_label">Скачать PDF</div>
 							</a>
-							<a class="big_icons__item big_icons__item-mail" href="">
+							<a class="big_icons__item big_icons__item-mail" data-target="#modal_fav" data-toggle="modal">
 								<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 viewBox="0 0 529.5 576.7" style="enable-background:new 0 0 529.5 576.7;" xml:space="preserve">
 								<g>
@@ -812,5 +812,27 @@
 			</form>
 			<div class="contacts_form_success">Спасибо!</div>
 		</div>
+	</div>
+</div>
+
+
+<div id="modal_fav" class="modal fade" >
+	<div class="modal-dialog">
+		<a href="javascript:;" class="close" data-dismiss="modal"><i class="icon-cancel"></i></a>
+
+		<div class="modal_title">Отправить список:</div>
+		<div class="modal_subtitle">Мы вышлем на указаный адрес ссылку с сохраненным списком выбранных квартир</div>
+
+		<form action="">
+			<input type="text" class="form_input form_input-name" placeholder="Ваше имя" name="name">
+			<input type="text" class="form_input form_input-email" placeholder="E-mail" name="email">
+			<textarea class="form_input form_input-text" placeholder="Текст сообщения"></textarea>
+			<label class="check">
+				<input type="checkbox">
+				<div class="check__title">Согласен с политикой обработки персональных данных</div>
+			</label>
+			<button class="btn">Отправить <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.005 L10.004,9.999 L-0.000,20.002 L5.726,10.335 L-0.000,-0.005 Z"></path></svg></button>
+		</form>
+		<div class="contacts_form_success">Спасибо, <br><br>информация отправлена на указанный e-mail</div>
 	</div>
 </div>
