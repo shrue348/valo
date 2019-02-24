@@ -291,7 +291,7 @@
 .app_item__compare_icon svg { fill: #0d233f; transition: all .2s ease; margin-bottom: 5px;  }
 .app_item__compare_icon-compare svg { width: 27px; height: 25px; }
 .app_item__compare_icon-favorite svg { width: 25px; height: 22px; }
-.app_item__compare_icon-active svg { fill: #e0508f; }
+.app_item__compare_icon-active svg .st0 { fill: #e0508f; }
 .app_item__compare_icon-label { color: #fff; white-space: nowrap; font-size: 11px; height: 0; }
 .app_item__compare_icon-compare { margin-bottom: 15px; margin-top: 5px; }
 .app_item:hover { background-color: #32bcc1; border-color: #32bcc1; }
